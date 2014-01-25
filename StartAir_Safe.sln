@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testView", "testView\testView.vcxproj", "{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -20,6 +22,10 @@ Global
 		{EA278B7A-BF1D-4912-A124-3DE242F337E4}.Debug|Win32.Build.0 = Debug|Win32
 		{EA278B7A-BF1D-4912-A124-3DE242F337E4}.Release|Win32.ActiveCfg = Release|Win32
 		{EA278B7A-BF1D-4912-A124-3DE242F337E4}.Release|Win32.Build.0 = Release|Win32
+		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Debug|Win32.Build.0 = Debug|Win32
+		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Release|Win32.ActiveCfg = Release|Win32
+		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
