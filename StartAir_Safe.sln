@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testView", "testView\testView.vcxproj", "{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcxproj", "{0AEF34A8-D334-4810-A147-D27398AB73C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Release|Win32.ActiveCfg = Release|Win32
 		{D544CF4B-1493-45D7-8D2D-56B4EF6F1C7F}.Release|Win32.Build.0 = Release|Win32
+		{0AEF34A8-D334-4810-A147-D27398AB73C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AEF34A8-D334-4810-A147-D27398AB73C0}.Debug|Win32.Build.0 = Debug|Win32
+		{0AEF34A8-D334-4810-A147-D27398AB73C0}.Release|Win32.ActiveCfg = Release|Win32
+		{0AEF34A8-D334-4810-A147-D27398AB73C0}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
