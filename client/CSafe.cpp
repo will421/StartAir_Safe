@@ -2,6 +2,8 @@
 
 
 using std::list;
+using std::cout;
+using std::endl;
 
 namespace safe {
 	CSafe::CSafe()
@@ -33,25 +35,32 @@ namespace safe {
 	}
 	void CSafe::dataReceived(SimDataEvent& e)
 	{
+		//Voir cet exemple pour l'envoi de donnée : http://msdn.microsoft.com/en-us/library/cc730359.aspx
 		TListDatum d = e.data;
-		for (TListDatum::iterator it = d.begin(); it != d.end(); it++)
+		if (e.requ->getRequestId() == requid)
 		{
-			if (it->first == "Vertical Speed")
+			for (TListDatum::iterator it = d.begin(); it != d.end(); it++)
 			{
-				printf("\nVertical speed = %f",it->second);
+				if (it->first == "Vertical Speed")
+				{
+					printf("\nVertical speed = %f", it->second);
+				}
+				else if (it->first == "Pitot Heat")
+				{
+					printf("\nPitot heat = %f", it->second);
+				}
+				else if (it->first == "PLANE LATITUDE")
+				{
+					printf("\nPLANE LATITUDE = %f", it->second);
+				}
+				else
+				{
+					cout << endl << "Unknown datum :" << it->first;
+				}
 			}
-			else if (it->first == "Pitot Heat")
-			{
-				printf("\nPitot heat = %f", it->second);
-			}
-			else if (it->first == "PLANE LATITUDE")
-			{
-				printf("\nPLANE LATITUDE = %f", it->second);
-			}
-			else
-			{
-				printf("\nUnknown datum : %s", it->first);
-			}
+		}
+		else {
+			cout << endl << "Unknown request :" << e.requ->getRequestId();
 		}
 	}
 };

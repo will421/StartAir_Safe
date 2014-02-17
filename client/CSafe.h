@@ -3,6 +3,7 @@
 #include "types.h"
 #include "SimReceiver.h"
 
+
 namespace safe{
 	class CSafe : public ISimListener
 	{
@@ -11,6 +12,7 @@ namespace safe{
 		~CSafe();
 		void launch();
 		void dataReceived(SimDataEvent& e);
-
+	private :
+		int requid;
 	};
 };

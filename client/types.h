@@ -20,8 +20,10 @@ static enum DATA_NAMES {
 	DATA_PITOT_HEAT
 };
 */
-class structVarUnit{
-	public :
+
+/* varName and unitName can be found here : http://msdn.microsoft.com/en-us/library/cc526981.aspx
+*/
+struct structVarUnit{
 	char* varName;
 	char* unitName;
 };
