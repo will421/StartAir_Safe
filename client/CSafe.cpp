@@ -36,6 +36,7 @@ namespace safe {
 	void CSafe::dataReceived(SimDataEvent& e)
 	{
 		//Voir cet exemple pour l'envoi de donnée : http://msdn.microsoft.com/en-us/library/cc730359.aspx
+		
 		TListDatum d = e.data;
 		if (e.requ->getRequestId() == requid)
 		{
