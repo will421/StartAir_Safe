@@ -18,13 +18,13 @@ namespace safe {
 	void CSafe::launch()
 	{
 
-		SimReceiver sr = SimReceiver();
+		SimReceiver sr = SimReceiver(0);
 
 		list<structVarUnit> l;
 		l.push_back({ "Vertical Speed", "Feet per second" });
 		l.push_back({ "Pitot Heat", "Bool" });
 		l.push_back({ "PLANE LATITUDE", "radians" });
-		int requid = sr.request(l);
+		requid = sr.request(l);
 		sr.addListener(this);
 
 		while (!sr.stop())

@@ -12,9 +12,15 @@ namespace safe{
 
 	SimReceiver::SimReceiver(HANDLE h) : quit(0), hSimConnect(h)
 	{
+
+			// Request a simulation start event 
+			SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_START, "SimStart");
+
+	}
+	SimReceiver::SimReceiver(int numCfg) : quit(0), hSimConnect(NULL)
+	{
 		HRESULT hr;
 		char * nomclient = "Test client";
-		int numCfg = 0;
 
 		if (SUCCEEDED(SimConnect_Open(&hSimConnect, nomclient, NULL, 0, 0, numCfg)))
 		{

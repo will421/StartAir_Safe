@@ -39,11 +39,18 @@ namespace safe{
 		std::list<ISimListener*> simListeners; /*listener list*/
 		std::map<int,Request> requests; /*request list*/
 	public:
-		SimReceiver(HANDLE h=NULL);
+		/* \brief Create a SimReceiver and a new connection
+		*  \param numCfg number of the configuration from SimConnect.cfg file
+		*/
+		SimReceiver(int numCfg=0);
+		/* \brief Create a SimReceiver with an existing connection
+		*  \param h the handle of the connection
+		*/
+		SimReceiver(HANDLE h);
 		~SimReceiver();
 		/*
 		* \brief Subcribre to a list of data
-		* \param set datas data that you want to retrieve for this request
+		* \param s set datas data that you want to retrieve for this request
 		* \return l'id de la requete
 		*/
 		int request(std::list<structVarUnit> s);
@@ -65,7 +72,10 @@ namespace safe{
 		/* \brief remove l from the listener list
 		*/
 		void removeListener(ISimListener* l);
-
+		/* \brief Get the handle of this receiver
+		*  \return The handle
+		*/
+		HANDLE getHandle();
 	protected:
 		static void CALLBACK dispatchCallback(
 			SIMCONNECT_RECV *pData,
