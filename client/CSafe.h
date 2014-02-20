@@ -12,6 +12,9 @@ namespace safe{
 		~CSafe();
 		void launch();
 		void dataReceived(SimDataEvent& e);
+		void simQuitted(HANDLE h);
+		void simStopped(HANDLE h);
+		void simStarted(HANDLE h);
 	private :
 		int requid;
 	};
