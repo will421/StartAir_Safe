@@ -39,21 +39,33 @@ namespace safe{
 	*/
 	class SimReceiver
 	{
+
+#define max_send_records 10 
+
+		struct  record_struct {
+			char  call[256];
+			DWORD   sendid;
+		};
+
+		int     record_count = 0;
+		struct  record_struct send_record[max_send_records];
+
+
 	private:
 		HANDLE hSimConnect; /* Handle for the connection*/
 		boolean quit;			/*!<True if the simulator quit*/
 		std::list<ISimListener*> simListeners; /*listener list*/
-		std::map<int,Request> requests; /*request list*/
+		std::map<int, Request> requests; /*request list*/
 	public:
 		/* \brief Create a SimReceiver and a new connection
 		*  \param numCfg number of the configuration from SimConnect.cfg file
 		*/
-		SimReceiver(int numCfg=0);
+		SimReceiver(int numCfg = 0);
 		/* \brief Create a SimReceiver with an existing connection
 		*  \param h the handle of the connection
 		*/
-		//SimReceiver(HANDLE h);
-		
+		SimReceiver(HANDLE h);
+
 		~SimReceiver();
 		/*
 		* \brief Subcribre to a list of data
@@ -69,7 +81,7 @@ namespace safe{
 		* \brief Process the next SimConnect message received through the process function.
 		*/
 		void dispatch();
-		/* \brief 
+		/* \brief
 		*	\return true if the simulator has quit
 		*/
 		boolean stop();
@@ -83,6 +95,10 @@ namespace safe{
 		*  \return The handle
 		*/
 		HANDLE getHandle();
+
+		void addSendRecord(char* c);
+		char* findSendRecord(DWORD id);
+
 	protected:
 		static void CALLBACK dispatchCallback(
 			SIMCONNECT_RECV *pData,

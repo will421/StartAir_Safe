@@ -18,7 +18,7 @@ namespace safe {
 	void CSafe::launch()
 	{
 
-		SimReceiver sr = SimReceiver(0);
+		SimReceiver sr = SimReceiver(1);
 
 		list<structVarUnit> l;
 		l.push_back({ "Vertical Speed", "Feet per second" });

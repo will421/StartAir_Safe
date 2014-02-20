@@ -10,16 +10,46 @@ using std::list;
 
 namespace safe{
 
-	/*
+
+	// Given the ID of an erroneous packet, find the identification string of the call 
+
+	char* SimReceiver::findSendRecord(DWORD id)
+	{
+		bool found = false;
+		int count = 0;
+		while (!found && count < record_count)
+		{
+			if (id == send_record[count].sendid)
+				return send_record[count].call;
+			++count;
+		}
+		return "Send Record not found";
+	}
+
+	void SimReceiver::addSendRecord(char* c)
+	{
+		DWORD id;
+
+		if (record_count < max_send_records)
+		{
+			int hr = SimConnect_GetLastSentPacketID(hSimConnect, &id);
+
+			strncpy_s(send_record[record_count].call, 255, c, 255);
+			send_record[record_count].sendid = id;
+			++record_count;
+		}
+	}
+
+
 	SimReceiver::SimReceiver(HANDLE h) : quit(0), hSimConnect(h)
 	{
 
-			// Request a simulation start event 
-			SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_START, "SimStart");
-			SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_STOP, "SimStop");
+		// Request a simulation start event 
+		SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_START, "SimStart");
+		SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_STOP, "SimStop");
 
 	}
-	*/
+
 	SimReceiver::SimReceiver(int numCfg) : quit(0), hSimConnect(NULL)
 	{
 		HRESULT hr;
@@ -42,7 +72,7 @@ namespace safe{
 
 	int SimReceiver::request(list<structVarUnit> s)
 	{
-		
+
 		Request r = Request(hSimConnect, s);
 		requests[r.getRequestId()] = r;
 		return r.getRequestId();
@@ -95,7 +125,7 @@ namespace safe{
 							// only that data that has changed 
 							for (std::map<int, Request>::iterator it = requests.begin(); it != requests.end(); it++)
 							{
-								hr = SimConnect_RequestDataOnSimObject(hSimConnect, it->first, it->first, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME,SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
+								hr = SimConnect_RequestDataOnSimObject(hSimConnect, it->first, it->first, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
 								//hr = SimConnect_RequestDataOnSimObject(hSimConnect, REQUEST_PDR, DEFINITION_PDR, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
 							}
 
@@ -118,44 +148,54 @@ namespace safe{
 					fireDataReceived(pObjData);
 					/*switch (pObjData->dwRequestID)
 					{
-						case REQUEST_PDR:
-							;
-							{
-								int count = 0;
-								StructDatum *pS = (StructDatum*)&pObjData->dwData;
-								// There can be a minimum of 1 and a maximum of maxReturnedItems 
-								// in the StructDatum structure. The actual number returned will 
-								// be held in the dwDefineCount parameter. 
+					case REQUEST_PDR:
+					;
+					{
+					int count = 0;
+					StructDatum *pS = (StructDatum*)&pObjData->dwData;
+					// There can be a minimum of 1 and a maximum of maxReturnedItems
+					// in the StructDatum structure. The actual number returned will
+					// be held in the dwDefineCount parameter.
 
-								while (count < (int)pObjData->dwDefineCount)
-								{
-									switch (pS->datum[count].id)
-									{
-										case DATA_VERTICAL_SPEED:
-											printf("\nVertical speed = %f", pS->datum[count].value);
-											break;
+					while (count < (int)pObjData->dwDefineCount)
+					{
+					switch (pS->datum[count].id)
+					{
+					case DATA_VERTICAL_SPEED:
+					printf("\nVertical speed = %f", pS->datum[count].value);
+					break;
 
-										case DATA_PITOT_HEAT:
-											printf("\nPitot heat = %f", pS->datum[count].value);
-											break;
+					case DATA_PITOT_HEAT:
+					printf("\nPitot heat = %f", pS->datum[count].value);
+					break;
 
-										default:
-											printf("\nUnknown datum ID: %d", pS->datum[count].id);
-											break;
-									}
-									++count;
-								}
-								break;
-							}
+					default:
+					printf("\nUnknown datum ID: %d", pS->datum[count].id);
+					break;
+					}
+					++count;
+					}
+					break;
+					}
 
-						default:
-							cout << endl << "REQUEST UNKNOW";
-							break;
+					default:
+					cout << endl << "REQUEST UNKNOW";
+					break;
 					}*/
 					break;
 				}
 
+			case SIMCONNECT_RECV_ID_EXCEPTION:
+				;
+				{
+					SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;
+					printf("\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n", except->dwException, except->dwSendID, except->dwIndex, cbData);
 
+					// Locate the bad call and print it out 
+					char* s = findSendRecord(except->dwSendID);
+					printf("\n%s", s);
+					break;
+				}
 			case SIMCONNECT_RECV_ID_QUIT:
 				;
 				{
@@ -173,18 +213,22 @@ namespace safe{
 		simListeners.push_back(l);
 	}
 	void SimReceiver::removeListener(ISimListener* l) {
-			simListeners.remove(l);
-	/*	else {
-			// handle the case
-			cout << "Could not unregister the specified listener object as it is not registered." << std::endl;
-		}*/
+		simListeners.remove(l);
+		/*	else {
+				// handle the case
+				cout << "Could not unregister the specified listener object as it is not registered." << std::endl;
+				}*/
+	}
+	HANDLE SimReceiver :: getHandle()
+	{
+		return hSimConnect;
 	}
 	void SimReceiver::fireDataReceived(SIMCONNECT_RECV_SIMOBJECT_DATA * pObjData)
 	{
-		SimDataEvent e = SimDataEvent(&hSimConnect, &requests[pObjData->dwRequestID],pObjData);
+		SimDataEvent e = SimDataEvent(&hSimConnect, &requests[pObjData->dwRequestID], pObjData);
 		/*for (list<ISimListener*>::iterator it = simListeners.begin(); it != simListeners.end(); it++)
 		{
-			(*it)->dataReceived(e);
+		(*it)->dataReceived(e);
 		}*/
 		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->dataReceived(e); });
 	}

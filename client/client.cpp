@@ -10,12 +10,12 @@ using namespace safe;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	CSafe s = CSafe();
-	s.launch();
+	//CSafe s = CSafe();
+	//s.launch();
 
-	//sendData d = sendData();
-	//d.launch();
-	//d.~sendData();
+	sendData d = sendData();
+	d.launch();
+	d.~sendData();
 
 	return 0;
 }

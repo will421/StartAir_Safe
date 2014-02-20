@@ -11,9 +11,10 @@ namespace safe{
 			DEFINITION_THROTTLE,
 		};
 		struct DATA {
-			float verticalSpeed;
-			float pilotHeat;
-			float planeLatitude;
+			/*double verticalSpeed;
+			float pilotHeat;*/
+			double planeLatitude;
+			double planeLongitude;
 		};
 	public:
 		sendData();
@@ -21,8 +22,12 @@ namespace safe{
 		void launch();
 		void dataReceived(SimDataEvent& e);
 	private :
+		SimReceiver forex;
 		int requid;
 		HANDLE hSimConnect; /* Handle for the connection*/
 		DATA dataToSend;	// The data to send
+		void simQuitted(HANDLE h);
+		void simStopped(HANDLE h);
+		void simStarted(HANDLE h);
 	};
 };
