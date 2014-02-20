@@ -84,11 +84,24 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ISimListener.h" />
+    <ClInclude Include="Request.h" />
+    <ClInclude Include="CSafe.h" />
+    <ClInclude Include="sendData.h" />
+    <ClInclude Include="SimDataEvent.h" />
+    <ClInclude Include="SimReceiver.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="client.cpp" />
+    <ClCompile Include="Request.cpp" />
+    <ClCompile Include="CSafe.cpp" />
+    <ClCompile Include="sendData.cpp" />
+    <ClCompile Include="SimDataEvent.cpp" />
+    <ClCompile Include="SimListener.cpp" />
+    <ClCompile Include="SimReceiver.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
