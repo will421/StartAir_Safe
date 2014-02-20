@@ -63,4 +63,8 @@ namespace safe {
 			cout << endl << "Unknown request :" << e.requ->getRequestId();
 		}
 	}
+
+	void CSafe::simQuitted(HANDLE h) { cout << "\nSIM QUIT" << endl; }
+	void CSafe::simStopped(HANDLE h) { cout << "\nSIM STOP" << endl; }
+	void CSafe::simStarted(HANDLE h) { cout << "\nSIM START" << endl; }
 };

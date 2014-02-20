@@ -27,6 +27,12 @@
 */
 namespace safe{
 
+	static enum SYM_EVENT {
+		EVENT_SIM_START,
+		EVENT_SIM_STOP
+	};
+
+
 	/*!
 	* \class SimReceiver
 	* \brief Allow to retrieve data
@@ -46,7 +52,8 @@ namespace safe{
 		/* \brief Create a SimReceiver with an existing connection
 		*  \param h the handle of the connection
 		*/
-		SimReceiver(HANDLE h);
+		//SimReceiver(HANDLE h);
+		
 		~SimReceiver();
 		/*
 		* \brief Subcribre to a list of data

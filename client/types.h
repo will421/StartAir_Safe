@@ -3,9 +3,7 @@
 
 
 
-static enum EVENT_PDR {
-	EVENT_SIM_START,
-};
+
 /*
 static enum DATA_DEFINE_ID {
 	DEFINITION_PDR,
