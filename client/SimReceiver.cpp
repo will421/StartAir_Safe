@@ -41,7 +41,7 @@ namespace safe{
 	}
 
 
-	SimReceiver::SimReceiver(HANDLE h) : quit(0), hSimConnect(h)
+	SimReceiver::SimReceiver(HANDLE h) : quit(0), hSimConnect(h), latLonAltRequested(false), PBHRequested(false)
 	{
 
 		// Request a simulation start event 
@@ -50,7 +50,7 @@ namespace safe{
 
 	}
 
-	SimReceiver::SimReceiver(int numCfg) : quit(0), hSimConnect(NULL)
+	SimReceiver::SimReceiver(int numCfg) : quit(0), hSimConnect(NULL), latLonAltRequested(false), PBHRequested(false)
 	{
 		HRESULT hr;
 		char * nomclient = "Test client";
@@ -121,14 +121,15 @@ namespace safe{
 						case EVENT_SIM_START:
 							fireSimStart();
 							//cout << "EVENT_SIM_START" << endl;
-							// Make the call for data every second, but only when it changes and 
+							// Make the call for data every sim frame, but only when it changes and 
 							// only that data that has changed 
 							for (std::map<int, Request>::iterator it = requests.begin(); it != requests.end(); it++)
 							{
 								hr = SimConnect_RequestDataOnSimObject(hSimConnect, it->first, it->first, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
 								//hr = SimConnect_RequestDataOnSimObject(hSimConnect, REQUEST_PDR, DEFINITION_PDR, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
 							}
-
+							if (latLonAltRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 50, 50, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
+							if (PBHRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 60, 60, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
 							break;
 						case EVENT_SIM_STOP:
 							fireSimStop();
@@ -142,46 +143,40 @@ namespace safe{
 
 			case SIMCONNECT_RECV_ID_SIMOBJECT_DATA:
 				;
-				{
+				{/*
+						#define maxReturnedItems    20
+					// A basic structure for a single item of returned data 
+					struct StructOneDatum {
+						int        id;
+						SIMCONNECT_DATA_LATLONALT value;
+					};
+
+					// A structure that can be used to receive Tagged data 
+					struct StructDatum {
+						StructOneDatum  datum[maxReturnedItems];
+					};
+					*/
 					//cout << "SIMCONNECT_RECV_ID_SIMOBJECT_DATA" << endl;
 					SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData = (SIMCONNECT_RECV_SIMOBJECT_DATA*)pData;
-					fireDataReceived(pObjData);
-					/*switch (pObjData->dwRequestID)
+					if (pObjData->dwRequestID == 50)
 					{
-					case REQUEST_PDR:
-					;
+						SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*) &pObjData->dwData;
+						fireLatLonAlt(*d);
+					} else if (pObjData->dwRequestID == 60)
 					{
-					int count = 0;
-					StructDatum *pS = (StructDatum*)&pObjData->dwData;
-					// There can be a minimum of 1 and a maximum of maxReturnedItems
-					// in the StructDatum structure. The actual number returned will
-					// be held in the dwDefineCount parameter.
-
-					while (count < (int)pObjData->dwDefineCount)
-					{
-					switch (pS->datum[count].id)
-					{
-					case DATA_VERTICAL_SPEED:
-					printf("\nVertical speed = %f", pS->datum[count].value);
-					break;
-
-					case DATA_PITOT_HEAT:
-					printf("\nPitot heat = %f", pS->datum[count].value);
-					break;
-
-					default:
-					printf("\nUnknown datum ID: %d", pS->datum[count].id);
-					break;
+						//SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&pObjData->dwData;
+						SIMCONNECT_DATA_PBH * d = (SIMCONNECT_DATA_PBH*)&pObjData->dwData;
+						firePBH(*d);
 					}
-					++count;
+					else
+					{
+						fireDataReceived(pObjData);
 					}
-					break;
-					}
+					
+				//	StructDatum *pS = (StructDatum*)&pObjData->dwData;
+					
 
-					default:
-					cout << endl << "REQUEST UNKNOW";
-					break;
-					}*/
+
 					break;
 				}
 
@@ -209,6 +204,26 @@ namespace safe{
 				break;
 		}
 	}
+
+	void SimReceiver::requestLatLonAlt() {
+
+		SimConnect_AddToDataDefinition(hSimConnect, 50, "PLANE LATITUDE", "Radians");
+		SimConnect_AddToDataDefinition(hSimConnect, 50, "PLANE LONGITUDE", "Radians");
+		SimConnect_AddToDataDefinition(hSimConnect, 50, "PLANE ALTITUDE", "Feet");
+
+
+		//SimConnect_AddToDataDefinition(hSimConnect, 50, "struct LATLONALT", NULL, SIMCONNECT_DATATYPE_LATLONALT, 0, 0);
+		latLonAltRequested = true;
+
+	}
+	void SimReceiver::requestPBH(){
+		//SimConnect_AddToDataDefinition(hSimConnect, 60, "struct LATLONALTPBH", NULL, SIMCONNECT_DATATYPE_LATLONALT, 0, 0);
+		SimConnect_AddToDataDefinition(hSimConnect, 60, "PLANE PITCH DEGREES", "Radians"/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);
+		SimConnect_AddToDataDefinition(hSimConnect, 60, "PLANE BANK DEGREES", "Radians"/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);
+		SimConnect_AddToDataDefinition(hSimConnect, 60, "PLANE HEADING DEGREES TRUE", "Radians"/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);
+		PBHRequested = true;
+	}
+
 	void SimReceiver::addListener(ISimListener* l) {
 		simListeners.push_back(l);
 	}
@@ -226,10 +241,7 @@ namespace safe{
 	void SimReceiver::fireDataReceived(SIMCONNECT_RECV_SIMOBJECT_DATA * pObjData)
 	{
 		SimDataEvent e = SimDataEvent(&hSimConnect, &requests[pObjData->dwRequestID], pObjData);
-		/*for (list<ISimListener*>::iterator it = simListeners.begin(); it != simListeners.end(); it++)
-		{
-		(*it)->dataReceived(e);
-		}*/
+
 		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->dataReceived(e); });
 	}
 	void SimReceiver::fireSimStart()
@@ -245,4 +257,12 @@ namespace safe{
 		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->simQuitted(hSimConnect); });
 	}
 
+	void SimReceiver::fireLatLonAlt(SIMCONNECT_DATA_LATLONALT& d)
+	{
+		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->latlonaltReceived(hSimConnect, d); });
+	}
+	void SimReceiver::firePBH(SIMCONNECT_DATA_PBH& d)
+	{
+		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->PBHReceived(hSimConnect, d); });
+	}
 };

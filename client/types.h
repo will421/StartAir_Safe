@@ -25,3 +25,11 @@ struct structVarUnit{
 	char* varName;
 	char* unitName;
 };
+
+
+struct SIMCONNECT_DATA_PBH
+{
+	double  p;
+	double  b;
+	double  h;
+};

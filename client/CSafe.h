@@ -15,6 +15,8 @@ namespace safe{
 		void simQuitted(HANDLE h);
 		void simStopped(HANDLE h);
 		void simStarted(HANDLE h);
+		void latlonaltReceived(HANDLE h, SIMCONNECT_DATA_LATLONALT& d);
+		void PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH& d);
 	private :
 		int requid;
 	};

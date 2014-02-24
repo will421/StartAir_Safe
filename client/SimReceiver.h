@@ -54,6 +54,8 @@ namespace safe{
 	private:
 		HANDLE hSimConnect; /* Handle for the connection*/
 		boolean quit;			/*!<True if the simulator quit*/
+		boolean latLonAltRequested;
+		boolean PBHRequested;
 		std::list<ISimListener*> simListeners; /*listener list*/
 		std::map<int, Request> requests; /*request list*/
 	public:
@@ -73,6 +75,10 @@ namespace safe{
 		* \return l'id de la requete
 		*/
 		int request(std::list<structVarUnit> s);
+
+		void requestLatLonAlt();
+		void requestPBH();
+
 		/*
 		*\brief Close the connection
 		*/
@@ -110,6 +116,8 @@ namespace safe{
 		void fireSimStart();
 		void fireSimStop();
 		void fireSimQuit();
+		void fireLatLonAlt(SIMCONNECT_DATA_LATLONALT& d);
+		void firePBH(SIMCONNECT_DATA_PBH& d);
 	};
 
 };

@@ -36,8 +36,9 @@ void Request::addToDataDef()
 
 	for (std::map<char *, structIdType>::iterator it = data.begin(); it != data.end(); ++it)
 	{
-		SimConnect_AddToDataDefinition(h, id, it->first, it->second.unitName, SIMCONNECT_DATATYPE_FLOAT32, 0, it->second.id);
+		SimConnect_AddToDataDefinition(h, id, it->first, it->second.unitName,SIMCONNECT_DATATYPE_FLOAT32, 0,it->second.id);
 		//SimConnect_AddToDataDefinition(h, id, it->first, it->second.unitName,SIMCONNECT_DATATYPE_FLOAT32, 0,it->second.id);
+		//SimConnect_AddToDataDefinition(h, id, it->first, NULL, SIMCONNECT_DATATYPE_LATLONALT, 0, it->second.id);
 	}
 }
 void Request::addToSubscribedData(int id, structVarUnit vu){

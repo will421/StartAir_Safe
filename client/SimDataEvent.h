@@ -7,7 +7,7 @@
 #include <list>
 #include <iostream>
 
-typedef std::list<std::pair<std::string, float>> TListDatum;
+typedef std::list<std::pair<std::string, double>> TListDatum;
 
 class SimDataEvent
 {

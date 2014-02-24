@@ -18,7 +18,7 @@ SimDataEvent::SimDataEvent(HANDLE* hSim, Request* r, SIMCONNECT_RECV_SIMOBJECT_D
 		{
 			if (pS->datum[count].id == r->getDataId(it->varName))
 			{
-				ld.push_back(pair< string, float>(it->varName,pS->datum[count].value));
+				ld.push_back(pair< string, double>(it->varName,pS->datum[count].value));
 				break;
 			}
 		}

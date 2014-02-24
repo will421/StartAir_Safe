@@ -18,13 +18,15 @@ namespace safe {
 	void CSafe::launch()
 	{
 
-		SimReceiver sr = SimReceiver(1);
+		SimReceiver sr = SimReceiver(0);
 
 		list<structVarUnit> l;
-		l.push_back({ "Vertical Speed", "Feet per second" });
-		l.push_back({ "Pitot Heat", "Bool" });
 		l.push_back({ "PLANE LATITUDE", "radians" });
-		requid = sr.request(l);
+		l.push_back({ "PLANE LONGITUDE", "radians" });
+		//l.push_back({ "struct LATLONALT", "SIMCONNECT_DATA_LATLONALT" });
+		//requid = sr.request(l);
+		sr.requestLatLonAlt();
+		sr.requestPBH();
 		sr.addListener(this);
 
 		while (!sr.stop())
@@ -41,17 +43,13 @@ namespace safe {
 		{
 			for (TListDatum::iterator it = d.begin(); it != d.end(); it++)
 			{
-				if (it->first == "Vertical Speed")
+				if (it->first == "PLANE LATITUDE")
 				{
-					printf("\nVertical speed = %f", it->second);
+					cout << endl << "PLANE LATITUDE = " << it->second;
 				}
-				else if (it->first == "Pitot Heat")
+				else if (it->first == "PLANE LONGITUDE")
 				{
-					printf("\nPitot heat = %f", it->second);
-				}
-				else if (it->first == "PLANE LATITUDE")
-				{
-					printf("\nPLANE LATITUDE = %f", it->second);
+					cout << endl << "PLANE LONGITUDE = " << it->second;
 				}
 				else
 				{
@@ -63,6 +61,17 @@ namespace safe {
 			cout << endl << "Unknown request :" << e.requ->getRequestId();
 		}
 	}
+	void CSafe::latlonaltReceived(HANDLE h, SIMCONNECT_DATA_LATLONALT& d) {
+		cout << endl << "PLANE LATITUDE = " << d.Latitude;
+		cout << endl << "PLANE LONGITUDE = " << d.Longitude;
+		cout << endl << "PLANE ALTITUDE = " << d.Altitude;
+	}
+	void CSafe::PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH& d) {
+		cout << endl << "P = " << d.p;
+		cout << endl << "B = " << d.b;
+		cout << endl << "H = " << d.h;
+	}
+
 
 	void CSafe::simQuitted(HANDLE h) { cout << "\nSIM QUIT" << endl; }
 	void CSafe::simStopped(HANDLE h) { cout << "\nSIM STOP" << endl; }
