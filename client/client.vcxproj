@@ -103,7 +103,6 @@
     <ClCompile Include="CSafe.cpp" />
     <ClCompile Include="sendData.cpp" />
     <ClCompile Include="SimDataEvent.cpp" />
-    <ClCompile Include="SimListener.cpp" />
     <ClCompile Include="SimReceiver.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

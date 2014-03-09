@@ -59,9 +59,6 @@
     <ClCompile Include="SimDataEvent.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="SimListener.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="SimReceiver.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>

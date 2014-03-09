@@ -14,6 +14,9 @@
 
 #include "SimConnect.h" 
 
+
+
+
 int     quit = 0;
 HANDLE  hSimConnect = NULL;
 
@@ -29,8 +32,13 @@ static enum EVENT_ID {
 	EVENT_CAMERA_DOWN
 };
 
+static enum INPUT_ID {
+	INPUT0,
+};
+
+
 static float cameraBank = 0.0f;
-static float cameraPos = 0.9f;
+static float cameraPos = 0.0f;
 
 float normalize180(float v)
 {
@@ -115,10 +123,6 @@ void CALLBACK MyDispatchProcCC(SIMCONNECT_RECV* pData, DWORD cbData, void *pCont
 			break;
 	}
 }
-
-static enum INPUT_ID {
-	INPUT0,
-};
 
 void testCockpitCamera()
 {
