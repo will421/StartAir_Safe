@@ -4,15 +4,15 @@
 #include "stdafx.h"
 #include "SimConnect.h"
 #include "CSafe.h"
-#include "sendData.h"
+#include "DataSender.h"
 
 using namespace safe;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	//CSafe s = CSafe(); s.launch();
+	CSafe s = CSafe(); s.launch();
 
-	sendData d = sendData(); d.launch(); d.~sendData();
+	//DataSender d = DataSender(); d.launch(); d.~DataSender();
 	
 	return 0;
 }

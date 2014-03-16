@@ -2,6 +2,7 @@
 
 #include "types.h"
 #include "SimReceiver.h"
+#include "DataSender.h"
 
 
 namespace safe{
@@ -19,5 +20,7 @@ namespace safe{
 		void PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH& d);
 	private :
 		int requid;
+		SimReceiver sr;
+		DataSender ds;
 	};
 };
