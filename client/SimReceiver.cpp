@@ -73,11 +73,11 @@ namespace safe{
 
 
 	void SimReceiver::onRecvSimobjectData(SIMCONNECT_RECV *pData) {
-		DataSender::boucle++;
+		//DataSender::boucle++;
 
 		SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData = (SIMCONNECT_RECV_SIMOBJECT_DATA*)pData;
 
-		cout << endl << DataSender::boucle << "-> " << pObjData->dwRequestID;
+		//cout << endl << DataSender::boucle << "-> " << pObjData->dwRequestID;
 
 		if (pObjData->dwRequestID == 50)
 		{
@@ -121,14 +121,14 @@ namespace safe{
 					//cout << "EVENT_SIM_START" << endl;
 					// Make the call for data every sim frame, but only when it changes and 
 					// only that data that has changed 
-					for (std::map<int, Request>::iterator it = requests.begin(); it != requests.end(); it++)
+					/*for (std::map<int, Request>::iterator it = requests.begin(); it != requests.end(); it++)
 					{
 						SimConnect_RequestDataOnSimObject(hSimConnect, it->first, it->first, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
 						//hr = SimConnect_RequestDataOnSimObject(hSimConnect, REQUEST_PDR, DEFINITION_PDR, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);
-					}
-					if (latLonAltRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 50, 50, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
-					if (PBHRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 60, 60, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
-					if (AllRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 70, 70, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
+					}*/
+					if (latLonAltRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 50, 50, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
+					if (PBHRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 60, 60, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
+					if (AllRequested){ SimConnect_RequestDataOnSimObject(hSimConnect, 70, 70, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }
 					break;
 				case EVENT_SIM_STOP:
 					fireSimStop();

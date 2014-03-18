@@ -87,6 +87,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="IDataPool.h" />
+    <ClInclude Include="Extrapolation.h" />
     <ClInclude Include="ISimListener.h" />
     <ClInclude Include="Request.h" />
     <ClInclude Include="CSafe.h" />
@@ -101,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="client.cpp" />
+    <ClCompile Include="Extrapolation.cpp" />
     <ClCompile Include="Request.cpp" />
     <ClCompile Include="CSafe.cpp" />
     <ClCompile Include="DataSender.cpp" />

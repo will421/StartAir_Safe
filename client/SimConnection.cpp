@@ -25,16 +25,16 @@ void SimConnection::dispatchCallback(SIMCONNECT_RECV *pData, DWORD cbData, void 
 }
 
 void SimConnection::onRecvSimobjectData(SIMCONNECT_RECV *pData){
-	printf("onRecvSimobjectData");
+	std::cout << std::endl <<"onRecvSimobjectData";
 }
 void SimConnection::onRecvEvent(SIMCONNECT_RECV *pData){
-	printf("onRecvSimobjectData");
+	std::cout << std::endl << "onRecvEvent";
 }
 void SimConnection::onRecvException(SIMCONNECT_RECV *pData, DWORD cbData){
-	printf("onRecvSimobjectData");
+	std::cout << std::endl << "onRecvException";
 }
 void SimConnection::onRecvQuit(SIMCONNECT_RECV *pData){
-	printf("onRecvSimobjectData");
+	std::cout << std::endl << "onRecvQuit";
 }
 
 void SimConnection::process(SIMCONNECT_RECV *pData, DWORD cbData)

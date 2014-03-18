@@ -1,6 +1,8 @@
 #pragma once
 
 #include "SimConnect.h"
+#include <iostream>
+#include <string>
 
 class SimExManager
 {
@@ -18,8 +20,13 @@ public:
 private :
 	int     record_count = 0;
 	struct  record_struct send_record[max_send_records];
+	int firstSet;
+	char* recordname;
+	void add(int id,char * c);
 protected :
 	void addSendRecord(HANDLE hSimConnect, char* c);
 	char* findSendRecord(DWORD id);
+	void firstSendRecord(HANDLE h, char* rn);
+	void lastSendRecord(HANDLE h);
 };
 

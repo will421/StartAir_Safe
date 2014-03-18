@@ -51,6 +51,12 @@
     <ClInclude Include="SimConnection.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="Extrapolation.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="IDataPool.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -78,6 +84,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="SimConnection.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Extrapolation.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

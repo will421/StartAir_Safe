@@ -1,6 +1,8 @@
 #include "CSafe.h"
 
 
+#include <ctime>
+
 using std::list;
 using std::cout;
 using std::endl;
@@ -30,24 +32,25 @@ namespace safe {
 		// Inscription au type de données reçue
 
 		//requid = sr.request(l);
-		//sr.requestLatLonAlt();
-		//sr.requestPBH();
-		sr.requestAll();
-		HANDLE a = sr.getHandle();
+		sr.requestLatLonAlt();
+		sr.requestPBH();
+		//sr.requestAll();
+
 		sr.addListener(this);
 
 		ds = DataSender(0);
 		
-
-
-
-		//tbegin = clock();
-
 		// Boucle de reception pour le traitement des données recues
 		while (!sr.stop())
 		{
+			clock_t tbegin, tend;
+			tbegin = clock();
 			sr.dispatch();
-			Sleep(1);
+			ds.dispatch();
+			tend = clock();
+			if (tend-tbegin !=0) cout << endl << "Temp dispatch :" << (tend - tbegin) << "-------------------------------------- "/*/ CLOCKS_PER_SEC * 1000*/;
+
+			Sleep(10);
 		}
 	}
 
@@ -92,15 +95,15 @@ namespace safe {
 	}
 
 	void CSafe::latlonaltReceived(HANDLE h, SIMCONNECT_DATA_LATLONALT& d) {
-		//cout << endl << "PLANE LATITUDE = " << d.Latitude;
-		//cout << endl << "PLANE LONGITUDE = " << d.Longitude;
-		//cout << endl << "PLANE ALTITUDE = " << d.Altitude;
+		cout << endl << "PLANE LATITUDE = " << d.Latitude;
+		cout << endl << "PLANE LONGITUDE = " << d.Longitude;
+		cout << endl << "PLANE ALTITUDE = " << d.Altitude;
 		ds.sendLatLonAlt(d);
 	}
 	void CSafe::PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH& d) {
-		//cout << endl << "P = " << d.p;
-		//cout << endl << "B = " << d.b;
-		//cout << endl << "H = " << d.h;
+		cout << endl << "P = " << d.p;
+		cout << endl << "B = " << d.b;
+		cout << endl << "H = " << d.h;
 		ds.sendPBH(d);
 	}
 };
