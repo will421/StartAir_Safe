@@ -1,5 +1,11 @@
 #pragma once
+
+
+
+#define _WINSOCKAPI_ //To avoid redefinition from #include <windows.h> in "SimConnect.h
 #include "SimConnect.h"
+
+
 #include "types.h"
 #include "ISimListener.h"
 #include "Request.h"
@@ -46,7 +52,7 @@ namespace safe{
 		boolean quit;			/*!<True if the simulator quit*/
 		boolean latLonAltRequested;
 		boolean PBHRequested;
-		boolean AllRequested;
+		boolean posRequested;
 		std::list<ISimListener*> simListeners; /*listener list*/
 		std::map<int, Request> requests; /*request list*/
 	public:
@@ -69,7 +75,7 @@ namespace safe{
 
 		void requestLatLonAlt();
 		void requestPBH();
-		void requestAll();
+		void requestPos();
 
 		/*
 		*\brief Close the connection
@@ -103,6 +109,7 @@ namespace safe{
 		void fireSimQuit();
 		void fireLatLonAlt(SIMCONNECT_DATA_LATLONALT& d);
 		void firePBH(SIMCONNECT_DATA_PBH& d);
+		void fireLatLonAltPBH(SAFE_DATA_POS& d);
 	};
 
 };

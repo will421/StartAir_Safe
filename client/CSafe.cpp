@@ -8,7 +8,8 @@ using std::cout;
 using std::endl;
 
 namespace safe {
-	CSafe::CSafe()
+
+	CSafe::CSafe(int port) : UDPReceiver(port), ds(0)
 	{
 	}
 
@@ -20,14 +21,14 @@ namespace safe {
 	void CSafe::launch()
 	{
 
+
+		/*
 		list<structVarUnit> l;
 		l.push_back({ "PLANE LATITUDE", "radians" });
 		l.push_back({ "PLANE LONGITUDE", "radians" });
 
-
-
 		// Initialise le receiver pour la reception des données depuis une autre machine
-		sr = SimReceiver(2);
+		sr = SimReceiver(0);
 
 		// Inscription au type de données reçue
 
@@ -46,12 +47,16 @@ namespace safe {
 			clock_t tbegin, tend;
 			tbegin = clock();
 			sr.dispatch();
-			ds.dispatch();
+			//ds.dispatch();
 			tend = clock();
-			if (tend-tbegin !=0) cout << endl << "Temp dispatch :" << (tend - tbegin) << "-------------------------------------- "/*/ CLOCKS_PER_SEC * 1000*/;
+			if (tend-tbegin !=0) cout << endl << "Temp dispatch :" << (tend - tbegin) << "-------------------------------------- "/ CLOCKS_PER_SEC * 1000;
 
-			Sleep(10);
+			Sleep(1);
 		}
+		*/
+
+		boucle();
+
 	}
 
 
@@ -98,12 +103,30 @@ namespace safe {
 		cout << endl << "PLANE LATITUDE = " << d.Latitude;
 		cout << endl << "PLANE LONGITUDE = " << d.Longitude;
 		cout << endl << "PLANE ALTITUDE = " << d.Altitude;
-		ds.sendLatLonAlt(d);
+		//ds.sendLatLonAlt(d);
 	}
 	void CSafe::PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH& d) {
 		cout << endl << "P = " << d.p;
 		cout << endl << "B = " << d.b;
 		cout << endl << "H = " << d.h;
-		ds.sendPBH(d);
+		
+		//ds.sendPBH(d);
+	}
+	void CSafe::latLonAltPBHReceived(HANDLE h, SAFE_DATA_POS& d)
+	{
+
+	}
+
+	void CSafe::datagramReceived(SOCKADDR & from, SAFE_RECV & datagram)
+	{
+
+		//std::cout << "datagramReceived : " << datagram.d.Altitude << " " << d->Latitude << std::endl;
+		//cout << endl << "PLANE LATITUDE = " << datagram.d.Latitude;
+		//cout << endl << "PLANE LONGITUDE = " << datagram.d.Longitude;
+		//cout << endl << "PLANE ALTITUDE = " << datagram.d.Altitude;
+		//cout << endl << "P = " << datagram.d.p;
+		//cout << endl << "B = " << datagram.d.b;
+		//cout << endl << "H = " << datagram.d.h;
+		ds.sendPos(datagram.d);
 	}
 };

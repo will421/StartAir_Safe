@@ -23,13 +23,14 @@ namespace safe{
 		~DataSender();
 		void sendLatLonAlt(SIMCONNECT_DATA_LATLONALT &d);
 		void sendPBH(SIMCONNECT_DATA_PBH &d);
+		void DataSender::sendPos(SAFE_DATA_POS&d);
 		//void sendAll(SIMCONNECT_DATA_LATLONALT &d1, SIMCONNECT_DATA_PBH &d2);
 		//static int boucle;
 	private :
 		SIMCONNECT_DATA_LATLONALT lla;
 		SIMCONNECT_DATA_PBH pbh;
 	protected :
-		void requestFreezeState();
+		//void requestFreezeState();
 		void freeze();
 		void onRecvSimobjectData(SIMCONNECT_RECV *pData);
 		void onRecvException(SIMCONNECT_RECV *pData, DWORD cbData);

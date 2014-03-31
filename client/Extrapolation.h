@@ -9,8 +9,8 @@ namespace safe {
 		Extrapolation();
 		~Extrapolation();
 
-		SIMCONNECT_DATA_PBH& nextPBH();
-		SIMCONNECT_DATA_LATLONALT& nextLatLonAlt();
+		SIMCONNECT_DATA_PBH nextPBH();
+		SIMCONNECT_DATA_LATLONALT nextLatLonAlt();
 	};
 };
 

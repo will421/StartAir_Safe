@@ -31,6 +31,9 @@ namespace safe {
 		*/
 		virtual void PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH& d) = 0;
 
+		virtual void latLonAltPBHReceived(HANDLE h, SAFE_DATA_POS& d) = 0;
+
 	};
 
 };
+

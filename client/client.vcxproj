@@ -19,7 +19,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -53,7 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>../inc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../inc;../global</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -87,31 +87,32 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\global\DataSender.h" />
+    <ClInclude Include="..\global\ISimListener.h" />
+    <ClInclude Include="..\global\Request.h" />
+    <ClInclude Include="..\global\SimDataEvent.h" />
+    <ClInclude Include="..\global\SimExManager.h" />
+    <ClInclude Include="..\global\types.h" />
     <ClInclude Include="IDataPool.h" />
     <ClInclude Include="Extrapolation.h" />
-    <ClInclude Include="ISimListener.h" />
-    <ClInclude Include="Request.h" />
     <ClInclude Include="CSafe.h" />
-    <ClInclude Include="DataSender.h" />
     <ClInclude Include="SimConnection.h" />
-    <ClInclude Include="SimDataEvent.h" />
-    <ClInclude Include="SimExManager.h" />
-    <ClInclude Include="SimReceiver.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="types.h" />
+    <ClInclude Include="UDPReceiver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\global\DataSender.cpp" />
+    <ClCompile Include="..\global\Request.cpp" />
+    <ClCompile Include="..\global\SimConnection.cpp" />
+    <ClCompile Include="..\global\SimDataEvent.cpp" />
+    <ClCompile Include="..\global\SimExManager.cpp" />
+    <ClCompile Include="..\global\SimReceiver.cpp" />
     <ClCompile Include="client.cpp" />
     <ClCompile Include="Extrapolation.cpp" />
-    <ClCompile Include="Request.cpp" />
     <ClCompile Include="CSafe.cpp" />
-    <ClCompile Include="DataSender.cpp" />
-    <ClCompile Include="SimConnection.cpp" />
-    <ClCompile Include="SimDataEvent.cpp" />
-    <ClCompile Include="SimExManager.cpp" />
-    <ClCompile Include="SimReceiver.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="UDPReceiver.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
