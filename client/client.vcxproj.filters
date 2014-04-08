@@ -68,9 +68,6 @@
     <ClCompile Include="CSafe.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Extrapolation.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="UDPReceiver.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>

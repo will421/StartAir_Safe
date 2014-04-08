@@ -1,0 +1,29 @@
+digraph "SIMCONNECT_RECV_EVENT"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{SIMCONNECT_RECV_EVENT\n|+ uGroupID\l+ uEventID\l+ dwData\l+ UNKNOWN_GROUP\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node2 [label="{SIMCONNECT_RECV\n|+ dwSize\l+ dwVersion\l+ dwID\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node3 [label="{SIMCONNECT_RECV_CUSTOM\l_ACTION\n|+ guidInstanceId\l+ dwWaitForCompletion\l+ szPayLoad\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__CUSTOM__ACTION.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node4 [label="{SIMCONNECT_RECV_EVENT\l_FILENAME\n|+ szFileName\l+ dwFlags\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__FILENAME.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node5 [label="{SIMCONNECT_RECV_EVENT\l_FRAME\n|+ fFrameRate\l+ fSimSpeed\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__FRAME.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node6 [label="{SIMCONNECT_RECV_EVENT\l_MULTIPLAYER_CLIENT_STARTED\n||}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__MULTIPLAYER__CLIENT__STARTED.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node7 [label="{SIMCONNECT_RECV_EVENT\l_MULTIPLAYER_SERVER_STARTED\n||}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__MULTIPLAYER__SERVER__STARTED.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node8 [label="{SIMCONNECT_RECV_EVENT\l_MULTIPLAYER_SESSION_ENDED\n||}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__MULTIPLAYER__SESSION__ENDED.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node9 [label="{SIMCONNECT_RECV_EVENT\l_OBJECT_ADDREMOVE\n|+ eObjType\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__OBJECT__ADDREMOVE.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node10 [label="{SIMCONNECT_RECV_EVENT\l_RACE_END\n|+ dwRacerNumber\l+ RacerData\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__RACE__END.html"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node11 [label="{SIMCONNECT_RECV_EVENT\l_RACE_LAP\n|+ dwLapIndex\l+ RacerData\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__RACE__LAP.html"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node12 [label="{SIMCONNECT_RECV_EVENT\l_WEATHER_MODE\n||}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__EVENT__WEATHER__MODE.html"];
+}

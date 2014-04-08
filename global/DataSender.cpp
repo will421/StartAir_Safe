@@ -56,12 +56,12 @@ namespace safe {
 			//forex.addSendRecord(hSimConnect,"b");
 			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE ALTITUDE", "Feet");
 			//forex.addSendRecord(hSimConnect,"c");
-			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE PITCH DEGREES", "Radians");
-			//forex.addSendRecord(hSimConnect,"2");
-			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE BANK DEGREES", "Radians");
-			//forex.addSendRecord(hSimConnect,"3");
-			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE HEADING DEGREES TRUE", "Radians");
-			//forex.addSendRecord(hSimConnect,"4");
+			//SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE PITCH DEGREES", "Radians");
+			//SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE BANK DEGREES", "Radians");
+			//SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE HEADING DEGREES TRUE", "Radians");
+			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE PITCH DEGREES", "degree");
+			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE BANK DEGREES", "degree");
+			SimConnect_AddToDataDefinition(hSimConnect, 99, "PLANE HEADING DEGREES TRUE", "degree");
 
 			freeze();
 			//requestFreezeState();

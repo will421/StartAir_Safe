@@ -1,0 +1,13 @@
+digraph "safe::SimReceiver"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{safe::SimReceiver\n|- quit\l- latLonAltRequested\l- PBHRequested\l- posRequested\l- simListeners\l- requests\l|+ SimReceiver()\l+ ~SimReceiver()\l+ request()\l+ requestLatLonAlt()\l+ requestPBH()\l+ requestPos()\l+ close()\l+ stop()\l+ addListener()\l+ removeListener()\l+ getHandle()\l# onRecvSimobjectData()\l# onRecvEvent()\l# onRecvException()\l# onRecvQuit()\l# addToDataDefinition()\l# fireDataReceived()\l# fireSimStart()\l# fireSimStop()\l# fireSimQuit()\l# fireLatLonAlt()\l# firePBH()\l# firePos()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node2 [label="{SimExManager\n|- record_count\l- firstSet\l- recordname\l|+ SimExManager()\l+ ~SimExManager()\l# addSendRecord()\l# findSendRecord()\l# firstSendRecord()\l# lastSendRecord()\l- add()\l}",height=0.2,width=0.4,color="black",URL="$classSimExManager.html"];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" -send_record" ,arrowhead="odiamond",fontname="FreeSans"];
+  Node3 [label="{SimExManager::record\l_struct\n|+ call\l+ sendid\l|}",height=0.2,width=0.4,color="black",URL="$structSimExManager_1_1record__struct.html"];
+  Node4 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node4 [label="{SimConnection\n|# hSimConnect\l|+ SimConnection()\l+ SimConnection()\l+ ~SimConnection()\l+ dispatch()\l# process()\l# onRecvSimobjectData()\l# onRecvEvent()\l# onRecvException()\l# onRecvQuit()\l# dispatchCallback()\l}",height=0.2,width=0.4,color="black",URL="$classSimConnection.html"];
+}

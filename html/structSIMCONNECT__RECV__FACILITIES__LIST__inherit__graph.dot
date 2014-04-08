@@ -1,0 +1,17 @@
+digraph "SIMCONNECT_RECV_FACILITIES_LIST"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{SIMCONNECT_RECV_FACILITIES_LIST\n|+ dwRequestID\l+ dwArraySize\l+ dwEntryNumber\l+ dwOutOf\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node2 [label="{SIMCONNECT_RECV\n|+ dwSize\l+ dwVersion\l+ dwID\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node3 [label="{SIMCONNECT_RECV_AIRPORT_LIST\n|+ rgData\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__AIRPORT__LIST.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node4 [label="{SIMCONNECT_RECV_NDB_LIST\n|+ rgData\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__NDB__LIST.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node5 [label="{SIMCONNECT_RECV_VOR_LIST\n|+ rgData\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__VOR__LIST.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node6 [label="{SIMCONNECT_RECV_WAYPOINT_LIST\n|+ rgData\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV__WAYPOINT__LIST.html"];
+}

@@ -1,0 +1,7 @@
+digraph "ClientServer" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  dir_5c70d44407ddaa33db772a7cc5a16b15 [shape=box, label="ClientServer", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5c70d44407ddaa33db772a7cc5a16b15.html"];
+}

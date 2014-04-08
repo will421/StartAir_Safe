@@ -1,0 +1,4 @@
+var structSIMCONNECT__RECV__EVENT__OBJECT__ADDREMOVE =
+[
+    [ "eObjType", "structSIMCONNECT__RECV__EVENT__OBJECT__ADDREMOVE.html#a94969a0be8d07ce09419798705645d6d", null ]
+];

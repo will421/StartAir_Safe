@@ -1,0 +1,12 @@
+digraph "SimExManager::lastSendRecord"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SimExManager::lastSendRecord",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="safe::DataSender::freeze",height=0.2,width=0.4,color="black",URL="$classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node3 [label="safe::DataSender::DataSender",height=0.2,width=0.4,color="black",URL="$classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16"];
+}

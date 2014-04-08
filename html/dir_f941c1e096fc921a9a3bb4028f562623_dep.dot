@@ -1,0 +1,10 @@
+digraph "TestOpenGl/Projet1" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  subgraph clusterdir_7a56af5b92f930041d92213618745a08 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="TestOpenGl" fontname="FreeSans", fontsize="10", URL="dir_7a56af5b92f930041d92213618745a08.html"]
+  dir_f941c1e096fc921a9a3bb4028f562623 [shape=box, label="Projet1", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_f941c1e096fc921a9a3bb4028f562623.html"];
+  }
+}

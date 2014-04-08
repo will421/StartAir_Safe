@@ -1,0 +1,9 @@
+digraph "SimDataEvent"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{SimDataEvent\n|+ handleSim\l+ data\l|+ SimDataEvent()\l+ SimDataEvent()\l+ ~SimDataEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +requ" ,arrowhead="odiamond",fontname="FreeSans"];
+  Node2 [label="{Request\n|- h\l- id\l- data\l- varUnits\l- next_id\l|+ Request()\l+ Request()\l+ ~Request()\l+ getDataId()\l+ getRequestId()\l+ getvarUnitList()\l# addToDataDef()\l# requestDataOnSimObject()\l# addToSubscribedData()\l}",height=0.2,width=0.4,color="black",URL="$classRequest.html"];
+}

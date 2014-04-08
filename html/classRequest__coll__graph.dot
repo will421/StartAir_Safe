@@ -1,0 +1,7 @@
+digraph "Request"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{Request\n|- h\l- id\l- data\l- varUnits\l- next_id\l|+ Request()\l+ Request()\l+ ~Request()\l+ getDataId()\l+ getRequestId()\l+ getvarUnitList()\l# addToDataDef()\l# requestDataOnSimObject()\l# addToSubscribedData()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

@@ -1,0 +1,7 @@
+digraph "copiercoller" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  dir_6b9d0071faec206a215bd61fd225a685 [shape=box, label="copiercoller", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6b9d0071faec206a215bd61fd225a685.html"];
+}

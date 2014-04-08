@@ -1,0 +1,9 @@
+digraph "CameraTool" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  dir_9972059da26a622c78be68e80a5c442f [shape=box, label="CameraTool", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9972059da26a622c78be68e80a5c442f.html"];
+  dir_bfccd401955b95cf8c75461437045ac0 [shape=box label="inc" URL="dir_bfccd401955b95cf8c75461437045ac0.html"];
+  dir_9972059da26a622c78be68e80a5c442f->dir_bfccd401955b95cf8c75461437045ac0 [headlabel="1", labeldistance=1.5 headhref="dir_000000_000012.html"];
+}

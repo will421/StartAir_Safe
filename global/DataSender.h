@@ -5,7 +5,7 @@
 
 
 namespace safe{
-	class DataSender : public SimExManager,public SimConnection /*: public ISimListener*/
+	class DataSender : public SimExManager,public SimConnection
 	{
 		static enum DATA_DEFINE_ID {
 			DEFINITION_THROTTLE,
@@ -23,9 +23,7 @@ namespace safe{
 		~DataSender();
 		void sendLatLonAlt(SIMCONNECT_DATA_LATLONALT &d);
 		void sendPBH(SIMCONNECT_DATA_PBH &d);
-		void DataSender::sendPos(SAFE_DATA_POS&d);
-		//void sendAll(SIMCONNECT_DATA_LATLONALT &d1, SIMCONNECT_DATA_PBH &d2);
-		//static int boucle;
+		void sendPos(SAFE_DATA_POS&d);
 	private :
 		SIMCONNECT_DATA_LATLONALT lla;
 		SIMCONNECT_DATA_PBH pbh;

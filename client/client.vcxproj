@@ -109,7 +109,6 @@
     <ClCompile Include="..\global\SimExManager.cpp" />
     <ClCompile Include="..\global\SimReceiver.cpp" />
     <ClCompile Include="client.cpp" />
-    <ClCompile Include="Extrapolation.cpp" />
     <ClCompile Include="CSafe.cpp" />
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="UDPReceiver.cpp" />

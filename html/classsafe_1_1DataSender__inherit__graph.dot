@@ -1,0 +1,11 @@
+digraph "safe::DataSender"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{safe::DataSender\n|- lla\l- pbh\l|+ DataSender()\l+ DataSender()\l+ ~DataSender()\l+ sendLatLonAlt()\l+ sendPBH()\l+ sendPos()\l# freeze()\l# onRecvSimobjectData()\l# onRecvException()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node2 [label="{SimExManager\n|- record_count\l- send_record\l- firstSet\l- recordname\l|+ SimExManager()\l+ ~SimExManager()\l# addSendRecord()\l# findSendRecord()\l# firstSendRecord()\l# lastSendRecord()\l- add()\l}",height=0.2,width=0.4,color="black",URL="$classSimExManager.html"];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node3 [label="{SimConnection\n|# hSimConnect\l|+ SimConnection()\l+ SimConnection()\l+ ~SimConnection()\l+ dispatch()\l# process()\l# onRecvSimobjectData()\l# onRecvEvent()\l# onRecvException()\l# onRecvQuit()\l# dispatchCallback()\l}",height=0.2,width=0.4,color="black",URL="$classSimConnection.html"];
+}

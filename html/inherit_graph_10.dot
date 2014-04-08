@@ -1,0 +1,10 @@
+digraph "Graphical Class Hierarchy"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="safe::IDataPool",height=0.2,width=0.4,color="black",URL="$classsafe_1_1IDataPool.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="FreeSans"];
+  Node2 [label="safe::Extrapolation",height=0.2,width=0.4,color="black",URL="$classsafe_1_1Extrapolation.html"];
+}

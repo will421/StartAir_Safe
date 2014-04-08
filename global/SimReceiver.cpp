@@ -16,14 +16,14 @@ namespace safe{
 
 
 
-	SimReceiver::SimReceiver(HANDLE h) : quit(0), SimConnection(h), latLonAltRequested(false), PBHRequested(false), posRequested(false)
-	{
+	//SimReceiver::SimReceiver(HANDLE h) : quit(0), SimConnection(h), latLonAltRequested(false), PBHRequested(false), posRequested(false)
+	//{
 
-		// Request a simulation start event 
-		SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_START, "SimStart");
-		SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_STOP, "SimStop");
+	//	// Request a simulation start event 
+	//	SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_START, "SimStart");
+	//	SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_STOP, "SimStop");
 
-	}
+	//}
 
 	SimReceiver::SimReceiver(int numCfg) : quit(0), SimConnection(NULL), latLonAltRequested(false), PBHRequested(false), posRequested(false)
 	{
@@ -100,7 +100,7 @@ namespace safe{
 
 			//fireLatLonAlt(d->d1);
 			//firePBH(d->d2);
-			fireLatLonAltPBH(*d);
+			firePos(*d);
 		}
 		else
 		{
@@ -190,9 +190,12 @@ namespace safe{
 		l.push_back({ "PLANE LATITUDE", "Radians" });
 		l.push_back({ "PLANE LONGITUDE", "Radians" });
 		l.push_back({ "PLANE ALTITUDE", "Feet" });
-		l.push_back({ "PLANE PITCH DEGREES", "Radians" });
-		l.push_back({ "PLANE BANK DEGREES", "Radians" });
-		l.push_back({ "PLANE HEADING DEGREES TRUE", "Radians" });
+		//l.push_back({ "PLANE PITCH DEGREES", "Radians" });
+		//l.push_back({ "PLANE BANK DEGREES", "Radians" });
+		//l.push_back({ "PLANE HEADING DEGREES TRUE", "Radians" });
+		l.push_back({ "PLANE PITCH DEGREES", "degree" });
+		l.push_back({ "PLANE BANK DEGREES", "degree" });
+		l.push_back({ "PLANE HEADING DEGREES TRUE", "degree" });
 		this->addToDataDefinition(70, l);
 		posRequested = true;
 	}
@@ -247,7 +250,7 @@ namespace safe{
 		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->PBHReceived(hSimConnect, d); });
 	}
 
-	void SimReceiver::fireLatLonAltPBH(SAFE_DATA_POS& d)
+	void SimReceiver::firePos(SAFE_DATA_POS& d)
 	{
 		std::for_each(simListeners.begin(), simListeners.end(), [&](ISimListener *l) {l->latLonAltPBHReceived(hSimConnect, d); });
 	}

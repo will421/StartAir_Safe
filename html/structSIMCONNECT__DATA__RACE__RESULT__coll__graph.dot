@@ -1,0 +1,7 @@
+digraph "SIMCONNECT_DATA_RACE_RESULT"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{SIMCONNECT_DATA_RACE\l_RESULT\n|+ dwNumberOfRacers\l+ MissionGUID\l+ szPlayerName\l+ szSessionType\l+ szAircraft\l+ szPlayerRole\l+ fTotalTime\l+ fPenaltyTime\l+ dwIsDisqualified\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

@@ -1,0 +1,12 @@
+digraph "UDPClient" {
+  bgcolor=transparent;
+  compound=true
+  node [ fontsize="10", fontname="FreeSans"];
+  edge [ labelfontsize="10", labelfontname="FreeSans"];
+  dir_34c3bb03cf2898fab3b8e17a70a93fe9 [shape=box, label="UDPClient", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_34c3bb03cf2898fab3b8e17a70a93fe9.html"];
+  dir_41e1742e44e2de38b3bc91f993fed282 [shape=box label="server" URL="dir_41e1742e44e2de38b3bc91f993fed282.html"];
+  dir_b8c754d6c2c0718e22b77230d07d6ce9 [shape=box label="global" URL="dir_b8c754d6c2c0718e22b77230d07d6ce9.html"];
+  dir_41e1742e44e2de38b3bc91f993fed282->dir_b8c754d6c2c0718e22b77230d07d6ce9 [headlabel="1", labeldistance=1.5 headhref="dir_000002_000011.html"];
+  dir_34c3bb03cf2898fab3b8e17a70a93fe9->dir_41e1742e44e2de38b3bc91f993fed282 [headlabel="1", labeldistance=1.5 headhref="dir_000005_000002.html"];
+  dir_34c3bb03cf2898fab3b8e17a70a93fe9->dir_b8c754d6c2c0718e22b77230d07d6ce9 [headlabel="1", labeldistance=1.5 headhref="dir_000005_000011.html"];
+}

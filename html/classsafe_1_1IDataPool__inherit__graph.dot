@@ -1,0 +1,9 @@
+digraph "safe::IDataPool"
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{safe::IDataPool\n||+ ~IDataPool()\l+ nextPBH()\l+ nextLatLonAlt()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
+  Node2 [label="{safe::Extrapolation\n||+ Extrapolation()\l+ ~Extrapolation()\l+ nextPBH()\l+ nextLatLonAlt()\l}",height=0.2,width=0.4,color="black",URL="$classsafe_1_1Extrapolation.html"];
+}
