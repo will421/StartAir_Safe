@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('ISimListener_8h_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="comment">/* /bried called when a latitude, longitude and altitude are received</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">                *  /param d struct which contain 3 latitude, longitude and altitude</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">                */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1ISimListener.html#ae7487000ececf788ad177f040456fe47">latlonaltReceived</a>(HANDLE h, <a class="code" href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a>&amp; d) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1ISimListener.html#ae7487000ececf788ad177f040456fe47">latlonaltReceived</a>(HANDLE h, SIMCONNECT_DATA_LATLONALT&amp; d) = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="comment">/* /bried called when a p, b and h are received</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">                *  /param d struct which contain 3  p, b and h</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">                */</span></div>
@@ -112,7 +112,6 @@ $(document).ready(function(){initNavTree('ISimListener_8h_source.html','');});
 <div class="ttc" id="classsafe_1_1ISimListener_html_a8e2ddd4a3ad278e9decdca347a2a28ba"><div class="ttname"><a href="classsafe_1_1ISimListener.html#a8e2ddd4a3ad278e9decdca347a2a28ba">safe::ISimListener::latLonAltPBHReceived</a></div><div class="ttdeci">virtual void latLonAltPBHReceived(HANDLE h, SAFE_DATA_POS &amp;d)=0</div></div>
 <div class="ttc" id="structSIMCONNECT__DATA__PBH_html"><div class="ttname"><a href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00030">types.h:30</a></div></div>
 <div class="ttc" id="classsafe_1_1ISimListener_html_ac0fd973ce05f54c5270f417ceee65a6a"><div class="ttname"><a href="classsafe_1_1ISimListener.html#ac0fd973ce05f54c5270f417ceee65a6a">safe::ISimListener::~ISimListener</a></div><div class="ttdeci">virtual ~ISimListener()</div><div class="ttdef"><b>Definition:</b> <a href="ISimListener_8h_source.html#l00012">ISimListener.h:12</a></div></div>
-<div class="ttc" id="structSIMCONNECT__DATA__LATLONALT_html"><div class="ttname"><a href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a></div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00643">SimConnect.h:643</a></div></div>
 <div class="ttc" id="SimReceiver_8h_html"><div class="ttname"><a href="SimReceiver_8h.html">SimReceiver.h</a></div><div class="ttdoc">Header for the class SimReceiver. </div></div>
 <div class="ttc" id="classsafe_1_1ISimListener_html_ae91c7504f708f87e1350c135aa51c5a9"><div class="ttname"><a href="classsafe_1_1ISimListener.html#ae91c7504f708f87e1350c135aa51c5a9">safe::ISimListener::simStarted</a></div><div class="ttdeci">virtual void simStarted(HANDLE h)=0</div></div>
 <div class="ttc" id="classsafe_1_1ISimListener_html_a6e7ce3c060263f533fb6639199056b65"><div class="ttname"><a href="classsafe_1_1ISimListener.html#a6e7ce3c060263f533fb6639199056b65">safe::ISimListener::PBHReceived</a></div><div class="ttdeci">virtual void PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH &amp;d)=0</div></div>
@@ -128,7 +127,7 @@ $(document).ready(function(){initNavTree('ISimListener_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b8c754d6c2c0718e22b77230d07d6ce9.html">global</a></li><li class="navelem"><a class="el" href="ISimListener_8h.html">ISimListener.h</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:07 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:03 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

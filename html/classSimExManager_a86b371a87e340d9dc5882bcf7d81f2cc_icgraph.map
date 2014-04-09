@@ -1,0 +1,4 @@
+<map id="SimExManager::findSendRecord" name="SimExManager::findSendRecord">
+<area shape="rect" id="node2" href="$classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4" title="safe::DataSender::onRecv\lException" alt="" coords="265,5,437,46"/>
+<area shape="rect" id="node3" href="$classsafe_1_1SimReceiver.html#a50408fe63a9c210029701a923e1a5fbc" title="safe::SimReceiver::\lonRecvException" alt="" coords="283,70,418,111"/>
+</map>

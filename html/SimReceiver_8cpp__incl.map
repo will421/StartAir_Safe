@@ -1,0 +1,10 @@
+<map id="global/SimReceiver.cpp" name="global/SimReceiver.cpp">
+<area shape="rect" id="node2" href="$SimReceiver_8h.html" title="Header for the class SimReceiver. " alt="" coords="393,155,497,181"/>
+<area shape="rect" id="node17" href="$DataSender_8h.html" title="DataSender.h" alt="" coords="483,80,584,107"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="types.h" alt="" coords="722,453,787,480"/>
+<area shape="rect" id="node5" href="$ISimListener_8h.html" title="ISimListener.h" alt="" coords="302,229,407,256"/>
+<area shape="rect" id="node6" href="$SimDataEvent_8h.html" title="SimDataEvent.h" alt="" coords="251,304,365,331"/>
+<area shape="rect" id="node7" href="$Request_8h.html" title="Request.h" alt="" coords="201,379,281,405"/>
+<area shape="rect" id="node14" href="$SimExManager_8h.html" title="SimExManager.h" alt="" coords="637,304,760,331"/>
+<area shape="rect" id="node15" href="$SimConnection_8h.html" title="SimConnection.h" alt="" coords="441,304,561,331"/>
+</map>

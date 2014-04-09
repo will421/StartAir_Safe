@@ -88,7 +88,7 @@ $(document).ready(function(){initNavTree('CSafe_8h_source.html','');});
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a3b19bc1f557d0b38513c06865761f006">simQuitted</a>(HANDLE h);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a0ee70c123407e407b4b278fdfe2ab47d">simStopped</a>(HANDLE h);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#aea9278afc59bf944a36c54eb7d475493">simStarted</a>(HANDLE h);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a31a46dd8e7ac4d88c9852cf546be522b">latlonaltReceived</a>(HANDLE h, <a class="code" href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a>&amp; d);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a31a46dd8e7ac4d88c9852cf546be522b">latlonaltReceived</a>(HANDLE h, SIMCONNECT_DATA_LATLONALT&amp; d);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a6ef6b7d3cf37214119942197bdddc44c">PBHReceived</a>(HANDLE h, <a class="code" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a>&amp; d);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a23f816c2f1ab90b8383ef99880d6237f">latLonAltPBHReceived</a>(HANDLE h, <a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a>&amp; d);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1CSafe.html#a9d1cfb0ceff990ceceb2caf69c8a6b7e">datagramReceived</a>(SOCKADDR &amp; from, <a class="code" href="structSAFE__RECV.html">SAFE_RECV</a> &amp; message);</div>
@@ -105,7 +105,6 @@ $(document).ready(function(){initNavTree('CSafe_8h_source.html','');});
 <div class="ttc" id="classsafe_1_1CSafe_html_aba59cc798971e185143619a7ff9f7bb3"><div class="ttname"><a href="classsafe_1_1CSafe.html#aba59cc798971e185143619a7ff9f7bb3">safe::CSafe::dataReceived</a></div><div class="ttdeci">void dataReceived(SimDataEvent &amp;e)</div><div class="ttdef"><b>Definition:</b> <a href="CSafe_8cpp_source.html#l00067">CSafe.cpp:67</a></div></div>
 <div class="ttc" id="structSIMCONNECT__DATA__PBH_html"><div class="ttname"><a href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00030">types.h:30</a></div></div>
 <div class="ttc" id="classsafe_1_1DataSender_html"><div class="ttname"><a href="classsafe_1_1DataSender.html">safe::DataSender</a></div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8h_source.html#l00008">DataSender.h:8</a></div></div>
-<div class="ttc" id="structSIMCONNECT__DATA__LATLONALT_html"><div class="ttname"><a href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a></div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00643">SimConnect.h:643</a></div></div>
 <div class="ttc" id="classsafe_1_1CSafe_html_a6ef6b7d3cf37214119942197bdddc44c"><div class="ttname"><a href="classsafe_1_1CSafe.html#a6ef6b7d3cf37214119942197bdddc44c">safe::CSafe::PBHReceived</a></div><div class="ttdeci">void PBHReceived(HANDLE h, SIMCONNECT_DATA_PBH &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="CSafe_8cpp_source.html#l00108">CSafe.cpp:108</a></div></div>
 <div class="ttc" id="SimReceiver_8h_html"><div class="ttname"><a href="SimReceiver_8h.html">SimReceiver.h</a></div><div class="ttdoc">Header for the class SimReceiver. </div></div>
 <div class="ttc" id="UDPReceiver_8h_html"><div class="ttname"><a href="UDPReceiver_8h.html">UDPReceiver.h</a></div></div>
@@ -130,7 +129,7 @@ $(document).ready(function(){initNavTree('CSafe_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="CSafe_8h.html">CSafe.h</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:07 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:03 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

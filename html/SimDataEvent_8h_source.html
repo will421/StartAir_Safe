@@ -69,7 +69,7 @@ $(document).ready(function(){initNavTree('SimDataEvent_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <a href="SimDataEvent_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="SimConnect_8h.html">SimConnect.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;SimConnect.h&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Request_8h.html">Request.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('SimDataEvent_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e">SimDataEvent</a>(HANDLE* hSim, <a class="code" href="classRequest.html">Request</a> * r, <a class="code" href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html">SIMCONNECT_RECV_SIMOBJECT_DATA</a> * pObjData);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e">SimDataEvent</a>(HANDLE* hSim, <a class="code" href="classRequest.html">Request</a> * r, SIMCONNECT_RECV_SIMOBJECT_DATA * pObjData);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e">SimDataEvent</a>(HANDLE* hSim,<a class="code" href="classRequest.html">Request</a> * r,<a class="code" href="SimDataEvent_8h.html#a1e5efb845a100557a375ea004fa53247">TListDatum</a> d);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classSimDataEvent.html#a31dde9f878bc938134b23f603bae1685">~SimDataEvent</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classSimDataEvent.html#aa3ebc591997078d366f6ed4623efe28d">   34</a></span>&#160;        HANDLE* <a class="code" href="classSimDataEvent.html#aa3ebc591997078d366f6ed4623efe28d">handleSim</a>; <span class="comment">/*To identify from which simulator this event come from*/</span></div>
@@ -110,9 +110,7 @@ $(document).ready(function(){initNavTree('SimDataEvent_8h_source.html','');});
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="classSimDataEvent_html_a122ba0e214526307a3b96abedc09bd42"><div class="ttname"><a href="classSimDataEvent.html#a122ba0e214526307a3b96abedc09bd42">SimDataEvent::data</a></div><div class="ttdeci">TListDatum data</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8h_source.html#l00036">SimDataEvent.h:36</a></div></div>
 <div class="ttc" id="classRequest_html"><div class="ttname"><a href="classRequest.html">Request</a></div><div class="ttdef"><b>Definition:</b> <a href="Request_8h_source.html#l00020">Request.h:20</a></div></div>
-<div class="ttc" id="SimConnect_8h_html"><div class="ttname"><a href="SimConnect_8h.html">SimConnect.h</a></div></div>
 <div class="ttc" id="classSimDataEvent_html_a31dde9f878bc938134b23f603bae1685"><div class="ttname"><a href="classSimDataEvent.html#a31dde9f878bc938134b23f603bae1685">SimDataEvent::~SimDataEvent</a></div><div class="ttdeci">~SimDataEvent()</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8cpp_source.html#l00034">SimDataEvent.cpp:34</a></div></div>
-<div class="ttc" id="structSIMCONNECT__RECV__SIMOBJECT__DATA_html"><div class="ttname"><a href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html">SIMCONNECT_RECV_SIMOBJECT_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00473">SimConnect.h:473</a></div></div>
 <div class="ttc" id="structSimDataEvent_1_1StructOneDatum_html_a7f3c458ee28ee73951d5dbcefb0ef059"><div class="ttname"><a href="structSimDataEvent_1_1StructOneDatum.html#a7f3c458ee28ee73951d5dbcefb0ef059">SimDataEvent::StructOneDatum::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8h_source.html#l00020">SimDataEvent.h:20</a></div></div>
 <div class="ttc" id="classSimDataEvent_html_a19bd31aa125dcae4b60abace41e9eb4e"><div class="ttname"><a href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e">SimDataEvent::SimDataEvent</a></div><div class="ttdeci">SimDataEvent(HANDLE *hSim, Request *r, SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData)</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8cpp_source.html#l00008">SimDataEvent.cpp:8</a></div></div>
 <div class="ttc" id="structSimDataEvent_1_1StructOneDatum_html_a95b1454b58acdf1e524ce2b07d35a9c1"><div class="ttname"><a href="structSimDataEvent_1_1StructOneDatum.html#a95b1454b58acdf1e524ce2b07d35a9c1">SimDataEvent::StructOneDatum::value</a></div><div class="ttdeci">float value</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8h_source.html#l00021">SimDataEvent.h:21</a></div></div>
@@ -131,7 +129,7 @@ $(document).ready(function(){initNavTree('SimDataEvent_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b8c754d6c2c0718e22b77230d07d6ce9.html">global</a></li><li class="navelem"><a class="el" href="SimDataEvent_8h.html">SimDataEvent.h</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:07 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:03 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

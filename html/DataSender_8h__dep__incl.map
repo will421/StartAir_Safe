@@ -1,0 +1,7 @@
+<map id="global/DataSender.h" name="global/DataSender.h">
+<area shape="rect" id="node2" href="$DataSender_8cpp.html" title="global/DataSender.cpp" alt="" coords="5,80,157,107"/>
+<area shape="rect" id="node3" href="$SimReceiver_8cpp.html" title="global/SimReceiver.cpp" alt="" coords="183,80,340,107"/>
+<area shape="rect" id="node4" href="$CSafe_8h.html" title="client/CSafe.h" alt="" coords="415,80,517,107"/>
+<area shape="rect" id="node5" href="$client_8cpp.html" title="client/client.cpp" alt="" coords="321,155,433,181"/>
+<area shape="rect" id="node6" href="$CSafe_8cpp.html" title="client/CSafe.cpp" alt="" coords="459,155,576,181"/>
+</map>

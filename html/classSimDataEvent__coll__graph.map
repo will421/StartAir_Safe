@@ -1,0 +1,3 @@
+<map id="SimDataEvent" name="SimDataEvent">
+<area shape="rect" id="node2" href="$classRequest.html" title="{Request\n|&#45; h\l&#45; id\l&#45; data\l&#45; varUnits\l&#45; next_id\l|+ Request()\l+ Request()\l+ ~Request()\l+ getDataId()\l+ getRequestId()\l+ getvarUnitList()\l# addToDataDef()\l# requestDataOnSimObject()\l# addToSubscribedData()\l}" alt="" coords="5,5,195,259"/>
+</map>

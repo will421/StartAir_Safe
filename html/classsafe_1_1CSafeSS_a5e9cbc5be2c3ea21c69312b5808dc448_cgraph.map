@@ -1,0 +1,14 @@
+<map id="safe::CSafeSS::launch" name="safe::CSafeSS::launch">
+<area shape="rect" id="node2" href="$classsafe_1_1SimReceiver.html#a558820c799462003539f3736c50b2c1f" title="safe::SimReceiver::\laddListener" alt="" coords="225,5,359,46"/>
+<area shape="rect" id="node3" href="$classUDPSender.html#a32a2dc2e2667fee6c9386fe46314a00f" title="UDPSender::addTarget" alt="" coords="215,71,369,97"/>
+<area shape="rect" id="node4" href="$classSimConnection.html#a77aa02517e3d5cf6f25826d75c964e0a" title="SimConnection::dispatch" alt="" coords="209,121,375,148"/>
+<area shape="rect" id="node11" href="$classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1" title="safe::SimReceiver::\lrequestPos" alt="" coords="225,173,359,214"/>
+<area shape="rect" id="node13" href="$classsafe_1_1SimReceiver.html#a7d759a7de8dfc9d7bf2800a6a4d84079" title="safe::SimReceiver::stop" alt="" coords="213,239,371,265"/>
+<area shape="rect" id="node5" href="$classSimConnection.html#ae63f760488bc7984ce9db7da83a73f84" title="SimConnection::dispatchCallback" alt="" coords="425,121,642,148"/>
+<area shape="rect" id="node6" href="$classSimConnection.html#a844284a373277064526dfafbd99bde5d" title="SimConnection::process" alt="" coords="691,121,855,148"/>
+<area shape="rect" id="node7" href="$classSimConnection.html#afbb53f882a2c6f5f53696b560af9170d" title="SimConnection::onRecvEvent" alt="" coords="931,45,1123,72"/>
+<area shape="rect" id="node8" href="$classSimConnection.html#a4706c2f4c1ca5b978623204c1b427d22" title="SimConnection::onRecvException" alt="" coords="917,96,1136,123"/>
+<area shape="rect" id="node9" href="$classSimConnection.html#ac79a4977645b75c7af836daa22c3d35c" title="SimConnection::onRecvQuit" alt="" coords="935,147,1119,173"/>
+<area shape="rect" id="node10" href="$classSimConnection.html#afccf33344d2a799943d402125ea3f7cc" title="SimConnection::onRecvSimobjectData" alt="" coords="904,197,1149,224"/>
+<area shape="rect" id="node12" href="$classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="safe::SimReceiver::\laddToDataDefinition" alt="" coords="465,173,602,214"/>
+</map>

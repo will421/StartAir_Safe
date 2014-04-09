@@ -1,9 +1,0 @@
-digraph "client" {
-  bgcolor=transparent;
-  compound=true
-  node [ fontsize="10", fontname="FreeSans"];
-  edge [ labelfontsize="10", labelfontname="FreeSans"];
-  dir_db3a54907829b36871118d03417739cd [shape=box, label="client", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_db3a54907829b36871118d03417739cd.html"];
-  dir_b8c754d6c2c0718e22b77230d07d6ce9 [shape=box label="global" URL="dir_b8c754d6c2c0718e22b77230d07d6ce9.html"];
-  dir_db3a54907829b36871118d03417739cd->dir_b8c754d6c2c0718e22b77230d07d6ce9 [headlabel="7", labeldistance=1.5 headhref="dir_000001_000011.html"];
-}

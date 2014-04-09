@@ -1,7 +1,0 @@
-digraph "inc" {
-  bgcolor=transparent;
-  compound=true
-  node [ fontsize="10", fontname="FreeSans"];
-  edge [ labelfontsize="10", labelfontname="FreeSans"];
-  dir_bfccd401955b95cf8c75461437045ac0 [shape=box, label="inc", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_bfccd401955b95cf8c75461437045ac0.html"];
-}

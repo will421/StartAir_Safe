@@ -1,0 +1,4 @@
+<map id="safe::SimReceiver" name="safe::SimReceiver">
+<area shape="rect" id="node2" href="$classSimExManager.html" title="{SimExManager\n|&#45; record_count\l&#45; send_record\l&#45; firstSet\l&#45; recordname\l|+ SimExManager()\l+ ~SimExManager()\l# addSendRecord()\l# findSendRecord()\l# firstSendRecord()\l# lastSendRecord()\l&#45; add()\l}" alt="" coords="5,6,144,215"/>
+<area shape="rect" id="node3" href="$classSimConnection.html" title="{SimConnection\n|# hSimConnect\l|+ SimConnection()\l+ SimConnection()\l+ ~SimConnection()\l+ dispatch()\l# process()\l# onRecvSimobjectData()\l# onRecvEvent()\l# onRecvException()\l# onRecvQuit()\l# dispatchCallback()\l}" alt="" coords="168,6,336,215"/>
+</map>

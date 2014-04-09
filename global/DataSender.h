@@ -4,19 +4,23 @@
 #include "SimReceiver.h"
 
 
+
+/*!
+* \file DataSender.h
+* \brief Header for the class DataSender
+* \author RICOU & BOBO
+* \version 0.1
+* \date 08/04/2014
+*/
+
+
+/*! \namespace safe
+* namespace which contain class for the project StartAir Safe
+*/
 namespace safe{
 	class DataSender : public SimExManager,public SimConnection
 	{
-		static enum DATA_DEFINE_ID {
-			DEFINITION_THROTTLE,
-		};
-		struct DATA {
-			/*double verticalSpeed;
-			float pilotHeat;*/
-			double planeLatitude;
-			double planeLongitude;
-			
-		};
+
 	public:
 		DataSender();
 		DataSender(int numCfg );

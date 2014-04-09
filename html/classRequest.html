@@ -206,7 +206,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a1eb481f65fc754813ba837a330f8a3b3_cgraph.png" border="0" usemap="#classRequest_a1eb481f65fc754813ba837a330f8a3b3_cgraph" alt=""/></div>
 <map name="classRequest_a1eb481f65fc754813ba837a330f8a3b3_cgraph" id="classRequest_a1eb481f65fc754813ba837a330f8a3b3_cgraph">
-</map>
+<area shape="rect" id="node2" href="classRequest.html#a79afb05a99dace384590d55270ad7bcc" title="Request::addToDataDef" alt="" coords="205,5,363,32"/><area shape="rect" id="node3" href="classRequest.html#a539003916f24090e24b2d31b873d5958" title="Request::addToSubscribedData" alt="" coords="181,56,387,83"/></map>
 </div>
 </p>
 
@@ -256,38 +256,27 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="Request_8cpp_source.html#l00034">34</a> of file <a class="el" href="Request_8cpp_source.html">Request.cpp</a>.</p>
 
-<p>References <a class="el" href="Request_8h_source.html#l00037">data</a>, <a class="el" href="Request_8h_source.html#l00034">h</a>, <a class="el" href="SimConnect_8h.html#a2dceb52226912fe345b113f1bb98f849">SimConnect_AddToDataDefinition()</a>, and <a class="el" href="SimConnect_8h_source.html#l00120">SIMCONNECT_DATATYPE_FLOAT32</a>.</p>
+<p>References <a class="el" href="Request_8h_source.html#l00037">data</a>, and <a class="el" href="Request_8h_source.html#l00034">h</a>.</p>
 
 <p>Referenced by <a class="el" href="Request_8cpp_source.html#l00011">Request()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">for</span> (std::map&lt;char *, structIdType&gt;::iterator it = <a class="code" href="classRequest.html#ab608638d8172dc1cc73c188765749264">data</a>.begin(); it != <a class="code" href="classRequest.html#ab608638d8172dc1cc73c188765749264">data</a>.end(); ++it)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <a class="code" href="SimConnect_8h.html#a2dceb52226912fe345b113f1bb98f849">SimConnect_AddToDataDefinition</a>(<a class="code" href="classRequest.html#a9ac15835799825481a22c58560bf4146">h</a>, <span class="keywordtype">id</span>, it-&gt;first, it-&gt;second.unitName,<a class="code" href="SimConnect_8h.html#a0757937d6e9778758f60396d409530e1aec0e814fbe6909b468345b38e45607c0">SIMCONNECT_DATATYPE_FLOAT32</a>, 0,it-&gt;second.id);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                SimConnect_AddToDataDefinition(<a class="code" href="classRequest.html#a9ac15835799825481a22c58560bf4146">h</a>, <span class="keywordtype">id</span>, it-&gt;first, it-&gt;second.unitName,SIMCONNECT_DATATYPE_FLOAT32, 0,it-&gt;second.id);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(h, id, it-&gt;first, it-&gt;second.unitName,SIMCONNECT_DATATYPE_FLOAT32, 0,it-&gt;second.id);</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(h, id, it-&gt;first, NULL, SIMCONNECT_DATATYPE_LATLONALT, 0, it-&gt;second.id);</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="ttc" id="SimConnect_8h_html_a0757937d6e9778758f60396d409530e1aec0e814fbe6909b468345b38e45607c0"><div class="ttname"><a href="SimConnect_8h.html#a0757937d6e9778758f60396d409530e1aec0e814fbe6909b468345b38e45607c0">SIMCONNECT_DATATYPE_FLOAT32</a></div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00120">SimConnect.h:120</a></div></div>
 <div class="ttc" id="classRequest_html_ab608638d8172dc1cc73c188765749264"><div class="ttname"><a href="classRequest.html#ab608638d8172dc1cc73c188765749264">Request::data</a></div><div class="ttdeci">std::map&lt; char *, structIdType &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="Request_8h_source.html#l00037">Request.h:37</a></div></div>
 <div class="ttc" id="classRequest_html_a9ac15835799825481a22c58560bf4146"><div class="ttname"><a href="classRequest.html#a9ac15835799825481a22c58560bf4146">Request::h</a></div><div class="ttdeci">HANDLE h</div><div class="ttdef"><b>Definition:</b> <a href="Request_8h_source.html#l00034">Request.h:34</a></div></div>
-<div class="ttc" id="SimConnect_8h_html_a2dceb52226912fe345b113f1bb98f849"><div class="ttname"><a href="SimConnect_8h.html#a2dceb52226912fe345b113f1bb98f849">SimConnect_AddToDataDefinition</a></div><div class="ttdeci">SIMCONNECTAPI SimConnect_AddToDataDefinition(HANDLE hSimConnect, SIMCONNECT_DATA_DEFINITION_ID DefineID, const char *DatumName, const char *UnitsName, SIMCONNECT_DATATYPE DatumType=SIMCONNECT_DATATYPE_FLOAT64, float fEpsilon=0, DWORD DatumID=SIMCONNECT_UNUSED)</div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classRequest_a79afb05a99dace384590d55270ad7bcc_cgraph.png" border="0" usemap="#classRequest_a79afb05a99dace384590d55270ad7bcc_cgraph" alt=""/></div>
-<map name="classRequest_a79afb05a99dace384590d55270ad7bcc_cgraph" id="classRequest_a79afb05a99dace384590d55270ad7bcc_cgraph">
-</map>
-</div>
-</p>
-
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a79afb05a99dace384590d55270ad7bcc_icgraph.png" border="0" usemap="#classRequest_a79afb05a99dace384590d55270ad7bcc_icgraph" alt=""/></div>
 <map name="classRequest_a79afb05a99dace384590d55270ad7bcc_icgraph" id="classRequest_a79afb05a99dace384590d55270ad7bcc_icgraph">
-</map>
+<area shape="rect" id="node2" href="classRequest.html#a1eb481f65fc754813ba837a330f8a3b3" title="Request::Request" alt="" coords="214,5,341,32"/></map>
 </div>
 </p>
 
@@ -346,7 +335,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a539003916f24090e24b2d31b873d5958_icgraph.png" border="0" usemap="#classRequest_a539003916f24090e24b2d31b873d5958_icgraph" alt=""/></div>
 <map name="classRequest_a539003916f24090e24b2d31b873d5958_icgraph" id="classRequest_a539003916f24090e24b2d31b873d5958_icgraph">
-</map>
+<area shape="rect" id="node2" href="classRequest.html#a1eb481f65fc754813ba837a330f8a3b3" title="Request::Request" alt="" coords="259,5,386,32"/></map>
 </div>
 </p>
 
@@ -381,7 +370,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a6c752506f5a3c19385770db4335c8f39_icgraph.png" border="0" usemap="#classRequest_a6c752506f5a3c19385770db4335c8f39_icgraph" alt=""/></div>
 <map name="classRequest_a6c752506f5a3c19385770db4335c8f39_icgraph" id="classRequest_a6c752506f5a3c19385770db4335c8f39_icgraph">
-</map>
+<area shape="rect" id="node2" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e" title="SimDataEvent::SimDataEvent" alt="" coords="187,5,381,32"/></map>
 </div>
 </p>
 
@@ -415,7 +404,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a969a51620c5af946e295b911da503868_icgraph.png" border="0" usemap="#classRequest_a969a51620c5af946e295b911da503868_icgraph" alt=""/></div>
 <map name="classRequest_a969a51620c5af946e295b911da503868_icgraph" id="classRequest_a969a51620c5af946e295b911da503868_icgraph">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a41b0d6e5f4becb521cb22980556836d1" title="safe::SimReceiver::\lrequest" alt="" coords="209,5,343,46"/></map>
 </div>
 </p>
 
@@ -448,7 +437,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a7bf8516b623b6506c8a43517eac2a985_icgraph.png" border="0" usemap="#classRequest_a7bf8516b623b6506c8a43517eac2a985_icgraph" alt=""/></div>
 <map name="classRequest_a7bf8516b623b6506c8a43517eac2a985_icgraph" id="classRequest_a7bf8516b623b6506c8a43517eac2a985_icgraph">
-</map>
+<area shape="rect" id="node2" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e" title="SimDataEvent::SimDataEvent" alt="" coords="211,5,405,32"/></map>
 </div>
 </p>
 
@@ -608,7 +597,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classRequest.html">Request</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:08 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:03 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

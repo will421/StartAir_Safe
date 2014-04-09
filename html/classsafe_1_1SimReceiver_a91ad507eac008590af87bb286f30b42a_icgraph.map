@@ -1,0 +1,7 @@
+<map id="safe::SimReceiver::addToDataDefinition" name="safe::SimReceiver::addToDataDefinition">
+<area shape="rect" id="node2" href="$classsafe_1_1SimReceiver.html#a6279d9a9d8e653910f64d6e843ffa847" title="safe::SimReceiver::\lrequestLatLonAlt" alt="" coords="193,5,327,46"/>
+<area shape="rect" id="node3" href="$classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576" title="safe::SimReceiver::\lrequestPBH" alt="" coords="193,70,327,111"/>
+<area shape="rect" id="node4" href="$classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1" title="safe::SimReceiver::\lrequestPos" alt="" coords="193,135,327,177"/>
+<area shape="rect" id="node5" href="$classsafe_1_1CSafeSS.html#a5e9cbc5be2c3ea21c69312b5808dc448" title="safe::CSafeSS::launch" alt="" coords="377,143,530,169"/>
+<area shape="rect" id="node6" href="$server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="579,143,640,169"/>
+</map>

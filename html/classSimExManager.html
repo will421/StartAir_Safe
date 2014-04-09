@@ -84,14 +84,14 @@ Inheritance diagram for SimExManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager__inherit__graph.png" border="0" usemap="#SimExManager_inherit__map" alt="Inheritance graph"/></div>
 <map name="SimExManager_inherit__map" id="SimExManager_inherit__map">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1DataSender.html" title="{safe::DataSender\n|&#45; lla\l&#45; pbh\l|+ DataSender()\l+ DataSender()\l+ ~DataSender()\l+ sendLatLonAlt()\l+ sendPBH()\l+ sendPos()\l# freeze()\l# onRecvSimobjectData()\l# onRecvException()\l}" alt="" coords="5,397,173,606"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data..." alt="" coords="197,265,365,738"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for SimExManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager__coll__graph.png" border="0" usemap="#SimExManager_coll__map" alt="Collaboration graph"/></div>
 <map name="SimExManager_coll__map" id="SimExManager_coll__map">
-</map>
+<area shape="rect" id="node2" href="structSimExManager_1_1record__struct.html" title="{SimExManager::record\l_struct\n|+ call\l+ sendid\l|}" alt="" coords="5,5,160,112"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0f3380b98c2b5df7f405baec3a64ed37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimExManager.html#a0f3380b98c2b5df7f405baec3a64ed37">addSendRecord</a> (HANDLE <a class="el" href="testDLL_8cpp.html#ac9d6b731972a59b9aa22ff7eca2c457d">hSimConnect</a>, char *c)</td></tr>
+<tr class="memitem:a0f3380b98c2b5df7f405baec3a64ed37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimExManager.html#a0f3380b98c2b5df7f405baec3a64ed37">addSendRecord</a> (HANDLE hSimConnect, char *c)</td></tr>
 <tr class="separator:a0f3380b98c2b5df7f405baec3a64ed37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b371a87e340d9dc5882bcf7d81f2cc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a> (DWORD id)</td></tr>
 <tr class="separator:a86b371a87e340d9dc5882bcf7d81f2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,7 +231,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager_ab25590abbd9f1e5a291328ac6c3d2125_icgraph.png" border="0" usemap="#classSimExManager_ab25590abbd9f1e5a291328ac6c3d2125_icgraph" alt=""/></div>
 <map name="classSimExManager_ab25590abbd9f1e5a291328ac6c3d2125_icgraph" id="classSimExManager_ab25590abbd9f1e5a291328ac6c3d2125_icgraph">
-</map>
+<area shape="rect" id="node2" href="classSimExManager.html#a0f3380b98c2b5df7f405baec3a64ed37" title="SimExManager::addSendRecord" alt="" coords="195,5,405,32"/><area shape="rect" id="node3" href="classSimExManager.html#aecd7292ab1e8e417d6b7d57c10e52971" title="SimExManager::lastSendRecord" alt="" coords="195,56,405,83"/><area shape="rect" id="node4" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf" title="safe::DataSender::freeze" alt="" coords="453,56,619,83"/><area shape="rect" id="node5" href="classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16" title="safe::DataSender::DataSender" alt="" coords="667,56,866,83"/></map>
 </div>
 </p>
 
@@ -271,13 +271,13 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="SimExManager_8cpp_source.html#l00029">29</a> of file <a class="el" href="SimExManager_8cpp_source.html">SimExManager.cpp</a>.</p>
 
-<p>References <a class="el" href="SimExManager_8cpp_source.html#l00042">add()</a>, <a class="el" href="SimExManager_8h_source.html#l00009">max_send_records</a>, <a class="el" href="SimExManager_8h_source.html#l00021">record_count</a>, and <a class="el" href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID()</a>.</p>
+<p>References <a class="el" href="SimExManager_8cpp_source.html#l00042">add()</a>, <a class="el" href="SimExManager_8h_source.html#l00009">max_send_records</a>, and <a class="el" href="SimExManager_8h_source.html#l00021">record_count</a>.</p>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        DWORD id;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classSimExManager.html#a47af5095f8dcf8c6b9685461e5e3f4fa">record_count</a> &lt; <a class="code" href="SimExManager_8h.html#a1e9243518c04d6f9a693400f59e86302">max_send_records</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordtype">int</span> hr = <a class="code" href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID</a>(<a class="code" href="CameraTool_8cpp.html#ac9d6b731972a59b9aa22ff7eca2c457d">hSimConnect</a>, &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordtype">int</span> hr = SimConnect_GetLastSentPacketID(hSimConnect, &amp;<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <a class="code" href="classSimExManager.html#ab25590abbd9f1e5a291328ac6c3d2125">add</a>(<span class="keywordtype">id</span>,c);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
@@ -285,8 +285,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="ttc" id="classSimExManager_html_ab25590abbd9f1e5a291328ac6c3d2125"><div class="ttname"><a href="classSimExManager.html#ab25590abbd9f1e5a291328ac6c3d2125">SimExManager::add</a></div><div class="ttdeci">void add(int id, char *c)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00042">SimExManager.cpp:42</a></div></div>
 <div class="ttc" id="classSimExManager_html_a47af5095f8dcf8c6b9685461e5e3f4fa"><div class="ttname"><a href="classSimExManager.html#a47af5095f8dcf8c6b9685461e5e3f4fa">SimExManager::record_count</a></div><div class="ttdeci">int record_count</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8h_source.html#l00021">SimExManager.h:21</a></div></div>
-<div class="ttc" id="CameraTool_8cpp_html_ac9d6b731972a59b9aa22ff7eca2c457d"><div class="ttname"><a href="CameraTool_8cpp.html#ac9d6b731972a59b9aa22ff7eca2c457d">hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="CameraTool_8cpp_source.html#l00021">CameraTool.cpp:21</a></div></div>
-<div class="ttc" id="SimConnect_8h_html_acc0248e3b6f865327911312346394227"><div class="ttname"><a href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID</a></div><div class="ttdeci">SIMCONNECTAPI SimConnect_GetLastSentPacketID(HANDLE hSimConnect, DWORD *pdwError)</div></div>
 <div class="ttc" id="SimExManager_8h_html_a1e9243518c04d6f9a693400f59e86302"><div class="ttname"><a href="SimExManager_8h.html#a1e9243518c04d6f9a693400f59e86302">max_send_records</a></div><div class="ttdeci">#define max_send_records</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8h_source.html#l00009">SimExManager.h:9</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -294,7 +292,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager_a0f3380b98c2b5df7f405baec3a64ed37_cgraph.png" border="0" usemap="#classSimExManager_a0f3380b98c2b5df7f405baec3a64ed37_cgraph" alt=""/></div>
 <map name="classSimExManager_a0f3380b98c2b5df7f405baec3a64ed37_cgraph" id="classSimExManager_a0f3380b98c2b5df7f405baec3a64ed37_cgraph">
-</map>
+<area shape="rect" id="node2" href="classSimExManager.html#ab25590abbd9f1e5a291328ac6c3d2125" title="SimExManager::add" alt="" coords="265,5,405,32"/></map>
 </div>
 </p>
 
@@ -347,7 +345,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager_a86b371a87e340d9dc5882bcf7d81f2cc_icgraph.png" border="0" usemap="#classSimExManager_a86b371a87e340d9dc5882bcf7d81f2cc_icgraph" alt=""/></div>
 <map name="classSimExManager_a86b371a87e340d9dc5882bcf7d81f2cc_icgraph" id="classSimExManager_a86b371a87e340d9dc5882bcf7d81f2cc_icgraph">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4" title="safe::DataSender::onRecv\lException" alt="" coords="265,5,437,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#a50408fe63a9c210029701a923e1a5fbc" title="safe::SimReceiver::\lonRecvException" alt="" coords="283,70,418,111"/></map>
 </div>
 </p>
 
@@ -387,7 +385,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="SimExManager_8cpp_source.html#l00049">49</a> of file <a class="el" href="SimExManager_8cpp_source.html">SimExManager.cpp</a>.</p>
 
-<p>References <a class="el" href="SimExManager_8h_source.html#l00023">firstSet</a>, <a class="el" href="SimExManager_8h_source.html#l00024">recordname</a>, and <a class="el" href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID()</a>.</p>
+<p>References <a class="el" href="SimExManager_8h_source.html#l00023">firstSet</a>, and <a class="el" href="SimExManager_8h_source.html#l00024">recordname</a>.</p>
 
 <p>Referenced by <a class="el" href="DataSender_8cpp_source.html#l00083">safe::DataSender::freeze()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                     {</div>
@@ -399,30 +397,20 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="classSimExManager.html#a33def802ba24db56f14b3c0b9ed1c590">recordname</a> = rn;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordtype">int</span> hr = <a class="code" href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID</a>(h, &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordtype">int</span> hr = SimConnect_GetLastSentPacketID(h, &amp;<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="classSimExManager.html#a55e8192fbbc3ce33bf28e27bfbe5344a">firstSet</a> = id;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="ttc" id="classSimExManager_html_a55e8192fbbc3ce33bf28e27bfbe5344a"><div class="ttname"><a href="classSimExManager.html#a55e8192fbbc3ce33bf28e27bfbe5344a">SimExManager::firstSet</a></div><div class="ttdeci">int firstSet</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8h_source.html#l00023">SimExManager.h:23</a></div></div>
-<div class="ttc" id="SimConnect_8h_html_acc0248e3b6f865327911312346394227"><div class="ttname"><a href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID</a></div><div class="ttdeci">SIMCONNECTAPI SimConnect_GetLastSentPacketID(HANDLE hSimConnect, DWORD *pdwError)</div></div>
 <div class="ttc" id="classSimExManager_html_a33def802ba24db56f14b3c0b9ed1c590"><div class="ttname"><a href="classSimExManager.html#a33def802ba24db56f14b3c0b9ed1c590">SimExManager::recordname</a></div><div class="ttdeci">char * recordname</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8h_source.html#l00024">SimExManager.h:24</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_cgraph.png" border="0" usemap="#classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_cgraph" alt=""/></div>
-<map name="classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_cgraph" id="classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_cgraph">
-</map>
-</div>
-</p>
-
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_icgraph.png" border="0" usemap="#classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_icgraph" alt=""/></div>
 <map name="classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_icgraph" id="classSimExManager_a9d815a07d82c57eb8c6ed593dd6157fe_icgraph">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf" title="safe::DataSender::freeze" alt="" coords="264,5,429,32"/><area shape="rect" id="node3" href="classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16" title="safe::DataSender::DataSender" alt="" coords="478,5,677,32"/></map>
 </div>
 </p>
 
@@ -452,7 +440,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="SimExManager_8cpp_source.html#l00063">63</a> of file <a class="el" href="SimExManager_8cpp_source.html">SimExManager.cpp</a>.</p>
 
-<p>References <a class="el" href="SimExManager_8cpp_source.html#l00042">add()</a>, <a class="el" href="SimExManager_8h_source.html#l00023">firstSet</a>, <a class="el" href="SimExManager_8h_source.html#l00024">recordname</a>, and <a class="el" href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID()</a>.</p>
+<p>References <a class="el" href="SimExManager_8cpp_source.html#l00042">add()</a>, <a class="el" href="SimExManager_8h_source.html#l00023">firstSet</a>, and <a class="el" href="SimExManager_8h_source.html#l00024">recordname</a>.</p>
 
 <p>Referenced by <a class="el" href="DataSender_8cpp_source.html#l00083">safe::DataSender::freeze()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                         {</div>
@@ -463,7 +451,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID</a>(h, &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                SimConnect_GetLastSentPacketID(h, &amp;<span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordtype">int</span> lastset = id;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = <a class="code" href="classSimExManager.html#a55e8192fbbc3ce33bf28e27bfbe5344a">firstSet</a>; i &lt;= lastset; i++)</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                {</div>
@@ -475,7 +463,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="ttc" id="classSimExManager_html_ab25590abbd9f1e5a291328ac6c3d2125"><div class="ttname"><a href="classSimExManager.html#ab25590abbd9f1e5a291328ac6c3d2125">SimExManager::add</a></div><div class="ttdeci">void add(int id, char *c)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00042">SimExManager.cpp:42</a></div></div>
 <div class="ttc" id="classSimExManager_html_a55e8192fbbc3ce33bf28e27bfbe5344a"><div class="ttname"><a href="classSimExManager.html#a55e8192fbbc3ce33bf28e27bfbe5344a">SimExManager::firstSet</a></div><div class="ttdeci">int firstSet</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8h_source.html#l00023">SimExManager.h:23</a></div></div>
-<div class="ttc" id="SimConnect_8h_html_acc0248e3b6f865327911312346394227"><div class="ttname"><a href="SimConnect_8h.html#acc0248e3b6f865327911312346394227">SimConnect_GetLastSentPacketID</a></div><div class="ttdeci">SIMCONNECTAPI SimConnect_GetLastSentPacketID(HANDLE hSimConnect, DWORD *pdwError)</div></div>
 <div class="ttc" id="classSimExManager_html_a33def802ba24db56f14b3c0b9ed1c590"><div class="ttname"><a href="classSimExManager.html#a33def802ba24db56f14b3c0b9ed1c590">SimExManager::recordname</a></div><div class="ttdeci">char * recordname</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8h_source.html#l00024">SimExManager.h:24</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -483,7 +470,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_cgraph.png" border="0" usemap="#classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_cgraph" alt=""/></div>
 <map name="classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_cgraph" id="classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_cgraph">
-</map>
+<area shape="rect" id="node2" href="classSimExManager.html#ab25590abbd9f1e5a291328ac6c3d2125" title="SimExManager::add" alt="" coords="265,5,405,32"/></map>
 </div>
 </p>
 
@@ -492,7 +479,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_icgraph.png" border="0" usemap="#classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_icgraph" alt=""/></div>
 <map name="classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_icgraph" id="classSimExManager_aecd7292ab1e8e417d6b7d57c10e52971_icgraph">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf" title="safe::DataSender::freeze" alt="" coords="264,5,429,32"/><area shape="rect" id="node3" href="classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16" title="safe::DataSender::DataSender" alt="" coords="478,5,677,32"/></map>
 </div>
 </p>
 
@@ -605,7 +592,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSimExManager.html">SimExManager</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:10 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:04 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

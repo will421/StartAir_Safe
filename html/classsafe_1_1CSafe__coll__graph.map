@@ -1,0 +1,9 @@
+<map id="safe::CSafe" name="safe::CSafe">
+<area shape="rect" id="node2" href="$classsafe_1_1ISimListener.html" title="{safe::ISimListener\n||+ ~ISimListener()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l}" alt="" coords="5,458,176,638"/>
+<area shape="rect" id="node3" href="$classUDPReceiver.html" title="{UDPReceiver\n|&#45; sock\l|+ UDPReceiver()\l+ ~UDPReceiver()\l+ boucle()\l# datagramReceived()\l}" alt="" coords="201,487,348,609"/>
+<area shape="rect" id="node4" href="$classsafe_1_1DataSender.html" title="{safe::DataSender\n|&#45; lla\l|+ DataSender()\l+ DataSender()\l+ ~DataSender()\l+ sendLatLonAlt()\l+ sendPBH()\l+ sendPos()\l# freeze()\l# onRecvSimobjectData()\l# onRecvException()\l}" alt="" coords="372,451,540,645"/>
+<area shape="rect" id="node5" href="$classSimExManager.html" title="{SimExManager\n|&#45; record_count\l&#45; firstSet\l&#45; recordname\l|+ SimExManager()\l+ ~SimExManager()\l# addSendRecord()\l# findSendRecord()\l# firstSendRecord()\l# lastSendRecord()\l&#45; add()\l}" alt="" coords="209,184,348,379"/>
+<area shape="rect" id="node6" href="$structSimExManager_1_1record__struct.html" title="{SimExManager::record\l_struct\n|+ call\l+ sendid\l|}" alt="" coords="201,5,356,112"/>
+<area shape="rect" id="node7" href="$classSimConnection.html" title="{SimConnection\n|# hSimConnect\l|+ SimConnection()\l+ SimConnection()\l+ ~SimConnection()\l+ dispatch()\l# process()\l# onRecvSimobjectData()\l# onRecvEvent()\l# onRecvException()\l# onRecvQuit()\l# dispatchCallback()\l}" alt="" coords="372,177,540,386"/>
+<area shape="rect" id="node8" href="$structSIMCONNECT__DATA__PBH.html" title="{SIMCONNECT_DATA_PBH\n|+ p\l+ b\l+ h\l|}" alt="" coords="565,228,747,335"/>
+</map>

@@ -82,14 +82,14 @@ Inheritance diagram for safe::CSafeSS:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1CSafeSS__inherit__graph.png" border="0" usemap="#safe_1_1CSafeSS_inherit__map" alt="Inheritance graph"/></div>
 <map name="safe_1_1CSafeSS_inherit__map" id="safe_1_1CSafeSS_inherit__map">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1ISimListener.html" title="{safe::ISimListener\n||+ ~ISimListener()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l}" alt="" coords="5,6,176,186"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for safe::CSafeSS:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1CSafeSS__coll__graph.png" border="0" usemap="#safe_1_1CSafeSS_coll__map" alt="Collaboration graph"/></div>
 <map name="safe_1_1CSafeSS_coll__map" id="safe_1_1CSafeSS_coll__map">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1ISimListener.html" title="{safe::ISimListener\n||+ ~ISimListener()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l}" alt="" coords="5,6,176,186"/><area shape="rect" id="node3" href="classUDPSender.html" title="{UDPSender\n|&#45; targets\l&#45; sock\l|+ UDPSender()\l+ ~UDPSender()\l+ addTarget()\l+ send()\l}" alt="" coords="201,28,319,164"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -114,7 +114,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a97f8d7c62820d22617983185a78b81c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ae31f44bb2d02c8599027b775271df6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1CSafeSS.html#a9ae31f44bb2d02c8599027b775271df6">simStarted</a> (HANDLE h)</td></tr>
 <tr class="separator:a9ae31f44bb2d02c8599027b775271df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7864dd8b100c417ce9400fa39e8a8c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1CSafeSS.html#ac7864dd8b100c417ce9400fa39e8a8c7">latlonaltReceived</a> (HANDLE h, <a class="el" href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a> &amp;d)</td></tr>
+<tr class="memitem:ac7864dd8b100c417ce9400fa39e8a8c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1CSafeSS.html#ac7864dd8b100c417ce9400fa39e8a8c7">latlonaltReceived</a> (HANDLE h, SIMCONNECT_DATA_LATLONALT &amp;d)</td></tr>
 <tr class="separator:ac7864dd8b100c417ce9400fa39e8a8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1762cdb6108a677fc0c1c44b1cd75f84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1CSafeSS.html#a1762cdb6108a677fc0c1c44b1cd75f84">PBHReceived</a> (HANDLE h, <a class="el" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a> &amp;d)</td></tr>
 <tr class="separator:a1762cdb6108a677fc0c1c44b1cd75f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +262,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1CSafeSS_a4d4363c69f5fc0e02b3536dc1789fdca_cgraph.png" border="0" usemap="#classsafe_1_1CSafeSS_a4d4363c69f5fc0e02b3536dc1789fdca_cgraph" alt=""/></div>
 <map name="classsafe_1_1CSafeSS_a4d4363c69f5fc0e02b3536dc1789fdca_cgraph" id="classsafe_1_1CSafeSS_a4d4363c69f5fc0e02b3536dc1789fdca_cgraph">
-</map>
+<area shape="rect" id="node2" href="classUDPSender.html#ad9d9cfd0e6af018c44f6c0b0674f5bba" title="UDPSender::send" alt="" coords="222,12,349,39"/></map>
 </div>
 </p>
 
@@ -284,7 +284,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a> &amp;&#160;</td>
+          <td class="paramtype">SIMCONNECT_DATA_LATLONALT &amp;&#160;</td>
           <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
@@ -303,17 +303,12 @@ Here is the call graph for this function:</div>
 <p>Implements <a class="el" href="classsafe_1_1ISimListener.html#ae7487000ececf788ad177f040456fe47">safe::ISimListener</a>.</p>
 
 <p>Definition at line <a class="el" href="CSafeServerSide_8cpp_source.html#l00053">53</a> of file <a class="el" href="CSafeServerSide_8cpp_source.html">CSafeServerSide.cpp</a>.</p>
-
-<p>References <a class="el" href="SimConnect_8h_source.html#l00647">SIMCONNECT_DATA_LATLONALT::Altitude</a>, <a class="el" href="SimConnect_8h_source.html#l00645">SIMCONNECT_DATA_LATLONALT::Latitude</a>, and <a class="el" href="SimConnect_8h_source.html#l00646">SIMCONNECT_DATA_LATLONALT::Longitude</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                              {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE LATITUDE = &quot;</span> &lt;&lt; d.<a class="code" href="structSIMCONNECT__DATA__LATLONALT.html#a853f7e239454fb891c0a06891d890ffc">Latitude</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE LONGITUDE = &quot;</span> &lt;&lt; d.<a class="code" href="structSIMCONNECT__DATA__LATLONALT.html#a696ae9e28e2b3bad01dc47e9fa209bb9">Longitude</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE ALTITUDE = &quot;</span> &lt;&lt; d.<a class="code" href="structSIMCONNECT__DATA__LATLONALT.html#af24d5db58baaca1f19a37fd12ef206d3">Altitude</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE LATITUDE = &quot;</span> &lt;&lt; d.Latitude;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE LONGITUDE = &quot;</span> &lt;&lt; d.Longitude;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE ALTITUDE = &quot;</span> &lt;&lt; d.Altitude;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="comment">//udps.send((char*)&amp;d, sizeof(d));</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
-<div class="ttc" id="structSIMCONNECT__DATA__LATLONALT_html_a853f7e239454fb891c0a06891d890ffc"><div class="ttname"><a href="structSIMCONNECT__DATA__LATLONALT.html#a853f7e239454fb891c0a06891d890ffc">SIMCONNECT_DATA_LATLONALT::Latitude</a></div><div class="ttdeci">double Latitude</div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00645">SimConnect.h:645</a></div></div>
-<div class="ttc" id="structSIMCONNECT__DATA__LATLONALT_html_a696ae9e28e2b3bad01dc47e9fa209bb9"><div class="ttname"><a href="structSIMCONNECT__DATA__LATLONALT.html#a696ae9e28e2b3bad01dc47e9fa209bb9">SIMCONNECT_DATA_LATLONALT::Longitude</a></div><div class="ttdeci">double Longitude</div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00646">SimConnect.h:646</a></div></div>
-<div class="ttc" id="structSIMCONNECT__DATA__LATLONALT_html_af24d5db58baaca1f19a37fd12ef206d3"><div class="ttname"><a href="structSIMCONNECT__DATA__LATLONALT.html#af24d5db58baaca1f19a37fd12ef206d3">SIMCONNECT_DATA_LATLONALT::Altitude</a></div><div class="ttdeci">double Altitude</div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00647">SimConnect.h:647</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -335,7 +330,7 @@ Here is the call graph for this function:</div>
 
 <p>References <a class="el" href="SimReceiver_8cpp_source.html#l00211">safe::SimReceiver::addListener()</a>, <a class="el" href="UDPSender_8cpp_source.html#l00021">UDPSender::addTarget()</a>, <a class="el" href="SimConnection_8cpp_source.html#l00016">SimConnection::dispatch()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00182">safe::SimReceiver::requestPos()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00072">safe::SimReceiver::stop()</a>, and <a class="el" href="CSafeServerSide_8h_source.html#l00025">udps</a>.</p>
 
-<p>Referenced by <a class="el" href="server_2Server_8cpp_source.html#l00008">_tmain()</a>.</p>
+<p>Referenced by <a class="el" href="server_8cpp_source.html#l00008">_tmain()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <a class="code" href="classsafe_1_1CSafeSS.html#ad20e6d2a1cb47fc4e0184eb39b6a0188">udps</a>.<a class="code" href="classUDPSender.html#a32a2dc2e2667fee6c9386fe46314a00f">addTarget</a>(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, port);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <a class="code" href="classsafe_1_1CSafeSS.html#ad20e6d2a1cb47fc4e0184eb39b6a0188">udps</a>.<a class="code" href="classUDPSender.html#a32a2dc2e2667fee6c9386fe46314a00f">addTarget</a>(<span class="stringliteral">&quot;192.168.0.12&quot;</span>, port);</div>
@@ -367,7 +362,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_cgraph.png" border="0" usemap="#classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_cgraph" alt=""/></div>
 <map name="classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_cgraph" id="classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_cgraph">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a558820c799462003539f3736c50b2c1f" title="safe::SimReceiver::\laddListener" alt="" coords="225,5,359,46"/><area shape="rect" id="node3" href="classUDPSender.html#a32a2dc2e2667fee6c9386fe46314a00f" title="UDPSender::addTarget" alt="" coords="215,71,369,97"/><area shape="rect" id="node4" href="classSimConnection.html#a77aa02517e3d5cf6f25826d75c964e0a" title="SimConnection::dispatch" alt="" coords="209,121,375,148"/><area shape="rect" id="node11" href="classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1" title="safe::SimReceiver::\lrequestPos" alt="" coords="225,173,359,214"/><area shape="rect" id="node13" href="classsafe_1_1SimReceiver.html#a7d759a7de8dfc9d7bf2800a6a4d84079" title="safe::SimReceiver::stop" alt="" coords="213,239,371,265"/><area shape="rect" id="node5" href="classSimConnection.html#ae63f760488bc7984ce9db7da83a73f84" title="SimConnection::dispatchCallback" alt="" coords="425,121,642,148"/><area shape="rect" id="node6" href="classSimConnection.html#a844284a373277064526dfafbd99bde5d" title="SimConnection::process" alt="" coords="691,121,855,148"/><area shape="rect" id="node7" href="classSimConnection.html#afbb53f882a2c6f5f53696b560af9170d" title="SimConnection::onRecvEvent" alt="" coords="931,45,1123,72"/><area shape="rect" id="node8" href="classSimConnection.html#a4706c2f4c1ca5b978623204c1b427d22" title="SimConnection::onRecvException" alt="" coords="917,96,1136,123"/><area shape="rect" id="node9" href="classSimConnection.html#ac79a4977645b75c7af836daa22c3d35c" title="SimConnection::onRecvQuit" alt="" coords="935,147,1119,173"/><area shape="rect" id="node10" href="classSimConnection.html#afccf33344d2a799943d402125ea3f7cc" title="SimConnection::onRecvSimobjectData" alt="" coords="904,197,1149,224"/><area shape="rect" id="node12" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="safe::SimReceiver::\laddToDataDefinition" alt="" coords="465,173,602,214"/></map>
 </div>
 </p>
 
@@ -376,7 +371,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_icgraph.png" border="0" usemap="#classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_icgraph" alt=""/></div>
 <map name="classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_icgraph" id="classsafe_1_1CSafeSS_a5e9cbc5be2c3ea21c69312b5808dc448_icgraph">
-</map>
+<area shape="rect" id="node2" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="208,5,269,32"/></map>
 </div>
 </p>
 
@@ -554,7 +549,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesafe.html">safe</a></li><li class="navelem"><a class="el" href="classsafe_1_1CSafeSS.html">CSafeSS</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:10 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:04 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -35,7 +35,15 @@
 */
 namespace safe{
 
-	static enum SYM_EVENT {
+
+	/**
+	* \enum SIM_EVENT
+	* \brief simulator event constant
+	*
+	* SIM_EVENT are used to subscribing to system event
+	* 
+	*/
+	static enum SIM_EVENT {
 		EVENT_SIM_START,
 		EVENT_SIM_STOP
 	};

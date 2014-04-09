@@ -14,22 +14,17 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ]
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -39,10 +34,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "CSafeServerSide_8cpp.html",
-"SimConnect_8h.html#a7e84f52021cb825f52a75ce4aacb7764a315c9c543a3171ac1ab01b205cf4771f",
-"classSimDataEvent.html#af17ac84e6d8eecbdb161c5a7acc8ea05",
-"structSAFE__DATA__POS.html",
-"types_8h_source.html"
+"structSAFE__RECV.html#a90882484f60fd29264f6bbbd3e871ec0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,7 +1,0 @@
-digraph "testclient_serv" {
-  bgcolor=transparent;
-  compound=true
-  node [ fontsize="10", fontname="FreeSans"];
-  edge [ labelfontsize="10", labelfontname="FreeSans"];
-  dir_c4a08f78fca9d9ff72eddd96189701e7 [shape=box, label="testclient_serv", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_c4a08f78fca9d9ff72eddd96189701e7.html"];
-}

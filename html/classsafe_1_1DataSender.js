@@ -1,9 +1,5 @@
 var classsafe_1_1DataSender =
 [
-    [ "DATA", "structsafe_1_1DataSender_1_1DATA.html", "structsafe_1_1DataSender_1_1DATA" ],
-    [ "DATA_DEFINE_ID", "classsafe_1_1DataSender.html#ac80b826e1494b93a87623cb424b07fd6", [
-      [ "DEFINITION_THROTTLE", "classsafe_1_1DataSender.html#ac80b826e1494b93a87623cb424b07fd6a1f4c9c214dcb80e939f2b853b478e901", null ]
-    ] ],
     [ "DataSender", "classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457", null ],
     [ "DataSender", "classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16", null ],
     [ "~DataSender", "classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca", null ],

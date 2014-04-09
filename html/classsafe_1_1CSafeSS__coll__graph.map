@@ -1,0 +1,4 @@
+<map id="safe::CSafeSS" name="safe::CSafeSS">
+<area shape="rect" id="node2" href="$classsafe_1_1ISimListener.html" title="{safe::ISimListener\n||+ ~ISimListener()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l}" alt="" coords="5,6,176,186"/>
+<area shape="rect" id="node3" href="$classUDPSender.html" title="{UDPSender\n|&#45; targets\l&#45; sock\l|+ UDPSender()\l+ ~UDPSender()\l+ addTarget()\l+ send()\l}" alt="" coords="201,28,319,164"/>
+</map>

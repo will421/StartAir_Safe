@@ -2,8 +2,7 @@ var dir_b8c754d6c2c0718e22b77230d07d6ce9 =
 [
     [ "DataSender.cpp", "DataSender_8cpp.html", null ],
     [ "DataSender.h", "DataSender_8h.html", [
-      [ "DataSender", "classsafe_1_1DataSender.html", "classsafe_1_1DataSender" ],
-      [ "DATA", "structsafe_1_1DataSender_1_1DATA.html", "structsafe_1_1DataSender_1_1DATA" ]
+      [ "DataSender", "classsafe_1_1DataSender.html", "classsafe_1_1DataSender" ]
     ] ],
     [ "ISimListener.h", "ISimListener_8h.html", [
       [ "ISimListener", "classsafe_1_1ISimListener.html", "classsafe_1_1ISimListener" ]

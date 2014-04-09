@@ -1,9 +1,0 @@
-digraph "SAFE_RECV"
-{
-  bgcolor="transparent";
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="{SAFE_RECV\n|+ size\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +d" ,arrowhead="odiamond",fontname="FreeSans"];
-  Node2 [label="{SAFE_DATA_POS\n|+ Latitude\l+ Longitude\l+ Altitude\l+ p\l+ b\l+ h\l|}",height=0.2,width=0.4,color="black",URL="$structSAFE__DATA__POS.html"];
-}

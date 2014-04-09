@@ -1,0 +1,13 @@
+<map id="server/server.cpp" name="server/server.cpp">
+<area shape="rect" id="node2" href="$server_2stdafx_8h.html" title="stdafx.h" alt="" coords="163,80,231,107"/>
+<area shape="rect" id="node7" href="$CSafeServerSide_8h.html" title="CSafeServerSide.h" alt="" coords="683,80,813,107"/>
+<area shape="rect" id="node3" href="$server_2targetver_8h.html" title="targetver.h" alt="" coords="17,155,100,181"/>
+<area shape="rect" id="node8" href="$UDPSender_8h.html" title="UDPSender.h" alt="" coords="223,304,324,331"/>
+<area shape="rect" id="node13" href="$SimReceiver_8h.html" title="Header for the class SimReceiver. " alt="" coords="695,155,800,181"/>
+<area shape="rect" id="node15" href="$types_8h.html" title="types.h" alt="" coords="627,453,692,480"/>
+<area shape="rect" id="node16" href="$ISimListener_8h.html" title="ISimListener.h" alt="" coords="650,229,755,256"/>
+<area shape="rect" id="node17" href="$SimDataEvent_8h.html" title="SimDataEvent.h" alt="" coords="587,304,701,331"/>
+<area shape="rect" id="node18" href="$Request_8h.html" title="Request.h" alt="" coords="682,379,763,405"/>
+<area shape="rect" id="node22" href="$SimExManager_8h.html" title="SimExManager.h" alt="" coords="932,304,1055,331"/>
+<area shape="rect" id="node23" href="$SimConnection_8h.html" title="SimConnection.h" alt="" coords="1130,304,1251,331"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="SimConnection::onRecvQuit" name="SimConnection::onRecvQuit">
+<area shape="rect" id="node2" href="$classSimConnection.html#a844284a373277064526dfafbd99bde5d" title="SimConnection::process" alt="" coords="238,5,402,32"/>
+<area shape="rect" id="node3" href="$classSimConnection.html#ae63f760488bc7984ce9db7da83a73f84" title="SimConnection::dispatchCallback" alt="" coords="451,5,669,32"/>
+<area shape="rect" id="node4" href="$classSimConnection.html#a77aa02517e3d5cf6f25826d75c964e0a" title="SimConnection::dispatch" alt="" coords="718,5,885,32"/>
+<area shape="rect" id="node5" href="$classsafe_1_1CSafeSS.html#a5e9cbc5be2c3ea21c69312b5808dc448" title="safe::CSafeSS::launch" alt="" coords="934,5,1087,32"/>
+<area shape="rect" id="node6" href="$server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="1136,5,1197,32"/>
+</map>

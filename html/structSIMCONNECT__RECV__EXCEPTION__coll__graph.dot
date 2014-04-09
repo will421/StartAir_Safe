@@ -1,9 +1,0 @@
-digraph "SIMCONNECT_RECV_EXCEPTION"
-{
-  bgcolor="transparent";
-  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
-  node [fontname="FreeSans",fontsize="10",shape=record];
-  Node1 [label="{SIMCONNECT_RECV_EXCEPTION\n|+ dwException\l+ dwSendID\l+ dwIndex\l+ UNKNOWN_SENDID\l+ UNKNOWN_INDEX\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="FreeSans"];
-  Node2 [label="{SIMCONNECT_RECV\n|+ dwSize\l+ dwVersion\l+ dwID\l|}",height=0.2,width=0.4,color="black",URL="$structSIMCONNECT__RECV.html"];
-}

@@ -1,0 +1,6 @@
+<map id="safe::SimReceiver::onRecvSimobjectData" name="safe::SimReceiver::onRecvSimobjectData">
+<area shape="rect" id="node2" href="$classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10" title="safe::SimReceiver::\lfireDataReceived" alt="" coords="203,5,338,46"/>
+<area shape="rect" id="node3" href="$classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320" title="safe::SimReceiver::\lfireLatLonAlt" alt="" coords="203,70,338,111"/>
+<area shape="rect" id="node4" href="$classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc" title="safe::SimReceiver::\lfirePBH" alt="" coords="203,135,338,177"/>
+<area shape="rect" id="node5" href="$classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2" title="safe::SimReceiver::\lfirePos" alt="" coords="203,201,338,242"/>
+</map>

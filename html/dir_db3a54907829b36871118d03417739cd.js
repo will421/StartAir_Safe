@@ -1,6 +1,6 @@
 var dir_db3a54907829b36871118d03417739cd =
 [
-    [ "client.cpp", "client_2client_8cpp.html", "client_2client_8cpp" ],
+    [ "client.cpp", "client_8cpp.html", "client_8cpp" ],
     [ "CSafe.cpp", "CSafe_8cpp.html", null ],
     [ "CSafe.h", "CSafe_8h.html", [
       [ "CSafe", "classsafe_1_1CSafe.html", "classsafe_1_1CSafe" ]

@@ -80,7 +80,7 @@ Inheritance diagram for safe::ISimListener:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1ISimListener__inherit__graph.png" border="0" usemap="#safe_1_1ISimListener_inherit__map" alt="Inheritance graph"/></div>
 <map name="safe_1_1ISimListener_inherit__map" id="safe_1_1ISimListener_inherit__map">
-</map>
+<area shape="rect" id="node2" href="classsafe_1_1CSafe.html" title="{safe::CSafe\n|&#45; requid\l&#45; ds\l|+ CSafe()\l+ ~CSafe()\l+ launch()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l+ datagramReceived()\l}" alt="" coords="5,235,176,474"/><area shape="rect" id="node3" href="classsafe_1_1CSafeSS.html" title="{safe::CSafeSS\n|&#45; udps\l|+ CSafeSS()\l+ ~CSafeSS()\l+ launch()\l# dataReceived()\l# simQuitted()\l# simStopped()\l# simStarted()\l# latlonaltReceived()\l# PBHReceived()\l# latLonAltPBHReceived()\l}" alt="" coords="201,250,372,459"/></map>
 </div>
 <div class="dynheader">
 Collaboration diagram for safe::ISimListener:</div>
@@ -102,7 +102,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a117e78f5a19799801e91a39b9dc19c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae91c7504f708f87e1350c135aa51c5a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1ISimListener.html#ae91c7504f708f87e1350c135aa51c5a9">simStarted</a> (HANDLE h)=0</td></tr>
 <tr class="separator:ae91c7504f708f87e1350c135aa51c5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7487000ececf788ad177f040456fe47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1ISimListener.html#ae7487000ececf788ad177f040456fe47">latlonaltReceived</a> (HANDLE h, <a class="el" href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a> &amp;d)=0</td></tr>
+<tr class="memitem:ae7487000ececf788ad177f040456fe47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1ISimListener.html#ae7487000ececf788ad177f040456fe47">latlonaltReceived</a> (HANDLE h, SIMCONNECT_DATA_LATLONALT &amp;d)=0</td></tr>
 <tr class="separator:ae7487000ececf788ad177f040456fe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e7ce3c060263f533fb6639199056b65"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1ISimListener.html#a6e7ce3c060263f533fb6639199056b65">PBHReceived</a> (HANDLE h, <a class="el" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a> &amp;d)=0</td></tr>
 <tr class="separator:a6e7ce3c060263f533fb6639199056b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#aba59cc798971e185143619a7ff9f7bb3">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#a71b21bb190d73f9f160b27f993464410">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#a71b21bb190d73f9f160b27f993464410">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#aba59cc798971e185143619a7ff9f7bb3">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -198,7 +198,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#a23f816c2f1ab90b8383ef99880d6237f">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#a4d4363c69f5fc0e02b3536dc1789fdca">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#a4d4363c69f5fc0e02b3536dc1789fdca">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#a23f816c2f1ab90b8383ef99880d6237f">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -218,7 +218,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structSIMCONNECT__DATA__LATLONALT.html">SIMCONNECT_DATA_LATLONALT</a> &amp;&#160;</td>
+          <td class="paramtype">SIMCONNECT_DATA_LATLONALT &amp;&#160;</td>
           <td class="paramname"><em>d</em>&#160;</td>
         </tr>
         <tr>
@@ -234,7 +234,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#a31a46dd8e7ac4d88c9852cf546be522b">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#ac7864dd8b100c417ce9400fa39e8a8c7">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#ac7864dd8b100c417ce9400fa39e8a8c7">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#a31a46dd8e7ac4d88c9852cf546be522b">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#a6ef6b7d3cf37214119942197bdddc44c">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#a1762cdb6108a677fc0c1c44b1cd75f84">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#a1762cdb6108a677fc0c1c44b1cd75f84">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#a6ef6b7d3cf37214119942197bdddc44c">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#a3b19bc1f557d0b38513c06865761f006">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#aaeeadfed3dabf5e9b3d4e2625ad7db1c">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#aaeeadfed3dabf5e9b3d4e2625ad7db1c">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#a3b19bc1f557d0b38513c06865761f006">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#aea9278afc59bf944a36c54eb7d475493">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#a9ae31f44bb2d02c8599027b775271df6">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#a9ae31f44bb2d02c8599027b775271df6">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#aea9278afc59bf944a36c54eb7d475493">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classsafe_1_1CSafe.html#a0ee70c123407e407b4b278fdfe2ab47d">safe::CSafe</a>, and <a class="el" href="classsafe_1_1CSafeSS.html#a97f8d7c62820d22617983185a78b81c7">safe::CSafeSS</a>.</p>
+<p>Implemented in <a class="el" href="classsafe_1_1CSafeSS.html#a97f8d7c62820d22617983185a78b81c7">safe::CSafeSS</a>, and <a class="el" href="classsafe_1_1CSafe.html#a0ee70c123407e407b4b278fdfe2ab47d">safe::CSafe</a>.</p>
 
 </div>
 </div>
@@ -361,7 +361,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesafe.html">safe</a></li><li class="navelem"><a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:10 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:04 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

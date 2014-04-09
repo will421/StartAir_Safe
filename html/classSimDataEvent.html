@@ -82,7 +82,7 @@ Collaboration diagram for SimDataEvent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimDataEvent__coll__graph.png" border="0" usemap="#SimDataEvent_coll__map" alt="Collaboration graph"/></div>
 <map name="SimDataEvent_coll__map" id="SimDataEvent_coll__map">
-</map>
+<area shape="rect" id="node2" href="classRequest.html" title="{Request\n|&#45; h\l&#45; id\l&#45; data\l&#45; varUnits\l&#45; next_id\l|+ Request()\l+ Request()\l+ ~Request()\l+ getDataId()\l+ getRequestId()\l+ getvarUnitList()\l# addToDataDef()\l# requestDataOnSimObject()\l# addToSubscribedData()\l}" alt="" coords="5,5,195,259"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -94,7 +94,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19bd31aa125dcae4b60abace41e9eb4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e">SimDataEvent</a> (HANDLE *hSim, <a class="el" href="classRequest.html">Request</a> *r, <a class="el" href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html">SIMCONNECT_RECV_SIMOBJECT_DATA</a> *pObjData)</td></tr>
+<tr class="memitem:a19bd31aa125dcae4b60abace41e9eb4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimDataEvent.html#a19bd31aa125dcae4b60abace41e9eb4e">SimDataEvent</a> (HANDLE *hSim, <a class="el" href="classRequest.html">Request</a> *r, SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData)</td></tr>
 <tr class="separator:a19bd31aa125dcae4b60abace41e9eb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af17ac84e6d8eecbdb161c5a7acc8ea05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimDataEvent.html#af17ac84e6d8eecbdb161c5a7acc8ea05">SimDataEvent</a> (HANDLE *hSim, <a class="el" href="classRequest.html">Request</a> *r, <a class="el" href="SimDataEvent_8h.html#a1e5efb845a100557a375ea004fa53247">TListDatum</a> d)</td></tr>
 <tr class="separator:af17ac84e6d8eecbdb161c5a7acc8ea05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +133,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html">SIMCONNECT_RECV_SIMOBJECT_DATA</a> *&#160;</td>
+          <td class="paramtype">SIMCONNECT_RECV_SIMOBJECT_DATA *&#160;</td>
           <td class="paramname"><em>pObjData</em>&#160;</td>
         </tr>
         <tr>
@@ -146,14 +146,14 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="SimDataEvent_8cpp_source.html#l00008">8</a> of file <a class="el" href="SimDataEvent_8cpp_source.html">SimDataEvent.cpp</a>.</p>
 
-<p>References <a class="el" href="SimDataEvent_8h_source.html#l00036">data</a>, <a class="el" href="SimDataEvent_8h_source.html#l00026">SimDataEvent::StructDatum::datum</a>, <a class="el" href="SimConnect_8h_source.html#l00482">SIMCONNECT_RECV_SIMOBJECT_DATA::dwData</a>, <a class="el" href="SimConnect_8h_source.html#l00481">SIMCONNECT_RECV_SIMOBJECT_DATA::dwDefineCount</a>, <a class="el" href="Request_8cpp_source.html#l00050">Request::getDataId()</a>, <a class="el" href="Request_8cpp_source.html#l00056">Request::getvarUnitList()</a>, <a class="el" href="SimDataEvent_8h_source.html#l00020">SimDataEvent::StructOneDatum::id</a>, and <a class="el" href="SimDataEvent_8h_source.html#l00021">SimDataEvent::StructOneDatum::value</a>.</p>
+<p>References <a class="el" href="SimDataEvent_8h_source.html#l00036">data</a>, <a class="el" href="SimDataEvent_8h_source.html#l00026">SimDataEvent::StructDatum::datum</a>, <a class="el" href="Request_8cpp_source.html#l00050">Request::getDataId()</a>, <a class="el" href="Request_8cpp_source.html#l00056">Request::getvarUnitList()</a>, <a class="el" href="SimDataEvent_8h_source.html#l00020">SimDataEvent::StructOneDatum::id</a>, and <a class="el" href="SimDataEvent_8h_source.html#l00021">SimDataEvent::StructOneDatum::value</a>.</p>
 <div class="fragment"><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                                                                              : <a class="code" href="classSimDataEvent.html#aa3ebc591997078d366f6ed4623efe28d">handleSim</a>(hSim), <a class="code" href="classSimDataEvent.html#a28f3b442d5091469392c12d6ed0a0f95">requ</a>(r)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="SimDataEvent_8h.html#a1e5efb845a100557a375ea004fa53247">TListDatum</a> ld;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        StructDatum *pS = (StructDatum*)&amp;pObjData-&gt;<a class="code" href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html#a3f473809c5da4e43a92e383f8c93639f">dwData</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        StructDatum *pS = (StructDatum*)&amp;pObjData-&gt;dwData;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">int</span> count = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        while (count &lt; (<span class="keywordtype">int</span>)pObjData-&gt;<a class="code" href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html#a870f99295b2c8ca9266f17a80cd6aa16">dwDefineCount</a>)</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        while (count &lt; (<span class="keywordtype">int</span>)pObjData-&gt;dwDefineCount)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                std::list&lt;structVarUnit&gt; l = r-&gt;<a class="code" href="classRequest.html#a7bf8516b623b6506c8a43517eac2a985">getvarUnitList</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">for</span> (std::list&lt;structVarUnit&gt;::iterator it = l.begin(); it != l.end();it++)</div>
@@ -169,8 +169,6 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classSimDataEvent.html#a122ba0e214526307a3b96abedc09bd42">data</a> = ld;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="ttc" id="classSimDataEvent_html_a122ba0e214526307a3b96abedc09bd42"><div class="ttname"><a href="classSimDataEvent.html#a122ba0e214526307a3b96abedc09bd42">SimDataEvent::data</a></div><div class="ttdeci">TListDatum data</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8h_source.html#l00036">SimDataEvent.h:36</a></div></div>
-<div class="ttc" id="structSIMCONNECT__RECV__SIMOBJECT__DATA_html_a3f473809c5da4e43a92e383f8c93639f"><div class="ttname"><a href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html#a3f473809c5da4e43a92e383f8c93639f">SIMCONNECT_RECV_SIMOBJECT_DATA::dwData</a></div><div class="ttdeci">DWORD dwData</div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00482">SimConnect.h:482</a></div></div>
-<div class="ttc" id="structSIMCONNECT__RECV__SIMOBJECT__DATA_html_a870f99295b2c8ca9266f17a80cd6aa16"><div class="ttname"><a href="structSIMCONNECT__RECV__SIMOBJECT__DATA.html#a870f99295b2c8ca9266f17a80cd6aa16">SIMCONNECT_RECV_SIMOBJECT_DATA::dwDefineCount</a></div><div class="ttdeci">DWORD dwDefineCount</div><div class="ttdef"><b>Definition:</b> <a href="SimConnect_8h_source.html#l00481">SimConnect.h:481</a></div></div>
 <div class="ttc" id="classRequest_html_a6c752506f5a3c19385770db4335c8f39"><div class="ttname"><a href="classRequest.html#a6c752506f5a3c19385770db4335c8f39">Request::getDataId</a></div><div class="ttdeci">int getDataId(char *varName)</div><div class="ttdef"><b>Definition:</b> <a href="Request_8cpp_source.html#l00050">Request.cpp:50</a></div></div>
 <div class="ttc" id="classRequest_html_a7bf8516b623b6506c8a43517eac2a985"><div class="ttname"><a href="classRequest.html#a7bf8516b623b6506c8a43517eac2a985">Request::getvarUnitList</a></div><div class="ttdeci">std::list&lt; structVarUnit &gt; getvarUnitList()</div><div class="ttdef"><b>Definition:</b> <a href="Request_8cpp_source.html#l00056">Request.cpp:56</a></div></div>
 <div class="ttc" id="classSimDataEvent_html_aa3ebc591997078d366f6ed4623efe28d"><div class="ttname"><a href="classSimDataEvent.html#aa3ebc591997078d366f6ed4623efe28d">SimDataEvent::handleSim</a></div><div class="ttdeci">HANDLE * handleSim</div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8h_source.html#l00034">SimDataEvent.h:34</a></div></div>
@@ -182,7 +180,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimDataEvent_a19bd31aa125dcae4b60abace41e9eb4e_cgraph.png" border="0" usemap="#classSimDataEvent_a19bd31aa125dcae4b60abace41e9eb4e_cgraph" alt=""/></div>
 <map name="classSimDataEvent_a19bd31aa125dcae4b60abace41e9eb4e_cgraph" id="classSimDataEvent_a19bd31aa125dcae4b60abace41e9eb4e_cgraph">
-</map>
+<area shape="rect" id="node2" href="classRequest.html#a6c752506f5a3c19385770db4335c8f39" title="Request::getDataId" alt="" coords="260,5,393,32"/><area shape="rect" id="node3" href="classRequest.html#a7bf8516b623b6506c8a43517eac2a985" title="Request::getvarUnitList" alt="" coords="249,56,405,83"/></map>
 </div>
 </p>
 
@@ -302,7 +300,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSimDataEvent.html">SimDataEvent</a></li>
-    <li class="footer">Generated on Tue Apr 8 2014 23:39:10 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 09:44:04 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

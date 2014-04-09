@@ -1,0 +1,7 @@
+<map id="server/targetver.h" name="server/targetver.h">
+<area shape="rect" id="node2" href="$server_2stdafx_8h.html" title="server/stdafx.h" alt="" coords="289,80,396,107"/>
+<area shape="rect" id="node3" href="$CSafeServerSide_8cpp.html" title="server/CSafeServerSide.cpp" alt="" coords="5,155,187,181"/>
+<area shape="rect" id="node4" href="$server_8cpp.html" title="server/server.cpp" alt="" coords="211,155,329,181"/>
+<area shape="rect" id="node5" href="$server_2stdafx_8cpp.html" title="server/stdafx.cpp" alt="" coords="355,155,475,181"/>
+<area shape="rect" id="node6" href="$UDPSender_8cpp.html" title="server/UDPSender.cpp" alt="" coords="499,155,652,181"/>
+</map>

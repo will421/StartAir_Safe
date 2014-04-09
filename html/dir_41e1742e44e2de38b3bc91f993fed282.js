@@ -4,7 +4,7 @@ var dir_41e1742e44e2de38b3bc91f993fed282 =
     [ "CSafeServerSide.h", "CSafeServerSide_8h.html", [
       [ "CSafeSS", "classsafe_1_1CSafeSS.html", "classsafe_1_1CSafeSS" ]
     ] ],
-    [ "server.cpp", "server_2Server_8cpp.html", "server_2Server_8cpp" ],
+    [ "server.cpp", "server_8cpp.html", "server_8cpp" ],
     [ "stdafx.cpp", "server_2stdafx_8cpp.html", null ],
     [ "stdafx.h", "server_2stdafx_8h.html", null ],
     [ "targetver.h", "server_2targetver_8h.html", null ],
