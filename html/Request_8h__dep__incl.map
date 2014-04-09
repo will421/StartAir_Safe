@@ -6,7 +6,7 @@
 <area shape="rect" id="node14" href="$IDataPool_8h.html" title="client/IDataPool.h" alt="" coords="43,304,167,331"/>
 <area shape="rect" id="node16" href="$SimDataEvent_8cpp.html" title="global/SimDataEvent.cpp" alt="" coords="194,155,360,181"/>
 <area shape="rect" id="node5" href="$CSafeServerSide_8h.html" title="server/CSafeServerSide.h" alt="" coords="685,304,853,331"/>
-<area shape="rect" id="node8" href="$DataSender_8h.html" title="global/DataSender.h" alt="" coords="387,304,525,331"/>
+<area shape="rect" id="node8" href="$DataSender_8h.html" title="Header for the class DataSender. " alt="" coords="387,304,525,331"/>
 <area shape="rect" id="node10" href="$SimReceiver_8cpp.html" title="global/SimReceiver.cpp" alt="" coords="173,379,331,405"/>
 <area shape="rect" id="node11" href="$CSafe_8h.html" title="client/CSafe.h" alt="" coords="583,379,685,405"/>
 <area shape="rect" id="node6" href="$CSafeServerSide_8cpp.html" title="server/CSafeServerSide.cpp" alt="" coords="853,379,1035,405"/>

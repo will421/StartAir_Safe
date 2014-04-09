@@ -1,5 +1,5 @@
 <map id="global/DataSender.cpp" name="global/DataSender.cpp">
-<area shape="rect" id="node2" href="$DataSender_8h.html" title="DataSender.h" alt="" coords="213,80,315,107"/>
+<area shape="rect" id="node2" href="$DataSender_8h.html" title="Header for the class DataSender. " alt="" coords="213,80,315,107"/>
 <area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="162,453,227,480"/>
 <area shape="rect" id="node4" href="$SimReceiver_8h.html" title="Header for the class SimReceiver. " alt="" coords="471,155,576,181"/>
 <area shape="rect" id="node6" href="$ISimListener_8h.html" title="ISimListener.h" alt="" coords="471,229,576,256"/>

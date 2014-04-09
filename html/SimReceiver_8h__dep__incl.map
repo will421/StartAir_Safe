@@ -1,6 +1,6 @@
 <map id="global/SimReceiver.h" name="global/SimReceiver.h">
 <area shape="rect" id="node2" href="$CSafeServerSide_8h.html" title="server/CSafeServerSide.h" alt="" coords="187,80,355,107"/>
-<area shape="rect" id="node5" href="$DataSender_8h.html" title="global/DataSender.h" alt="" coords="544,80,683,107"/>
+<area shape="rect" id="node5" href="$DataSender_8h.html" title="Header for the class DataSender. " alt="" coords="544,80,683,107"/>
 <area shape="rect" id="node7" href="$SimReceiver_8cpp.html" title="global/SimReceiver.cpp" alt="" coords="355,155,512,181"/>
 <area shape="rect" id="node8" href="$CSafe_8h.html" title="client/CSafe.h" alt="" coords="766,155,868,181"/>
 <area shape="rect" id="node11" href="$ISimListener_8h.html" title="global/ISimListener.h" alt="" coords="758,80,900,107"/>
