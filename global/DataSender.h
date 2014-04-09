@@ -2,7 +2,7 @@
 
 #include "types.h"
 #include "SimReceiver.h"
-
+#include "config.h"
 
 
 /*!

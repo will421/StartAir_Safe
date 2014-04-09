@@ -9,10 +9,11 @@
 
 #include <windows.h> 
 #include <tchar.h> 
-#include <stdio.h> 
+#include <iostream> 
 #include <strsafe.h> 
 
 #include "SimConnect.h" 
+#include "config.h"
 
 
 
@@ -38,7 +39,7 @@ static enum INPUT_ID {
 
 
 static float cameraBank = 0.0f;
-static float cameraPos = 0.0f;
+static float cameraMoveForward = 0.0f;
 
 float normalize180(float v)
 {
@@ -63,7 +64,7 @@ void CALLBACK MyDispatchProcCC(SIMCONNECT_RECV* pData, DWORD cbData, void *pCont
 
 												 cameraBank = normalize180(cameraBank + 2.0f);
 
-												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraPos,
+												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraMoveForward,
 																					   SIMCONNECT_CAMERA_IGNORE_FIELD, SIMCONNECT_CAMERA_IGNORE_FIELD, cameraBank);
 
 												 printf("\nCamera Bank = %f", cameraBank);
@@ -73,22 +74,22 @@ void CALLBACK MyDispatchProcCC(SIMCONNECT_RECV* pData, DWORD cbData, void *pCont
 
 												 cameraBank = normalize180(cameraBank - 2.0f);
 
-												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraPos,
+												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraMoveForward,
 																					   SIMCONNECT_CAMERA_IGNORE_FIELD, SIMCONNECT_CAMERA_IGNORE_FIELD, cameraBank);
 
 												 printf("\nCamera Bank = %f", cameraBank);
 												 break;
 											 case EVENT_CAMERA_UP:
-												 cameraPos += 0.1;
-												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraPos,
+												 cameraMoveForward += 0.1;
+												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraMoveForward,
 																					   SIMCONNECT_CAMERA_IGNORE_FIELD, SIMCONNECT_CAMERA_IGNORE_FIELD, cameraBank);
-												 printf("\nPos = %f", cameraPos);
+												 printf("\nPos = %f", cameraMoveForward);
 												 break;
 											 case EVENT_CAMERA_DOWN:
-												 cameraPos -= 0.1;
-												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraPos,
+												 cameraMoveForward -= 0.1;
+												 hr = SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraMoveForward,
 																					   SIMCONNECT_CAMERA_IGNORE_FIELD, SIMCONNECT_CAMERA_IGNORE_FIELD, cameraBank);
-												 printf("\nPos = %f", cameraPos);
+												 printf("\nPos = %f", cameraMoveForward);
 												 break;
 											 default:
 												 break;
@@ -124,7 +125,7 @@ void CALLBACK MyDispatchProcCC(SIMCONNECT_RECV* pData, DWORD cbData, void *pCont
 	}
 }
 
-void testCockpitCamera()
+void CockpitCamera()
 {
 	HRESULT hr;
 
@@ -153,6 +154,9 @@ void testCockpitCamera()
 
 		hr = SimConnect_SetInputGroupState(hSimConnect, INPUT0, SIMCONNECT_STATE_ON);
 
+		//position initialisation
+		SimConnect_CameraSetRelative6DOF(hSimConnect, 0.0f, 0.0f, cameraMoveForward,
+										 SIMCONNECT_CAMERA_IGNORE_FIELD, SIMCONNECT_CAMERA_IGNORE_FIELD, cameraBank);
 
 		while (0 == quit)
 		{
@@ -164,10 +168,24 @@ void testCockpitCamera()
 	}
 }
 
+using namespace safe;
+
 int __cdecl _tmain(int argc, _TCHAR* argv[])
 {
+	safe::loadConfig();
+	try{
+		const Setting &camera = safe::cfg_Safe.lookup("camera");
+		camera.lookupValue("bank", cameraBank);
+		camera.lookupValue("moveForward", cameraMoveForward);
 
-	testCockpitCamera();
+	}
+	catch (SettingNotFoundException ex)
+	{
+		std::cerr << "setting 'camera' not found on " << configFile << std::endl;
+	}
+
+
+	CockpitCamera();
 
 	return 0;
 }

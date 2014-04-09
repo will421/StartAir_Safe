@@ -1,9 +1,10 @@
 <map id="global/DataSender.h" name="global/DataSender.h">
-<area shape="rect" id="node2" href="$types_8h.html" title="types.h" alt="" coords="162,379,227,405"/>
-<area shape="rect" id="node3" href="$SimReceiver_8h.html" title="Header for the class SimReceiver. " alt="" coords="471,80,576,107"/>
-<area shape="rect" id="node5" href="$ISimListener_8h.html" title="ISimListener.h" alt="" coords="471,155,576,181"/>
-<area shape="rect" id="node6" href="$SimDataEvent_8h.html" title="SimDataEvent.h" alt="" coords="539,229,653,256"/>
-<area shape="rect" id="node7" href="$Request_8h.html" title="Request.h" alt="" coords="583,304,664,331"/>
-<area shape="rect" id="node14" href="$SimExManager_8h.html" title="SimExManager.h" alt="" coords="195,229,317,256"/>
-<area shape="rect" id="node15" href="$SimConnection_8h.html" title="SimConnection.h" alt="" coords="393,229,513,256"/>
+<area shape="rect" id="node2" href="$types_8h.html" title="types.h" alt="" coords="61,379,125,405"/>
+<area shape="rect" id="node3" href="$SimReceiver_8h.html" title="Header for the class SimReceiver. " alt="" coords="411,80,516,107"/>
+<area shape="rect" id="node17" href="$config_8h.html" title="config.h" alt="" coords="1021,155,1088,181"/>
+<area shape="rect" id="node5" href="$ISimListener_8h.html" title="ISimListener.h" alt="" coords="195,155,300,181"/>
+<area shape="rect" id="node6" href="$SimDataEvent_8h.html" title="SimDataEvent.h" alt="" coords="264,229,379,256"/>
+<area shape="rect" id="node7" href="$Request_8h.html" title="Request.h" alt="" coords="246,304,327,331"/>
+<area shape="rect" id="node14" href="$SimExManager_8h.html" title="SimExManager.h" alt="" coords="677,229,800,256"/>
+<area shape="rect" id="node15" href="$SimConnection_8h.html" title="SimConnection.h" alt="" coords="825,229,945,256"/>
 </map>

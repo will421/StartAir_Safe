@@ -1,4 +1,4 @@
 <map id="SimExManager" name="SimExManager">
-<area shape="rect" id="node2" href="$classsafe_1_1DataSender.html" title="{safe::DataSender\n|&#45; lla\l&#45; pbh\l|+ DataSender()\l+ DataSender()\l+ ~DataSender()\l+ sendLatLonAlt()\l+ sendPBH()\l+ sendPos()\l# freeze()\l# onRecvSimobjectData()\l# onRecvException()\l}" alt="" coords="5,397,173,606"/>
-<area shape="rect" id="node3" href="$classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data..." alt="" coords="197,265,365,738"/>
+<area shape="rect" id="node2" href="$classsafe_1_1DataSender.html" title="{safe::DataSender\n|&#45; lla\l&#45; pbh\l|+ DataSender()\l+ DataSender()\l+ ~DataSender()\l+ sendLatLonAlt()\l+ sendPBH()\l+ sendPos()\l# freeze()\l# onRecvSimobjectData()\l# onRecvException()\l}" alt="" coords="5,403,173,613"/>
+<area shape="rect" id="node3" href="$classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data..." alt="" coords="197,264,365,752"/>
 </map>

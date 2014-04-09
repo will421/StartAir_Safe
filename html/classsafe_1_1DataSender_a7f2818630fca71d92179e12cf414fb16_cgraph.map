@@ -1,6 +1,4 @@
 <map id="safe::DataSender::DataSender" name="safe::DataSender::DataSender">
-<area shape="rect" id="node2" href="$classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf" title="safe::DataSender::freeze" alt="" coords="253,31,419,57"/>
-<area shape="rect" id="node3" href="$classSimExManager.html#a9d815a07d82c57eb8c6ed593dd6157fe" title="SimExManager::firstSendRecord" alt="" coords="467,5,677,32"/>
-<area shape="rect" id="node4" href="$classSimExManager.html#aecd7292ab1e8e417d6b7d57c10e52971" title="SimExManager::lastSendRecord" alt="" coords="467,56,677,83"/>
-<area shape="rect" id="node5" href="$classSimExManager.html#ab25590abbd9f1e5a291328ac6c3d2125" title="SimExManager::add" alt="" coords="726,56,866,83"/>
+<area shape="rect" id="node2" href="$classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf" title="safe::DataSender::freeze" alt="" coords="253,5,419,32"/>
+<area shape="rect" id="node3" href="$namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2" title="safe::loadConfig" alt="" coords="279,56,393,83"/>
 </map>

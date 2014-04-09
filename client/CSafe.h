@@ -4,13 +4,13 @@
 #include "SimReceiver.h"
 #include "DataSender.h"
 #include "UDPReceiver.h"
-
+#include "libconfig.h++"
+using namespace libconfig;
 
 namespace safe{
 	class CSafe : public ISimListener ,public UDPReceiver
 	{
 	public:
-		//CSafe();
 		CSafe(int port);
 		~CSafe();
 		void launch();
@@ -24,7 +24,6 @@ namespace safe{
 		void datagramReceived(SOCKADDR & from, SAFE_RECV & message);
 	private :
 		int requid;
-		//SimReceiver sr;
 		DataSender ds;
 	};
 };

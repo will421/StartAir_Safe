@@ -1,5 +1,13 @@
 var NAVTREEINDEX1 =
 {
+"structSAFE__DATA__POS.html#a18eaec4d79141d220b7efaf3970e3ce0":[1,0,2,3],
+"structSAFE__DATA__POS.html#a2245054e1dda3aa5272776d48da93a3b":[1,0,2,5],
+"structSAFE__DATA__POS.html#a2b4ec9c9302293682e013c70e4719613":[1,0,2,4],
+"structSAFE__DATA__POS.html#a7dc5001dc838ba3b0cd5461fea221350":[1,0,2,0],
+"structSAFE__DATA__POS.html#a7fb1a53fabf8603679ff7d681f6d6583":[1,0,2,2],
+"structSAFE__DATA__POS.html#a99a55b678e8622865ee50dc86650c80e":[1,0,2,1],
+"structSAFE__RECV.html":[1,0,3],
+"structSAFE__RECV.html#a766d7b0d6b0152ae5089159d61d87195":[1,0,3,0],
 "structSAFE__RECV.html#a90882484f60fd29264f6bbbd3e871ec0":[1,0,3,1],
 "structSIMCONNECT__DATA__PBH.html":[1,0,4],
 "structSIMCONNECT__DATA__PBH.html#a110532ecadd54e28597dfeaddafb5126":[1,0,4,0],
@@ -16,6 +24,6 @@ var NAVTREEINDEX1 =
 "structstructVarUnit.html":[1,0,8],
 "structstructVarUnit.html#a20c982a86e572220258112c40db56cd8":[1,0,8,1],
 "structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9":[1,0,8,0],
-"types_8h.html":[2,0,1,13],
-"types_8h_source.html":[2,0,1,13]
+"types_8h.html":[2,0,1,14],
+"types_8h_source.html":[2,0,1,14]
 };

@@ -66,7 +66,9 @@ $(document).ready(function(){initNavTree('namespacesafe.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">safe Namespace Reference</div>  </div>
 </div><!--header-->
@@ -97,6 +99,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a145f450e516b0cf04e77b85d933964b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">simulator event constant  <a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3">More...</a><br/></td></tr>
 <tr class="separator:a145f450e516b0cf04e77b85d933964b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a220bb815a5672adea49bc68b7f1df3b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2">loadConfig</a> ()</td></tr>
+<tr class="separator:a220bb815a5672adea49bc68b7f1df3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a85fc0f4134c6368f1e1edab0cdf1cdf2"><td class="memItemLeft" align="right" valign="top">static Config&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">cfg_Safe</a></td></tr>
+<tr class="separator:a85fc0f4134c6368f1e1edab0cdf1cdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace which contain class for the project StartAir Safe </p>
@@ -120,14 +132,98 @@ Enumerations</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00046">46</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                              {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">EVENT_SIM_START</a>,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">EVENT_SIM_STOP</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        };</div>
-<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">safe::EVENT_SIM_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00048">SimReceiver.h:48</a></div></div>
-<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">safe::EVENT_SIM_START</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00047">SimReceiver.h:47</a></div></div>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00047">47</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                              {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">EVENT_SIM_START</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">EVENT_SIM_STOP</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        };</div>
+<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">safe::EVENT_SIM_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00049">SimReceiver.h:49</a></div></div>
+<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">safe::EVENT_SIM_START</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00048">SimReceiver.h:48</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a220bb815a5672adea49bc68b7f1df3b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void safe::loadConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="config_8h_source.html#l00017">17</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+<p>References <a class="el" href="config_8h_source.html#l00015">cfg_Safe</a>, and <a class="el" href="config_8h_source.html#l00011">configFile</a>.</p>
+
+<p>Referenced by <a class="el" href="client_8cpp_source.html#l00014">_tmain()</a>, <a class="el" href="UDPReceiver_8cpp_source.html#l00032">UDPReceiver::boucle()</a>, <a class="el" href="DataSender_8cpp_source.html#l00020">safe::DataSender::DataSender()</a>, and <a class="el" href="CSafeServerSide_8cpp_source.html#l00023">safe::CSafeSS::launch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        <a class="code" href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">cfg_Safe</a>.readFile(<a class="code" href="config_8h.html#abf8df34568ec22868fa698c9620dbe4c">configFile</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordflow">catch</span> (<span class="keyword">const</span> FileIOException &amp;fioex)</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        std::cerr &lt;&lt; <span class="stringliteral">&quot;I/O error while reading file. &quot;</span> &lt;&lt; <span class="stringliteral">&quot;Is &quot;</span> &lt;&lt; <span class="stringliteral">&quot;\&quot;&quot;</span> &lt;&lt;<a class="code" href="config_8h.html#abf8df34568ec22868fa698c9620dbe4c">configFile</a> &lt;&lt;  <span class="stringliteral">&quot;\&quot;&quot;</span>  &lt;&lt; <span class="stringliteral">&quot; existing ?&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                        system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        exit(EXIT_FAILURE);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">catch</span> (<span class="keyword">const</span> ParseException &amp;pex)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        std::cerr &lt;&lt; <span class="stringliteral">&quot;Parse error at &quot;</span> &lt;&lt; pex.getFile() &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; pex.getLine()</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                &lt;&lt; <span class="stringliteral">&quot; - &quot;</span> &lt;&lt; pex.getError() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                        exit(EXIT_FAILURE);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="ttc" id="namespacesafe_html_a85fc0f4134c6368f1e1edab0cdf1cdf2"><div class="ttname"><a href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">safe::cfg_Safe</a></div><div class="ttdeci">static Config cfg_Safe</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00015">config.h:15</a></div></div>
+<div class="ttc" id="config_8h_html_abf8df34568ec22868fa698c9620dbe4c"><div class="ttname"><a href="config_8h.html#abf8df34568ec22868fa698c9620dbe4c">configFile</a></div><div class="ttdeci">#define configFile</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00011">config.h:11</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacesafe_a220bb815a5672adea49bc68b7f1df3b2_icgraph.png" border="0" usemap="#namespacesafe_a220bb815a5672adea49bc68b7f1df3b2_icgraph" alt=""/></div>
+<map name="namespacesafe_a220bb815a5672adea49bc68b7f1df3b2_icgraph" id="namespacesafe_a220bb815a5672adea49bc68b7f1df3b2_icgraph">
+<area shape="rect" id="node2" href="client_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="600,13,661,40"/><area shape="rect" id="node3" href="classUDPReceiver.html#a5dab36fdbe58782f084ea87348cb38c5" title="UDPReceiver::boucle" alt="" coords="196,38,340,65"/><area shape="rect" id="node5" href="classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16" title="safe::DataSender::DataSender" alt="" coords="169,89,367,116"/><area shape="rect" id="node6" href="classsafe_1_1CSafeSS.html#abe93583e42a49ab3b5a440fb3c94ac1f" title="safe::CSafeSS::launch" alt="" coords="191,140,345,166"/><area shape="rect" id="node4" href="classsafe_1_1CSafe.html#a2f769d9c2bc104cf720f3412d286ee84" title="safe::CSafe::launch" alt="" coords="417,38,551,65"/><area shape="rect" id="node7" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="453,140,515,166"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a85fc0f4134c6368f1e1edab0cdf1cdf2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Config safe::cfg_Safe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="config_8h_source.html#l00015">15</a> of file <a class="el" href="config_8h_source.html">config.h</a>.</p>
+
+<p>Referenced by <a class="el" href="client_8cpp_source.html#l00014">_tmain()</a>, <a class="el" href="UDPReceiver_8cpp_source.html#l00032">UDPReceiver::boucle()</a>, <a class="el" href="DataSender_8cpp_source.html#l00020">safe::DataSender::DataSender()</a>, <a class="el" href="DataSender_8cpp_source.html#l00072">safe::DataSender::freeze()</a>, <a class="el" href="CSafeServerSide_8cpp_source.html#l00023">safe::CSafeSS::launch()</a>, <a class="el" href="config_8h_source.html#l00017">loadConfig()</a>, and <a class="el" href="DataSender_8cpp_source.html#l00112">safe::DataSender::sendPos()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -136,7 +232,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesafe.html">safe</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 10:28:45 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -71,153 +71,174 @@ $(document).ready(function(){initNavTree('DataSender_8cpp_source.html','');});
 <a href="DataSender_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="DataSender_8h.html">DataSender.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//#include &lt;ctime&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> std::list;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::cout;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> std::endl;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> std::list;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> std::cout;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::endl;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>safe {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="comment">//clock_t tbegin, tend;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="comment">//double texec = 0.;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="comment">//int DataSender::boucle = 0;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">   16</a></span>&#160;        <a class="code" href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">DataSender::DataSender</a>() : <a class="code" href="classSimConnection.html">SimConnection</a>(NULL)</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16">   21</a></span>&#160;        <a class="code" href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">DataSender::DataSender</a>(<span class="keywordtype">int</span> numCfg) : <a class="code" href="classSimConnection.html">SimConnection</a>(NULL)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                list&lt;structVarUnit&gt; l;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;radians&quot;</span> });</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;radians&quot;</span> });</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="comment">//Connection au simulateur local</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordtype">char</span> * nomclient = <span class="stringliteral">&quot;Data Sender&quot;</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordflow">if</span> (SUCCEEDED(SimConnect_Open(&amp;<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, nomclient, NULL, 0, 0, numCfg))) <span class="comment">// Local</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;\nDataSender connected&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        <span class="comment">//forex = SimReceiver(hSimConnect);</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        <span class="comment">//std::for_each(l.begin(), l.end(), [&amp;](structVarUnit s) {SimConnect_AddToDataDefinition(hSimConnect, DEFINITION_THROTTLE, s.varName, s.unitName); });</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;PLANE LATITUDE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span>                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;PLANE LONGITUDE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span>                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;PLANE ALTITUDE&quot;, &quot;Feet&quot;);</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span>                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 61, &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span>                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 61, &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span>                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 61, &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <span class="comment">//forex.addSendRecord(hSimConnect,&quot;a&quot;);</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="comment">//forex.addSendRecord(hSimConnect,&quot;b&quot;);</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, <span class="stringliteral">&quot;PLANE ALTITUDE&quot;</span>, <span class="stringliteral">&quot;Feet&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="comment">//forex.addSendRecord(hSimConnect,&quot;c&quot;);</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 99, &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 99, &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                        <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 99, &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, <span class="stringliteral">&quot;PLANE PITCH DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, <span class="stringliteral">&quot;PLANE BANK DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, <span class="stringliteral">&quot;PLANE HEADING DEGREES TRUE&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        <a class="code" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">freeze</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                        <span class="comment">//requestFreezeState();</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca">   72</a></span>&#160;        <a class="code" href="classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca">DataSender::~DataSender</a>()</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>safe {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="comment">//clock_t tbegin, tend;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="comment">//double texec = 0.;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="comment">//int DataSender::boucle = 0;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">   15</a></span>&#160;        <a class="code" href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">DataSender::DataSender</a>() : <a class="code" href="classSimConnection.html">SimConnection</a>(NULL)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16">   20</a></span>&#160;        <a class="code" href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">DataSender::DataSender</a>(<span class="keywordtype">int</span> numCfg) : <a class="code" href="classSimConnection.html">SimConnection</a>(NULL)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="comment">//Connection au simulateur local</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="keywordtype">char</span> * nomclient = <span class="stringliteral">&quot;Data Sender&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordflow">if</span> (SUCCEEDED(SimConnect_Open(&amp;<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, nomclient, NULL, 0, 0, numCfg))) <span class="comment">// Local</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;\nDataSender connected&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        <span class="keywordtype">int</span> id;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                <a class="code" href="namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2">loadConfig</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                <span class="keyword">const</span> Setting &amp;cfg = <a class="code" href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">cfg_Safe</a>.lookup(<span class="stringliteral">&quot;datasender&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                <span class="keywordflow">if</span> (!cfg.lookupValue(<span class="stringliteral">&quot;position_definition_id&quot;</span>, <span class="keywordtype">id</span>))</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                        <span class="keywordtype">id</span> = 99;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        <span class="keywordflow">catch</span> (SettingNotFoundException ex)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                std::cerr &lt;&lt; <span class="stringliteral">&quot;No &#39;datasender&#39; setting in configuration file.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                <span class="keywordtype">id</span> = 99;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, <span class="stringliteral">&quot;PLANE ALTITUDE&quot;</span>, <span class="stringliteral">&quot;Feet&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, <span class="stringliteral">&quot;PLANE PITCH DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, <span class="stringliteral">&quot;PLANE BANK DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, <span class="stringliteral">&quot;PLANE HEADING DEGREES TRUE&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        <a class="code" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">freeze</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        <span class="comment">//requestFreezeState();</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;Connection failure. Is the simulator launched ?&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        system(<span class="stringliteral">&quot;pause&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        exit(EXIT_FAILURE);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca">   61</a></span>&#160;        <a class="code" href="classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca">DataSender::~DataSender</a>()</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">//void DataSender::requestFreezeState()</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">//{</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">//      SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;IS LATITUDE LONGITUDE FREEZE ON&quot;, &quot;bool&quot;);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//      SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;IS ALTITUDE FREEZE ON&quot;, &quot;bool&quot;);</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">//      SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;IS ATTITUDE FREEZE ON&quot;, &quot;bool&quot;);</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//      SimConnect_RequestDataOnSimObject(hSimConnect, 100, 100, 0, SIMCONNECT_PERIOD_SECOND);</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">   72</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">DataSender::freeze</a>()</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">//void DataSender::requestFreezeState()</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">//{</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">//      SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;IS LATITUDE LONGITUDE FREEZE ON&quot;, &quot;bool&quot;);</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">//      SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;IS ALTITUDE FREEZE ON&quot;, &quot;bool&quot;);</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">//      SimConnect_AddToDataDefinition(hSimConnect, 100, &quot;IS ATTITUDE FREEZE ON&quot;, &quot;bool&quot;);</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">//      SimConnect_RequestDataOnSimObject(hSimConnect, 100, 100, 0, SIMCONNECT_PERIOD_SECOND);</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">//}</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">   83</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">DataSender::freeze</a>()</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                SimConnect_MapClientEventToSimEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 0, <span class="stringliteral">&quot;FREEZE_LATITUDE_LONGITUDE_TOGGLE&quot;</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="classSimExManager.html#a9d815a07d82c57eb8c6ed593dd6157fe">firstSendRecord</a>(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="stringliteral">&quot;freeze()&quot;</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                SimConnect_TransmitClientEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, SIMCONNECT_OBJECT_ID_USER, 0, 0, SIMCONNECT_GROUP_PRIORITY_HIGHEST, SIMCONNECT_EVENT_FLAG_GROUPID_IS_PRIORITY);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                SimConnect_MapClientEventToSimEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 1, <span class="stringliteral">&quot;FREEZE_ALTITUDE_TOGGLE&quot;</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                SimConnect_TransmitClientEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, SIMCONNECT_OBJECT_ID_USER, 1, 0, SIMCONNECT_GROUP_PRIORITY_HIGHEST, SIMCONNECT_EVENT_FLAG_GROUPID_IS_PRIORITY);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                SimConnect_MapClientEventToSimEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 2, <span class="stringliteral">&quot;FREEZE_ATTITUDE_TOGGLE&quot;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                SimConnect_TransmitClientEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, SIMCONNECT_OBJECT_ID_USER, 2, 0, SIMCONNECT_GROUP_PRIORITY_HIGHEST, SIMCONNECT_EVENT_FLAG_GROUPID_IS_PRIORITY);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="classSimExManager.html#aecd7292ab1e8e417d6b7d57c10e52971">lastSendRecord</a>(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a951f4f4f05f1ee03fd13ec08149da300">   95</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#a951f4f4f05f1ee03fd13ec08149da300">DataSender::sendLatLonAlt</a>(SIMCONNECT_DATA_LATLONALT &amp;d)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="comment">//SimConnect_SetDataOnSimObject(hSimConnect, DEFINITION_THROTTLE, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(dataToSend), &amp;dataToSend);</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                SimConnect_SetDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 100, SIMCONNECT_OBJECT_ID_USER, 0, 0, <span class="keyword">sizeof</span>(d), &amp;d);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="comment">//forex.addSendRecord(&quot;SimConnect_SetDataOnSimObject(hSimConnect, 50, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &amp;d);&quot;);</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a01ad74b3bbab184ec2c512652a3b24b1">  101</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#a01ad74b3bbab184ec2c512652a3b24b1">DataSender::sendPBH</a>(<a class="code" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a> &amp;d)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                SimConnect_SetDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 61, SIMCONNECT_OBJECT_ID_USER, 0, 0, <span class="keyword">sizeof</span>(d), &amp;d);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="comment">//forex.addSendRecord(&quot;SimConnect_SetDataOnSimObject(hSimConnect, 60, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &amp;d);&quot;);</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#af35727080e08eabfa110bea9aa4c3648">  107</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#af35727080e08eabfa110bea9aa4c3648">DataSender::sendPos</a>(<a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a> &amp;d) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                SimConnect_SetDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 99, SIMCONNECT_OBJECT_ID_USER, 0, 0, <span class="keyword">sizeof</span>(d), &amp;d);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">//void DataSender::sendAll(SIMCONNECT_DATA_LATLONALT &amp;d1, SIMCONNECT_DATA_PBH &amp;d2) {</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">//      struct STRUCT_ALL {</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">//              SIMCONNECT_DATA_LATLONALT d1;</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">//              SIMCONNECT_DATA_PBH d2;</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">//      };</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="comment">//      SimConnect_SetDataOnSimObject(hSimConnect, 71, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(pbh), &amp;pbh);</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">//}</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a30b6456da55f81aa9f83af6c4ee05b72">  118</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#a30b6456da55f81aa9f83af6c4ee05b72">DataSender::onRecvSimobjectData</a>(SIMCONNECT_RECV *pData) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4">  123</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4">DataSender::onRecvException</a>(SIMCONNECT_RECV *pData, DWORD cbData)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                printf(<span class="stringliteral">&quot;\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n&quot;</span>, except-&gt;dwException, except-&gt;dwSendID, except-&gt;dwIndex, cbData);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="comment">// Locate the bad call and print it out </span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="keywordtype">char</span>* s = <a class="code" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a>(except-&gt;dwSendID);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                printf(<span class="stringliteral">&quot;\n%s&quot;</span>, s);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordtype">int</span> id1,id2,id3;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                        <span class="keyword">const</span> Setting &amp;cfg = <a class="code" href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">cfg_Safe</a>.lookup(<span class="stringliteral">&quot;datasender&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        <span class="keywordflow">if</span> (!(cfg.lookupValue(<span class="stringliteral">&quot;freeze_latitude_event_id&quot;</span>, id1) &amp;&amp; cfg.lookupValue(<span class="stringliteral">&quot;freeze_altitude_event_id&quot;</span>, id2) &amp;&amp; cfg.lookupValue(<span class="stringliteral">&quot;freeze_attitude_event_id&quot;</span>, id3)))</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                id1 = 0;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                id2 = 1;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                id3 = 2;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">catch</span> (SettingNotFoundException ex)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        std::cerr &lt;&lt; <span class="stringliteral">&quot;No &#39;datasender&#39; setting in configuration file.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        id1 = 0;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                        id2 = 1;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                        id3 = 2;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                SimConnect_MapClientEventToSimEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, id1, <span class="stringliteral">&quot;FREEZE_LATITUDE_LONGITUDE_TOGGLE&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                SimConnect_TransmitClientEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, SIMCONNECT_OBJECT_ID_USER, id1, 0, SIMCONNECT_GROUP_PRIORITY_HIGHEST, SIMCONNECT_EVENT_FLAG_GROUPID_IS_PRIORITY);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                SimConnect_MapClientEventToSimEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, id2, <span class="stringliteral">&quot;FREEZE_ALTITUDE_TOGGLE&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                SimConnect_TransmitClientEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, SIMCONNECT_OBJECT_ID_USER, id2, 0, SIMCONNECT_GROUP_PRIORITY_HIGHEST, SIMCONNECT_EVENT_FLAG_GROUPID_IS_PRIORITY);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                SimConnect_MapClientEventToSimEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, id3, <span class="stringliteral">&quot;FREEZE_ATTITUDE_TOGGLE&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                SimConnect_TransmitClientEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, SIMCONNECT_OBJECT_ID_USER, id3, 0, SIMCONNECT_GROUP_PRIORITY_HIGHEST, SIMCONNECT_EVENT_FLAG_GROUPID_IS_PRIORITY);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">//void DataSender::sendLatLonAlt(SIMCONNECT_DATA_LATLONALT &amp;d)</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//{</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">//      //SimConnect_SetDataOnSimObject(hSimConnect, DEFINITION_THROTTLE, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(dataToSend), &amp;dataToSend);</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//      SimConnect_SetDataOnSimObject(hSimConnect, 100, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &amp;d);</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">//      //forex.addSendRecord(&quot;SimConnect_SetDataOnSimObject(hSimConnect, 50, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &amp;d);&quot;);</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="comment">//void DataSender::sendPBH(SIMCONNECT_DATA_PBH &amp;d)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">//{</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">//      SimConnect_SetDataOnSimObject(hSimConnect, 61, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &amp;d);</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">//      //forex.addSendRecord(&quot;SimConnect_SetDataOnSimObject(hSimConnect, 60, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &amp;d);&quot;);</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#af35727080e08eabfa110bea9aa4c3648">  112</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#af35727080e08eabfa110bea9aa4c3648">DataSender::sendPos</a>(<a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a> &amp;d) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordtype">int</span> id;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">try</span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        <span class="keyword">const</span> Setting &amp;cfg = <a class="code" href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">cfg_Safe</a>.lookup(<span class="stringliteral">&quot;datasender&quot;</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        <span class="keywordflow">if</span> (!cfg.lookupValue(<span class="stringliteral">&quot;position_definition_id&quot;</span>, <span class="keywordtype">id</span>))</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                <span class="keywordtype">id</span> = 99;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">catch</span> (SettingNotFoundException ex)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        std::cerr &lt;&lt; <span class="stringliteral">&quot;No &#39;datasender&#39; setting in configuration file.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                        <span class="keywordtype">id</span> = 99;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                SimConnect_SetDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, SIMCONNECT_OBJECT_ID_USER, 0, 0, <span class="keyword">sizeof</span>(d), &amp;d);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">//void DataSender::sendAll(SIMCONNECT_DATA_LATLONALT &amp;d1, SIMCONNECT_DATA_PBH &amp;d2) {</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">//      struct STRUCT_ALL {</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">//              SIMCONNECT_DATA_LATLONALT d1;</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">//              SIMCONNECT_DATA_PBH d2;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="comment">//      };</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">//      SimConnect_SetDataOnSimObject(hSimConnect, 71, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(pbh), &amp;pbh);</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#a30b6456da55f81aa9f83af6c4ee05b72">  136</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#a30b6456da55f81aa9f83af6c4ee05b72">DataSender::onRecvSimobjectData</a>(SIMCONNECT_RECV *pData) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4">  141</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4">DataSender::onRecvException</a>(SIMCONNECT_RECV *pData, DWORD cbData)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                printf(<span class="stringliteral">&quot;\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n&quot;</span>, except-&gt;dwException, except-&gt;dwSendID, except-&gt;dwIndex, cbData);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="comment">// Locate the bad call and print it out </span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordtype">char</span>* s = <a class="code" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a>(except-&gt;dwSendID);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                printf(<span class="stringliteral">&quot;\n%s&quot;</span>, s);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html"><div class="ttname"><a href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00043">types.h:43</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_ae1490e3474aa164f22d65bcd6e74baf4"><div class="ttname"><a href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4">safe::DataSender::onRecvException</a></div><div class="ttdeci">void onRecvException(SIMCONNECT_RECV *pData, DWORD cbData)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00123">DataSender.cpp:123</a></div></div>
-<div class="ttc" id="structSIMCONNECT__DATA__PBH_html"><div class="ttname"><a href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00030">types.h:30</a></div></div>
-<div class="ttc" id="classSimExManager_html_aecd7292ab1e8e417d6b7d57c10e52971"><div class="ttname"><a href="classSimExManager.html#aecd7292ab1e8e417d6b7d57c10e52971">SimExManager::lastSendRecord</a></div><div class="ttdeci">void lastSendRecord(HANDLE h)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00063">SimExManager.cpp:63</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_a0a33d17a5f0b91757aaee65ae29fdedf"><div class="ttname"><a href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">safe::DataSender::freeze</a></div><div class="ttdeci">void freeze()</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00083">DataSender.cpp:83</a></div></div>
+<div class="ttc" id="structSAFE__DATA__POS_html"><div class="ttname"><a href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00026">types.h:26</a></div></div>
+<div class="ttc" id="classsafe_1_1DataSender_html_ae1490e3474aa164f22d65bcd6e74baf4"><div class="ttname"><a href="classsafe_1_1DataSender.html#ae1490e3474aa164f22d65bcd6e74baf4">safe::DataSender::onRecvException</a></div><div class="ttdeci">void onRecvException(SIMCONNECT_RECV *pData, DWORD cbData)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00141">DataSender.cpp:141</a></div></div>
+<div class="ttc" id="namespacesafe_html_a220bb815a5672adea49bc68b7f1df3b2"><div class="ttname"><a href="namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2">safe::loadConfig</a></div><div class="ttdeci">static void loadConfig()</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00017">config.h:17</a></div></div>
+<div class="ttc" id="namespacesafe_html_a85fc0f4134c6368f1e1edab0cdf1cdf2"><div class="ttname"><a href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">safe::cfg_Safe</a></div><div class="ttdeci">static Config cfg_Safe</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00015">config.h:15</a></div></div>
+<div class="ttc" id="classsafe_1_1DataSender_html_a0a33d17a5f0b91757aaee65ae29fdedf"><div class="ttname"><a href="classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf">safe::DataSender::freeze</a></div><div class="ttdeci">void freeze()</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00072">DataSender.cpp:72</a></div></div>
 <div class="ttc" id="classSimExManager_html_a86b371a87e340d9dc5882bcf7d81f2cc"><div class="ttname"><a href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">SimExManager::findSendRecord</a></div><div class="ttdeci">char * findSendRecord(DWORD id)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00016">SimExManager.cpp:16</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_aa06320ff85abc3b611fb8ec4468188ca"><div class="ttname"><a href="classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca">safe::DataSender::~DataSender</a></div><div class="ttdeci">~DataSender()</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00072">DataSender.cpp:72</a></div></div>
-<div class="ttc" id="classSimExManager_html_a9d815a07d82c57eb8c6ed593dd6157fe"><div class="ttname"><a href="classSimExManager.html#a9d815a07d82c57eb8c6ed593dd6157fe">SimExManager::firstSendRecord</a></div><div class="ttdeci">void firstSendRecord(HANDLE h, char *rn)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00049">SimExManager.cpp:49</a></div></div>
+<div class="ttc" id="classsafe_1_1DataSender_html_aa06320ff85abc3b611fb8ec4468188ca"><div class="ttname"><a href="classsafe_1_1DataSender.html#aa06320ff85abc3b611fb8ec4468188ca">safe::DataSender::~DataSender</a></div><div class="ttdeci">~DataSender()</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00061">DataSender.cpp:61</a></div></div>
 <div class="ttc" id="DataSender_8h_html"><div class="ttname"><a href="DataSender_8h.html">DataSender.h</a></div><div class="ttdoc">Header for the class DataSender. </div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_af35727080e08eabfa110bea9aa4c3648"><div class="ttname"><a href="classsafe_1_1DataSender.html#af35727080e08eabfa110bea9aa4c3648">safe::DataSender::sendPos</a></div><div class="ttdeci">void sendPos(SAFE_DATA_POS &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00107">DataSender.cpp:107</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_a36a797fe4046ecbca6e9753fb9508457"><div class="ttname"><a href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">safe::DataSender::DataSender</a></div><div class="ttdeci">DataSender()</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00016">DataSender.cpp:16</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_a30b6456da55f81aa9f83af6c4ee05b72"><div class="ttname"><a href="classsafe_1_1DataSender.html#a30b6456da55f81aa9f83af6c4ee05b72">safe::DataSender::onRecvSimobjectData</a></div><div class="ttdeci">void onRecvSimobjectData(SIMCONNECT_RECV *pData)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00118">DataSender.cpp:118</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_a01ad74b3bbab184ec2c512652a3b24b1"><div class="ttname"><a href="classsafe_1_1DataSender.html#a01ad74b3bbab184ec2c512652a3b24b1">safe::DataSender::sendPBH</a></div><div class="ttdeci">void sendPBH(SIMCONNECT_DATA_PBH &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00101">DataSender.cpp:101</a></div></div>
+<div class="ttc" id="classsafe_1_1DataSender_html_af35727080e08eabfa110bea9aa4c3648"><div class="ttname"><a href="classsafe_1_1DataSender.html#af35727080e08eabfa110bea9aa4c3648">safe::DataSender::sendPos</a></div><div class="ttdeci">void sendPos(SAFE_DATA_POS &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00112">DataSender.cpp:112</a></div></div>
+<div class="ttc" id="classsafe_1_1DataSender_html_a36a797fe4046ecbca6e9753fb9508457"><div class="ttname"><a href="classsafe_1_1DataSender.html#a36a797fe4046ecbca6e9753fb9508457">safe::DataSender::DataSender</a></div><div class="ttdeci">DataSender()</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00015">DataSender.cpp:15</a></div></div>
+<div class="ttc" id="classsafe_1_1DataSender_html_a30b6456da55f81aa9f83af6c4ee05b72"><div class="ttname"><a href="classsafe_1_1DataSender.html#a30b6456da55f81aa9f83af6c4ee05b72">safe::DataSender::onRecvSimobjectData</a></div><div class="ttdeci">void onRecvSimobjectData(SIMCONNECT_RECV *pData)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00136">DataSender.cpp:136</a></div></div>
 <div class="ttc" id="classSimConnection_html"><div class="ttname"><a href="classSimConnection.html">SimConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00006">SimConnection.h:6</a></div></div>
-<div class="ttc" id="classsafe_1_1DataSender_html_a951f4f4f05f1ee03fd13ec08149da300"><div class="ttname"><a href="classsafe_1_1DataSender.html#a951f4f4f05f1ee03fd13ec08149da300">safe::DataSender::sendLatLonAlt</a></div><div class="ttdeci">void sendLatLonAlt(SIMCONNECT_DATA_LATLONALT &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="DataSender_8cpp_source.html#l00095">DataSender.cpp:95</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_b8c754d6c2c0718e22b77230d07d6ce9.html">global</a></li><li class="navelem"><a class="el" href="DataSender_8cpp.html">DataSender.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 10:28:45 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

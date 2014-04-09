@@ -16,15 +16,6 @@ namespace safe{
 
 
 
-	//SimReceiver::SimReceiver(HANDLE h) : quit(0), SimConnection(h), latLonAltRequested(false), PBHRequested(false), posRequested(false)
-	//{
-
-	//	// Request a simulation start event 
-	//	SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_START, "SimStart");
-	//	SimConnect_SubscribeToSystemEvent(hSimConnect, EVENT_SIM_STOP, "SimStop");
-
-	//}
-
 	SimReceiver::SimReceiver(int numCfg) : quit(0), SimConnection(NULL), latLonAltRequested(false), PBHRequested(false), posRequested(false)
 	{
 		HRESULT hr;
@@ -80,6 +71,9 @@ namespace safe{
 		SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData = (SIMCONNECT_RECV_SIMOBJECT_DATA*)pData;
 
 		//cout << endl << DataSender::boucle << "-> " << pObjData->dwRequestID;
+
+
+
 
 		if (pObjData->dwRequestID == 50)
 		{

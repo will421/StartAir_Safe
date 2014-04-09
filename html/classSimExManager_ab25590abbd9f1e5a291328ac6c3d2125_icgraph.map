@@ -1,6 +1,4 @@
 <map id="SimExManager::add" name="SimExManager::add">
 <area shape="rect" id="node2" href="$classSimExManager.html#a0f3380b98c2b5df7f405baec3a64ed37" title="SimExManager::addSendRecord" alt="" coords="195,5,405,32"/>
 <area shape="rect" id="node3" href="$classSimExManager.html#aecd7292ab1e8e417d6b7d57c10e52971" title="SimExManager::lastSendRecord" alt="" coords="195,56,405,83"/>
-<area shape="rect" id="node4" href="$classsafe_1_1DataSender.html#a0a33d17a5f0b91757aaee65ae29fdedf" title="safe::DataSender::freeze" alt="" coords="453,56,619,83"/>
-<area shape="rect" id="node5" href="$classsafe_1_1DataSender.html#a7f2818630fca71d92179e12cf414fb16" title="safe::DataSender::DataSender" alt="" coords="667,56,866,83"/>
 </map>

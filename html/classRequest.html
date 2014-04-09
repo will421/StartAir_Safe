@@ -83,8 +83,6 @@ $(document).ready(function(){initNavTree('classRequest.html','');});
 Collaboration diagram for Request:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest__coll__graph.png" border="0" usemap="#Request_coll__map" alt="Collaboration graph"/></div>
-<map name="Request_coll__map" id="Request_coll__map">
-</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -316,7 +314,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="Request_8cpp_source.html#l00044">44</a> of file <a class="el" href="Request_8cpp_source.html">Request.cpp</a>.</p>
 
-<p>References <a class="el" href="Request_8h_source.html#l00037">data</a>, <a class="el" href="Request_8h_source.html#l00023">Request::structIdType::id</a>, <a class="el" href="Request_8h_source.html#l00036">id</a>, <a class="el" href="Request_8h_source.html#l00024">Request::structIdType::unitName</a>, <a class="el" href="types_8h_source.html#l00026">structVarUnit::unitName</a>, and <a class="el" href="types_8h_source.html#l00025">structVarUnit::varName</a>.</p>
+<p>References <a class="el" href="Request_8h_source.html#l00037">data</a>, <a class="el" href="Request_8h_source.html#l00023">Request::structIdType::id</a>, <a class="el" href="Request_8h_source.html#l00036">id</a>, <a class="el" href="types_8h_source.html#l00009">structVarUnit::unitName</a>, <a class="el" href="Request_8h_source.html#l00024">Request::structIdType::unitName</a>, and <a class="el" href="types_8h_source.html#l00008">structVarUnit::varName</a>.</p>
 
 <p>Referenced by <a class="el" href="Request_8cpp_source.html#l00011">Request()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                         {</div>
@@ -325,10 +323,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        s.unitName = vu.<a class="code" href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">unitName</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classRequest.html#ab608638d8172dc1cc73c188765749264">data</a>[vu.<a class="code" href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">varName</a>] = s;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="ttc" id="structstructVarUnit_html_a20c982a86e572220258112c40db56cd8"><div class="ttname"><a href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">structVarUnit::varName</a></div><div class="ttdeci">char * varName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00025">types.h:25</a></div></div>
+<div class="ttc" id="structstructVarUnit_html_a20c982a86e572220258112c40db56cd8"><div class="ttname"><a href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">structVarUnit::varName</a></div><div class="ttdeci">char * varName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
 <div class="ttc" id="classRequest_html_ab608638d8172dc1cc73c188765749264"><div class="ttname"><a href="classRequest.html#ab608638d8172dc1cc73c188765749264">Request::data</a></div><div class="ttdeci">std::map&lt; char *, structIdType &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="Request_8h_source.html#l00037">Request.h:37</a></div></div>
 <div class="ttc" id="classRequest_html_a026538b5d27774177b27d0552d25fa13"><div class="ttname"><a href="classRequest.html#a026538b5d27774177b27d0552d25fa13">Request::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> <a href="Request_8h_source.html#l00036">Request.h:36</a></div></div>
-<div class="ttc" id="structstructVarUnit_html_a743b66ca2ac673c38933395e3c5d53a9"><div class="ttname"><a href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">structVarUnit::unitName</a></div><div class="ttdeci">char * unitName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00026">types.h:26</a></div></div>
+<div class="ttc" id="structstructVarUnit_html_a743b66ca2ac673c38933395e3c5d53a9"><div class="ttname"><a href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">structVarUnit::unitName</a></div><div class="ttdeci">char * unitName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00009">types.h:9</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -393,7 +391,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="Request_8h_source.html#l00036">id</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00048">safe::SimReceiver::request()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00039">safe::SimReceiver::request()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                         {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classRequest.html#a026538b5d27774177b27d0552d25fa13">id</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
@@ -404,7 +402,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classRequest_a969a51620c5af946e295b911da503868_icgraph.png" border="0" usemap="#classRequest_a969a51620c5af946e295b911da503868_icgraph" alt=""/></div>
 <map name="classRequest_a969a51620c5af946e295b911da503868_icgraph" id="classRequest_a969a51620c5af946e295b911da503868_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a41b0d6e5f4becb521cb22980556836d1" title="safe::SimReceiver::\lrequest" alt="" coords="209,5,343,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a41b0d6e5f4becb521cb22980556836d1" title="Subscribe to a list of data. " alt="" coords="209,5,343,46"/></map>
 </div>
 </p>
 
@@ -597,7 +595,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classRequest.html">Request</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 10:28:45 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

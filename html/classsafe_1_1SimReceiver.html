@@ -98,27 +98,36 @@ Collaboration diagram for safe::SimReceiver:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9450a0b4ac706c3074e817d0ffd4e3fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a9450a0b4ac706c3074e817d0ffd4e3fd">SimReceiver</a> (int numCfg=0)</td></tr>
+<tr class="memdesc:a9450a0b4ac706c3074e817d0ffd4e3fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data...">SimReceiver</a> and a new connection.  <a href="#a9450a0b4ac706c3074e817d0ffd4e3fd">More...</a><br/></td></tr>
 <tr class="separator:a9450a0b4ac706c3074e817d0ffd4e3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a1c163bde07b28d71d7aa587e4a149c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a4a1c163bde07b28d71d7aa587e4a149c">~SimReceiver</a> ()</td></tr>
 <tr class="memdesc:a4a1c163bde07b28d71d7aa587e4a149c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data...">SimReceiver</a> with an existing connection.  <a href="#a4a1c163bde07b28d71d7aa587e4a149c">More...</a><br/></td></tr>
 <tr class="separator:a4a1c163bde07b28d71d7aa587e4a149c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b0d6e5f4becb521cb22980556836d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a41b0d6e5f4becb521cb22980556836d1">request</a> (std::list&lt; <a class="el" href="structstructVarUnit.html">structVarUnit</a> &gt; s)</td></tr>
+<tr class="memdesc:a41b0d6e5f4becb521cb22980556836d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to a list of data.  <a href="#a41b0d6e5f4becb521cb22980556836d1">More...</a><br/></td></tr>
 <tr class="separator:a41b0d6e5f4becb521cb22980556836d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6279d9a9d8e653910f64d6e843ffa847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a6279d9a9d8e653910f64d6e843ffa847">requestLatLonAlt</a> ()</td></tr>
+<tr class="memdesc:a6279d9a9d8e653910f64d6e843ffa847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to latitude, longitude and latitude of user plane Data will be received by using latlonaltReceived() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a>.  <a href="#a6279d9a9d8e653910f64d6e843ffa847">More...</a><br/></td></tr>
 <tr class="separator:a6279d9a9d8e653910f64d6e843ffa847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64df1a0cb0d1ef7a8f87220dd506d576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576">requestPBH</a> ()</td></tr>
+<tr class="memdesc:a64df1a0cb0d1ef7a8f87220dd506d576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to pitch, bank and heading of user plane Data will be received by using PBHReceived() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a>.  <a href="#a64df1a0cb0d1ef7a8f87220dd506d576">More...</a><br/></td></tr>
 <tr class="separator:a64df1a0cb0d1ef7a8f87220dd506d576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828d69d4fa368bc93c22e4aab6a29eb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1">requestPos</a> ()</td></tr>
+<tr class="memdesc:a828d69d4fa368bc93c22e4aab6a29eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subscribe to both, latLonAlt and PBH. Data will be received by using latLonAltPBH() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a>.  <a href="#a828d69d4fa368bc93c22e4aab6a29eb1">More...</a><br/></td></tr>
 <tr class="separator:a828d69d4fa368bc93c22e4aab6a29eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91600171a3a9618908c6a28d3cc6cfdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a91600171a3a9618908c6a28d3cc6cfdf">close</a> ()</td></tr>
+<tr class="memdesc:a91600171a3a9618908c6a28d3cc6cfdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the connection with the simulator.  <a href="#a91600171a3a9618908c6a28d3cc6cfdf">More...</a><br/></td></tr>
 <tr class="separator:a91600171a3a9618908c6a28d3cc6cfdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d759a7de8dfc9d7bf2800a6a4d84079"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a7d759a7de8dfc9d7bf2800a6a4d84079">stop</a> ()</td></tr>
 <tr class="separator:a7d759a7de8dfc9d7bf2800a6a4d84079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558820c799462003539f3736c50b2c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a558820c799462003539f3736c50b2c1f">addListener</a> (<a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a> *l)</td></tr>
+<tr class="memdesc:a558820c799462003539f3736c50b2c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">add l to the listener of this receiver  <a href="#a558820c799462003539f3736c50b2c1f">More...</a><br/></td></tr>
 <tr class="separator:a558820c799462003539f3736c50b2c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cf5809b9f2f9053e3c6ee14be313b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a2cf5809b9f2f9053e3c6ee14be313b62">removeListener</a> (<a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a> *l)</td></tr>
+<tr class="memdesc:a2cf5809b9f2f9053e3c6ee14be313b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove l from the listener list  <a href="#a2cf5809b9f2f9053e3c6ee14be313b62">More...</a><br/></td></tr>
 <tr class="separator:a2cf5809b9f2f9053e3c6ee14be313b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a64935940fbb9a9136c2594d703e3c"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#af3a64935940fbb9a9136c2594d703e3c">getHandle</a> ()</td></tr>
+<tr class="memdesc:af3a64935940fbb9a9136c2594d703e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handle of this receiver.  <a href="#af3a64935940fbb9a9136c2594d703e3c">More...</a><br/></td></tr>
 <tr class="separator:af3a64935940fbb9a9136c2594d703e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSimExManager"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSimExManager')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSimExManager.html">SimExManager</a></td></tr>
 <tr class="memitem:ad91ffe79d676bca9abc3a6c45719b6e3 inherit pub_methods_classSimExManager"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimExManager.html#ad91ffe79d676bca9abc3a6c45719b6e3">SimExManager</a> ()</td></tr>
@@ -138,28 +147,40 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae1b926d69624b1fa8f25d1850749910a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a">onRecvSimobjectData</a> (SIMCONNECT_RECV *pData)</td></tr>
+<tr class="memdesc:ae1b926d69624b1fa8f25d1850749910a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See class <a class="el" href="classSimConnection.html">SimConnection</a>.  <a href="#ae1b926d69624b1fa8f25d1850749910a">More...</a><br/></td></tr>
 <tr class="separator:ae1b926d69624b1fa8f25d1850749910a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9d0b3fde76556e59a9a8f2135e58b4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#aa9d0b3fde76556e59a9a8f2135e58b4c">onRecvEvent</a> (SIMCONNECT_RECV *pData)</td></tr>
+<tr class="memdesc:aa9d0b3fde76556e59a9a8f2135e58b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See class <a class="el" href="classSimConnection.html">SimConnection</a>.  <a href="#aa9d0b3fde76556e59a9a8f2135e58b4c">More...</a><br/></td></tr>
 <tr class="separator:aa9d0b3fde76556e59a9a8f2135e58b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50408fe63a9c210029701a923e1a5fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a50408fe63a9c210029701a923e1a5fbc">onRecvException</a> (SIMCONNECT_RECV *pData, DWORD cbData)</td></tr>
+<tr class="memdesc:a50408fe63a9c210029701a923e1a5fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">See class <a class="el" href="classSimConnection.html">SimConnection</a>.  <a href="#a50408fe63a9c210029701a923e1a5fbc">More...</a><br/></td></tr>
 <tr class="separator:a50408fe63a9c210029701a923e1a5fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b46fd2a3242e184b53bda3a89f3b70b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a8b46fd2a3242e184b53bda3a89f3b70b">onRecvQuit</a> (SIMCONNECT_RECV *pData)</td></tr>
+<tr class="memdesc:a8b46fd2a3242e184b53bda3a89f3b70b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See class <a class="el" href="classSimConnection.html">SimConnection</a>.  <a href="#a8b46fd2a3242e184b53bda3a89f3b70b">More...</a><br/></td></tr>
 <tr class="separator:a8b46fd2a3242e184b53bda3a89f3b70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ad507eac008590af87bb286f30b42a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a> (int defId, std::list&lt; <a class="el" href="structstructVarUnit.html">structVarUnit</a> &gt; s)</td></tr>
+<tr class="memdesc:a91ad507eac008590af87bb286f30b42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a data definition on the simulator.  <a href="#a91ad507eac008590af87bb286f30b42a">More...</a><br/></td></tr>
 <tr class="separator:a91ad507eac008590af87bb286f30b42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e028dc30f3dd71ac243857f23631d10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10">fireDataReceived</a> (SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData)</td></tr>
+<tr class="memdesc:a9e028dc30f3dd71ac243857f23631d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that data is received.  <a href="#a9e028dc30f3dd71ac243857f23631d10">More...</a><br/></td></tr>
 <tr class="separator:a9e028dc30f3dd71ac243857f23631d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a927b567de21af15e8b8ce8beed97b41a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a">fireSimStart</a> ()</td></tr>
+<tr class="memdesc:a927b567de21af15e8b8ce8beed97b41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that the simulation start.  <a href="#a927b567de21af15e8b8ce8beed97b41a">More...</a><br/></td></tr>
 <tr class="separator:a927b567de21af15e8b8ce8beed97b41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acabc352211a25148dfb74fd0352c6652"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652">fireSimStop</a> ()</td></tr>
+<tr class="memdesc:acabc352211a25148dfb74fd0352c6652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that the simulation stop.  <a href="#acabc352211a25148dfb74fd0352c6652">More...</a><br/></td></tr>
 <tr class="separator:acabc352211a25148dfb74fd0352c6652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3181c1e8a89824f10065113b73221bf4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4">fireSimQuit</a> ()</td></tr>
+<tr class="memdesc:a3181c1e8a89824f10065113b73221bf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that the simulation quit.  <a href="#a3181c1e8a89824f10065113b73221bf4">More...</a><br/></td></tr>
 <tr class="separator:a3181c1e8a89824f10065113b73221bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009565494f89aeed81f642cf7a121320"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320">fireLatLonAlt</a> (SIMCONNECT_DATA_LATLONALT &amp;d)</td></tr>
+<tr class="memdesc:a009565494f89aeed81f642cf7a121320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that data is received.  <a href="#a009565494f89aeed81f642cf7a121320">More...</a><br/></td></tr>
 <tr class="separator:a009565494f89aeed81f642cf7a121320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc50f17b139d2285c3324932adab5cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc">firePBH</a> (<a class="el" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a> &amp;d)</td></tr>
+<tr class="memdesc:a3fc50f17b139d2285c3324932adab5cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that data is received.  <a href="#a3fc50f17b139d2285c3324932adab5cc">More...</a><br/></td></tr>
 <tr class="separator:a3fc50f17b139d2285c3324932adab5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a587c1801053190ee9ada057b2ec22fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2">firePos</a> (<a class="el" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a> &amp;d)</td></tr>
+<tr class="memdesc:a587c1801053190ee9ada057b2ec22fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell all listeners that data is received.  <a href="#a587c1801053190ee9ada057b2ec22fe2">More...</a><br/></td></tr>
 <tr class="separator:a587c1801053190ee9ada057b2ec22fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classSimExManager"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classSimExManager')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classSimExManager.html">SimExManager</a></td></tr>
 <tr class="memitem:a0f3380b98c2b5df7f405baec3a64ed37 inherit pro_methods_classSimExManager"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimExManager.html#a0f3380b98c2b5df7f405baec3a64ed37">addSendRecord</a> (HANDLE hSimConnect, char *c)</td></tr>
@@ -176,6 +197,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ab8484321a4c8d68183158614e2c4afac"><td class="memItemLeft" align="right" valign="top">Config&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#ab8484321a4c8d68183158614e2c4afac">cfg</a></td></tr>
+<tr class="separator:ab8484321a4c8d68183158614e2c4afac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace5239c6bb7b00183e15b23b7a6a1791"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a></td></tr>
 <tr class="separator:ace5239c6bb7b00183e15b23b7a6a1791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea2a9ddeb42fb5e8226ee659d88e9dc"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a></td></tr>
@@ -201,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Allow to retrieve data from the simulator You have to implement <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a> in order to receive data. </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00057">57</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00058">58</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9450a0b4ac706c3074e817d0ffd4e3fd"></a>
 <div class="memitem">
@@ -217,36 +240,44 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00028">28</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Create a <a class="el" href="classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data...">SimReceiver</a> and a new connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">numCfg</td><td>number of the configuration from SimConnect.cfg file </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>References <a class="el" href="SimReceiver_8h_source.html#l00047">safe::EVENT_SIM_START</a>, <a class="el" href="SimReceiver_8h_source.html#l00048">safe::EVENT_SIM_STOP</a>, and <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                           : <a class="code" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a>(0), <a class="code" href="classSimConnection.html#aba1d07dad2e704869150f76f16fe6607">SimConnection</a>(NULL), <a class="code" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a>(<span class="keyword">false</span>), <a class="code" href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">PBHRequested</a>(<span class="keyword">false</span>), <a class="code" href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">posRequested</a>(<span class="keyword">false</span>)</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                HRESULT hr;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keywordtype">char</span> * nomclient = <span class="stringliteral">&quot;SimReceiver&quot;</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">if</span> (SUCCEEDED(SimConnect_Open(&amp;<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, nomclient, NULL, 0, 0, numCfg)))</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;\nConnected to Flight Simulator!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                        <span class="comment">// Request a simulation start event </span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                        hr = SimConnect_SubscribeToSystemEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">EVENT_SIM_START</a>, <span class="stringliteral">&quot;SimStart&quot;</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                        hr = SimConnect_SubscribeToSystemEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">EVENT_SIM_STOP</a>, <span class="stringliteral">&quot;SimStop&quot;</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;Connection failure&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                        exit(0);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00019">19</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+
+<p>References <a class="el" href="SimReceiver_8h_source.html#l00048">safe::EVENT_SIM_START</a>, <a class="el" href="SimReceiver_8h_source.html#l00049">safe::EVENT_SIM_STOP</a>, and <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                           : <a class="code" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a>(0), <a class="code" href="classSimConnection.html#aba1d07dad2e704869150f76f16fe6607">SimConnection</a>(NULL), <a class="code" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a>(<span class="keyword">false</span>), <a class="code" href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">PBHRequested</a>(<span class="keyword">false</span>), <a class="code" href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">posRequested</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                HRESULT hr;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keywordtype">char</span> * nomclient = <span class="stringliteral">&quot;SimReceiver&quot;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <span class="keywordflow">if</span> (SUCCEEDED(SimConnect_Open(&amp;<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, nomclient, NULL, 0, 0, numCfg)))</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;\nConnected to Flight Simulator!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        <span class="comment">// Request a simulation start event </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                        hr = SimConnect_SubscribeToSystemEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">EVENT_SIM_START</a>, <span class="stringliteral">&quot;SimStart&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                        hr = SimConnect_SubscribeToSystemEvent(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">EVENT_SIM_STOP</a>, <span class="stringliteral">&quot;SimStop&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;Connection failure&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                        exit(0);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
 <div class="ttc" id="classSimConnection_html_aba1d07dad2e704869150f76f16fe6607"><div class="ttname"><a href="classSimConnection.html#aba1d07dad2e704869150f76f16fe6607">SimConnection::SimConnection</a></div><div class="ttdeci">SimConnection()</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8cpp_source.html#l00004">SimConnection.cpp:4</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5484378bd8f4bb4fa6df5f780160e466"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">safe::SimReceiver::PBHRequested</a></div><div class="ttdeci">boolean PBHRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00063">SimReceiver.h:63</a></div></div>
-<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">safe::EVENT_SIM_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00048">SimReceiver.h:48</a></div></div>
-<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">safe::EVENT_SIM_START</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00047">SimReceiver.h:47</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a7ea2a9ddeb42fb5e8226ee659d88e9dc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">safe::SimReceiver::latLonAltRequested</a></div><div class="ttdeci">boolean latLonAltRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00062">SimReceiver.h:62</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_aab20ce4c89be96f253eff41ec3e9e4dd"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">safe::SimReceiver::posRequested</a></div><div class="ttdeci">boolean posRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00064">SimReceiver.h:64</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_ace5239c6bb7b00183e15b23b7a6a1791"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">safe::SimReceiver::quit</a></div><div class="ttdeci">boolean quit</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00061">SimReceiver.h:61</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5484378bd8f4bb4fa6df5f780160e466"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">safe::SimReceiver::PBHRequested</a></div><div class="ttdeci">boolean PBHRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00064">SimReceiver.h:64</a></div></div>
+<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">safe::EVENT_SIM_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00049">SimReceiver.h:49</a></div></div>
+<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">safe::EVENT_SIM_START</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00048">SimReceiver.h:48</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a7ea2a9ddeb42fb5e8226ee659d88e9dc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">safe::SimReceiver::latLonAltRequested</a></div><div class="ttdeci">boolean latLonAltRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00063">SimReceiver.h:63</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_aab20ce4c89be96f253eff41ec3e9e4dd"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">safe::SimReceiver::posRequested</a></div><div class="ttdeci">boolean posRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_ace5239c6bb7b00183e15b23b7a6a1791"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">safe::SimReceiver::quit</a></div><div class="ttdeci">boolean quit</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00062">SimReceiver.h:62</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -265,12 +296,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Create a <a class="el" href="classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data...">SimReceiver</a> with an existing connection. </p>
 <ul>
-<li></li>
+<li>Destructor </li>
 </ul>
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00056">56</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00047">47</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -289,22 +320,24 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00211">211</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>add l to the listener of this receiver </p>
 
-<p>References <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00205">205</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="CSafeServerSide_8cpp_source.html#l00020">safe::CSafeSS::launch()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                                     {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.push_back(l);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<p>References <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="CSafeServerSide_8cpp_source.html#l00023">safe::CSafeSS::launch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                                     {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.push_back(l);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a558820c799462003539f3736c50b2c1f_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a558820c799462003539f3736c50b2c1f_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a558820c799462003539f3736c50b2c1f_icgraph" id="classsafe_1_1SimReceiver_a558820c799462003539f3736c50b2c1f_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1CSafeSS.html#a5e9cbc5be2c3ea21c69312b5808dc448" title="safe::CSafeSS::launch" alt="" coords="190,12,343,39"/><area shape="rect" id="node3" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="392,12,453,39"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1CSafeSS.html#abe93583e42a49ab3b5a440fb3c94ac1f" title="safe::CSafeSS::launch" alt="" coords="190,12,343,39"/><area shape="rect" id="node3" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="392,12,453,39"/></map>
 </div>
 </p>
 
@@ -342,28 +375,30 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00203">203</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Create a data definition on the simulator. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, <a class="el" href="types_8h_source.html#l00026">structVarUnit::unitName</a>, and <a class="el" href="types_8h_source.html#l00025">structVarUnit::varName</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00197">197</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00157">requestLatLonAlt()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00170">requestPBH()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00182">requestPos()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        {</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">for each</span> (<a class="code" href="structstructVarUnit.html">structVarUnit</a> var <span class="keywordflow">in</span> s)</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, defId, var.<a class="code" href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">varName</a>, var.<a class="code" href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">unitName</a>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, <a class="el" href="types_8h_source.html#l00009">structVarUnit::unitName</a>, and <a class="el" href="types_8h_source.html#l00008">structVarUnit::varName</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00151">requestLatLonAlt()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00164">requestPBH()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00176">requestPos()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="keywordflow">for each</span> (<a class="code" href="structstructVarUnit.html">structVarUnit</a> var <span class="keywordflow">in</span> s)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                        SimConnect_AddToDataDefinition(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, defId, var.<a class="code" href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">varName</a>, var.<a class="code" href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">unitName</a>);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="structstructVarUnit_html"><div class="ttname"><a href="structstructVarUnit.html">structVarUnit</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00024">types.h:24</a></div></div>
-<div class="ttc" id="structstructVarUnit_html_a20c982a86e572220258112c40db56cd8"><div class="ttname"><a href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">structVarUnit::varName</a></div><div class="ttdeci">char * varName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00025">types.h:25</a></div></div>
-<div class="ttc" id="structstructVarUnit_html_a743b66ca2ac673c38933395e3c5d53a9"><div class="ttname"><a href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">structVarUnit::unitName</a></div><div class="ttdeci">char * unitName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00026">types.h:26</a></div></div>
+<div class="ttc" id="structstructVarUnit_html"><div class="ttname"><a href="structstructVarUnit.html">structVarUnit</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00007">types.h:7</a></div></div>
+<div class="ttc" id="structstructVarUnit_html_a20c982a86e572220258112c40db56cd8"><div class="ttname"><a href="structstructVarUnit.html#a20c982a86e572220258112c40db56cd8">structVarUnit::varName</a></div><div class="ttdeci">char * varName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00008">types.h:8</a></div></div>
+<div class="ttc" id="structstructVarUnit_html_a743b66ca2ac673c38933395e3c5d53a9"><div class="ttname"><a href="structstructVarUnit.html#a743b66ca2ac673c38933395e3c5d53a9">structVarUnit::unitName</a></div><div class="ttdeci">char * unitName</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00009">types.h:9</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a91ad507eac008590af87bb286f30b42a_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a91ad507eac008590af87bb286f30b42a_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a91ad507eac008590af87bb286f30b42a_icgraph" id="classsafe_1_1SimReceiver_a91ad507eac008590af87bb286f30b42a_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a6279d9a9d8e653910f64d6e843ffa847" title="safe::SimReceiver::\lrequestLatLonAlt" alt="" coords="193,5,327,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576" title="safe::SimReceiver::\lrequestPBH" alt="" coords="193,70,327,111"/><area shape="rect" id="node4" href="classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1" title="safe::SimReceiver::\lrequestPos" alt="" coords="193,135,327,177"/><area shape="rect" id="node5" href="classsafe_1_1CSafeSS.html#a5e9cbc5be2c3ea21c69312b5808dc448" title="safe::CSafeSS::launch" alt="" coords="377,143,530,169"/><area shape="rect" id="node6" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="579,143,640,169"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a6279d9a9d8e653910f64d6e843ffa847" title="Subscribe to latitude, longitude and latitude of user plane Data will be received by using latlonaltR..." alt="" coords="193,5,327,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576" title="Subscribe to pitch, bank and heading of user plane Data will be received by using PBHReceived() in IS..." alt="" coords="193,70,327,111"/><area shape="rect" id="node4" href="classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1" title="Subscribe to both, latLonAlt and PBH. Data will be received by using latLonAltPBH() in ISimListener..." alt="" coords="193,135,327,177"/><area shape="rect" id="node5" href="classsafe_1_1CSafeSS.html#abe93583e42a49ab3b5a440fb3c94ac1f" title="safe::CSafeSS::launch" alt="" coords="377,143,530,169"/><area shape="rect" id="node6" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="579,143,640,169"/></map>
 </div>
 </p>
 
@@ -382,19 +417,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00061">61</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Close the connection with the simulator. </p>
+
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00052">52</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
 <p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">if</span> (SUCCEEDED(SimConnect_Close(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>)))</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;Client disconnected&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;\nDisconnection failure\n&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">if</span> (SUCCEEDED(SimConnect_Close(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>)))</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;Client disconnected&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                        cout &lt;&lt; <span class="stringliteral">&quot;\nDisconnection failure\n&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -421,19 +458,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00225">225</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that data is received. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, <a class="el" href="SimReceiver_8h_source.html#l00066">requests</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00219">219</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00077">onRecvSimobjectData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <a class="code" href="classSimDataEvent.html">SimDataEvent</a> e = <a class="code" href="classSimDataEvent.html">SimDataEvent</a>(&amp;<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, &amp;<a class="code" href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">requests</a>[pObjData-&gt;dwRequestID], pObjData);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;dataReceived(e); });</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, <a class="el" href="SimReceiver_8h_source.html#l00067">requests</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00068">onRecvSimobjectData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <a class="code" href="classSimDataEvent.html">SimDataEvent</a> e = <a class="code" href="classSimDataEvent.html">SimDataEvent</a>(&amp;<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, &amp;<a class="code" href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">requests</a>[pObjData-&gt;dwRequestID], pObjData);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;dataReceived(e); });</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_ad0643010dc11038739f30129b997fa27"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">safe::SimReceiver::requests</a></div><div class="ttdeci">std::map&lt; int, Request &gt; requests</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_ad0643010dc11038739f30129b997fa27"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">safe::SimReceiver::requests</a></div><div class="ttdeci">std::map&lt; int, Request &gt; requests</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00067">SimReceiver.h:67</a></div></div>
 <div class="ttc" id="classSimDataEvent_html"><div class="ttname"><a href="classSimDataEvent.html">SimDataEvent</a></div><div class="ttdef"><b>Definition:</b> <a href="SimDataEvent_8h_source.html#l00012">SimDataEvent.h:12</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -441,7 +480,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a9e028dc30f3dd71ac243857f23631d10_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a9e028dc30f3dd71ac243857f23631d10_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a9e028dc30f3dd71ac243857f23631d10_icgraph" id="classsafe_1_1SimReceiver_a9e028dc30f3dd71ac243857f23631d10_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="safe::SimReceiver::\lonRecvSimobjectData" alt="" coords="189,5,339,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="See class SimConnection. " alt="" coords="189,5,339,46"/></map>
 </div>
 </p>
 
@@ -469,23 +508,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00244">244</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that data is received. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00238">238</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00077">onRecvSimobjectData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;latlonaltReceived(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, d); });</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00068">onRecvSimobjectData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;latlonaltReceived(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, d); });</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a009565494f89aeed81f642cf7a121320_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a009565494f89aeed81f642cf7a121320_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a009565494f89aeed81f642cf7a121320_icgraph" id="classsafe_1_1SimReceiver_a009565494f89aeed81f642cf7a121320_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="safe::SimReceiver::\lonRecvSimobjectData" alt="" coords="189,5,339,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="See class SimConnection. " alt="" coords="189,5,339,46"/></map>
 </div>
 </p>
 
@@ -513,23 +554,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00248">248</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that data is received. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00242">242</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00077">onRecvSimobjectData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;PBHReceived(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, d); });</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00068">onRecvSimobjectData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;PBHReceived(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, d); });</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a3fc50f17b139d2285c3324932adab5cc_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a3fc50f17b139d2285c3324932adab5cc_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a3fc50f17b139d2285c3324932adab5cc_icgraph" id="classsafe_1_1SimReceiver_a3fc50f17b139d2285c3324932adab5cc_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="safe::SimReceiver::\lonRecvSimobjectData" alt="" coords="189,5,339,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="See class SimConnection. " alt="" coords="189,5,339,46"/></map>
 </div>
 </p>
 
@@ -557,23 +600,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00253">253</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that data is received. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00247">247</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00077">onRecvSimobjectData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;latLonAltPBHReceived(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, d); });</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00068">onRecvSimobjectData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;latLonAltPBHReceived(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, d); });</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a587c1801053190ee9ada057b2ec22fe2_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a587c1801053190ee9ada057b2ec22fe2_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a587c1801053190ee9ada057b2ec22fe2_icgraph" id="classsafe_1_1SimReceiver_a587c1801053190ee9ada057b2ec22fe2_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="safe::SimReceiver::\lonRecvSimobjectData" alt="" coords="189,5,339,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#ae1b926d69624b1fa8f25d1850749910a" title="See class SimConnection. " alt="" coords="189,5,339,46"/></map>
 </div>
 </p>
 
@@ -600,23 +645,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00239">239</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that the simulation quit. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00233">233</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00151">onRecvQuit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;simQuitted(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>); });</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00145">onRecvQuit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;simQuitted(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>); });</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a3181c1e8a89824f10065113b73221bf4_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a3181c1e8a89824f10065113b73221bf4_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a3181c1e8a89824f10065113b73221bf4_icgraph" id="classsafe_1_1SimReceiver_a3181c1e8a89824f10065113b73221bf4_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a8b46fd2a3242e184b53bda3a89f3b70b" title="safe::SimReceiver::\lonRecvQuit" alt="" coords="190,5,325,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a8b46fd2a3242e184b53bda3a89f3b70b" title="See class SimConnection. " alt="" coords="190,5,325,46"/></map>
 </div>
 </p>
 
@@ -643,23 +690,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00231">231</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that the simulation start. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00225">225</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00113">onRecvEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;simStarted(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>); });</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00107">onRecvEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;simStarted(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>); });</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a927b567de21af15e8b8ce8beed97b41a_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a927b567de21af15e8b8ce8beed97b41a_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a927b567de21af15e8b8ce8beed97b41a_icgraph" id="classsafe_1_1SimReceiver_a927b567de21af15e8b8ce8beed97b41a_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#aa9d0b3fde76556e59a9a8f2135e58b4c" title="safe::SimReceiver::\lonRecvEvent" alt="" coords="190,5,325,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#aa9d0b3fde76556e59a9a8f2135e58b4c" title="See class SimConnection. " alt="" coords="190,5,325,46"/></map>
 </div>
 </p>
 
@@ -686,23 +735,25 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00235">235</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Tell all listeners that the simulation stop. </p>
 
-<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00229">229</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00113">onRecvEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;simStopped(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>); });</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        }</div>
+<p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00107">onRecvEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                std::for_each(<a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.begin(), <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.end(), [&amp;](ISimListener *l) {l-&gt;simStopped(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>); });</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_acabc352211a25148dfb74fd0352c6652_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_acabc352211a25148dfb74fd0352c6652_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_acabc352211a25148dfb74fd0352c6652_icgraph" id="classsafe_1_1SimReceiver_acabc352211a25148dfb74fd0352c6652_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#aa9d0b3fde76556e59a9a8f2135e58b4c" title="safe::SimReceiver::\lonRecvEvent" alt="" coords="190,5,325,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#aa9d0b3fde76556e59a9a8f2135e58b4c" title="See class SimConnection. " alt="" coords="190,5,325,46"/></map>
 </div>
 </p>
 
@@ -721,12 +772,15 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00221">221</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Get the handle of this receiver. </p>
+<dl class="section return"><dt>Returns</dt><dd>The handle </dd></dl>
+
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00215">215</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
 <p>References <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>.</p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -753,54 +807,56 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>See class <a class="el" href="classSimConnection.html">SimConnection</a>. </p>
+
 <p>Reimplemented from <a class="el" href="classSimConnection.html#afbb53f882a2c6f5f53696b560af9170d">SimConnection</a>.</p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00113">113</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00107">107</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="SimReceiver_8h_source.html#l00047">safe::EVENT_SIM_START</a>, <a class="el" href="SimReceiver_8h_source.html#l00048">safe::EVENT_SIM_STOP</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00231">fireSimStart()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00235">fireSimStop()</a>, <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, <a class="el" href="SimReceiver_8h_source.html#l00062">latLonAltRequested</a>, <a class="el" href="SimReceiver_8h_source.html#l00063">PBHRequested</a>, and <a class="el" href="SimReceiver_8h_source.html#l00064">posRequested</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                            {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        <span class="comment">//cout &lt;&lt; &quot;SIMCONNECT_RECV_ID_EVENT&quot; &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        SIMCONNECT_RECV_EVENT *evt = (SIMCONNECT_RECV_EVENT*)pData;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        <span class="keywordflow">switch</span> (evt-&gt;uEventID)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                <span class="keywordflow">case</span> <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">EVENT_SIM_START</a>:</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                        <a class="code" href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a">fireSimStart</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                                        <span class="comment">//cout &lt;&lt; &quot;EVENT_SIM_START&quot; &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                        <span class="comment">// Make the call for data every sim frame, but only when it changes and </span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                        <span class="comment">// only that data that has changed </span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                        <span class="comment">/*for (std::map&lt;int, Request&gt;::iterator it = requests.begin(); it != requests.end(); it++)</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">                                        {</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment">                                                SimConnect_RequestDataOnSimObject(hSimConnect, it-&gt;first, it-&gt;first, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment">                                                //hr = SimConnect_RequestDataOnSimObject(hSimConnect, REQUEST_PDR, DEFINITION_PDR, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">                                        }*/</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                        <span class="keywordflow">if</span> (<a class="code" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a>){ SimConnect_RequestDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 50, 50, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                        <span class="keywordflow">if</span> (<a class="code" href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">PBHRequested</a>){ SimConnect_RequestDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 60, 60, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                        <span class="keywordflow">if</span> (<a class="code" href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">posRequested</a>){ SimConnect_RequestDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 70, 70, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }</div>
+<p>References <a class="el" href="SimReceiver_8h_source.html#l00048">safe::EVENT_SIM_START</a>, <a class="el" href="SimReceiver_8h_source.html#l00049">safe::EVENT_SIM_STOP</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00225">fireSimStart()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00229">fireSimStop()</a>, <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, <a class="el" href="SimReceiver_8h_source.html#l00063">latLonAltRequested</a>, <a class="el" href="SimReceiver_8h_source.html#l00064">PBHRequested</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">posRequested</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                                            {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                        <span class="comment">//cout &lt;&lt; &quot;SIMCONNECT_RECV_ID_EVENT&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        SIMCONNECT_RECV_EVENT *evt = (SIMCONNECT_RECV_EVENT*)pData;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                        <span class="keywordflow">switch</span> (evt-&gt;uEventID)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                        {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                <span class="keywordflow">case</span> <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">EVENT_SIM_START</a>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                        <a class="code" href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a">fireSimStart</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                        <span class="comment">//cout &lt;&lt; &quot;EVENT_SIM_START&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                        <span class="comment">// Make the call for data every sim frame, but only when it changes and </span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                        <span class="comment">// only that data that has changed </span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                        <span class="comment">/*for (std::map&lt;int, Request&gt;::iterator it = requests.begin(); it != requests.end(); it++)</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">                                        {</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">                                                SimConnect_RequestDataOnSimObject(hSimConnect, it-&gt;first, it-&gt;first, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">                                                //hr = SimConnect_RequestDataOnSimObject(hSimConnect, REQUEST_PDR, DEFINITION_PDR, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_SIM_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED | SIMCONNECT_DATA_REQUEST_FLAG_TAGGED);</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">                                        }*/</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                        <span class="keywordflow">if</span> (<a class="code" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a>){ SimConnect_RequestDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 50, 50, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                        <span class="keywordflow">if</span> (<a class="code" href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">PBHRequested</a>){ SimConnect_RequestDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 60, 60, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                        <span class="keywordflow">if</span> (<a class="code" href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">posRequested</a>){ SimConnect_RequestDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, 70, 70, SIMCONNECT_OBJECT_ID_USER, SIMCONNECT_PERIOD_VISUAL_FRAME, SIMCONNECT_DATA_REQUEST_FLAG_CHANGED); }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                <span class="keywordflow">case</span> <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">EVENT_SIM_STOP</a>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                        <a class="code" href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652">fireSimStop</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                        <span class="comment">//cout &lt;&lt; &quot;EVENT UNKNOW&quot; &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                <span class="keywordflow">case</span> <a class="code" href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">EVENT_SIM_STOP</a>:</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                        <a class="code" href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652">fireSimStop</a>();</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                        <span class="comment">//cout &lt;&lt; &quot;EVENT UNKNOW&quot; &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                        }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                        }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a927b567de21af15e8b8ce8beed97b41a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a">safe::SimReceiver::fireSimStart</a></div><div class="ttdeci">void fireSimStart()</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00231">SimReceiver.cpp:231</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5484378bd8f4bb4fa6df5f780160e466"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">safe::SimReceiver::PBHRequested</a></div><div class="ttdeci">boolean PBHRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00063">SimReceiver.h:63</a></div></div>
-<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">safe::EVENT_SIM_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00048">SimReceiver.h:48</a></div></div>
-<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">safe::EVENT_SIM_START</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00047">SimReceiver.h:47</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_acabc352211a25148dfb74fd0352c6652"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652">safe::SimReceiver::fireSimStop</a></div><div class="ttdeci">void fireSimStop()</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00235">SimReceiver.cpp:235</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a7ea2a9ddeb42fb5e8226ee659d88e9dc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">safe::SimReceiver::latLonAltRequested</a></div><div class="ttdeci">boolean latLonAltRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00062">SimReceiver.h:62</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_aab20ce4c89be96f253eff41ec3e9e4dd"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">safe::SimReceiver::posRequested</a></div><div class="ttdeci">boolean posRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00064">SimReceiver.h:64</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a927b567de21af15e8b8ce8beed97b41a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a">safe::SimReceiver::fireSimStart</a></div><div class="ttdeci">void fireSimStart()</div><div class="ttdoc">Tell all listeners that the simulation start. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00225">SimReceiver.cpp:225</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5484378bd8f4bb4fa6df5f780160e466"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">safe::SimReceiver::PBHRequested</a></div><div class="ttdeci">boolean PBHRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00064">SimReceiver.h:64</a></div></div>
+<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3a0a38b7b841db7351be00a3d4c553c543">safe::EVENT_SIM_STOP</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00049">SimReceiver.h:49</a></div></div>
+<div class="ttc" id="namespacesafe_html_a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632"><div class="ttname"><a href="namespacesafe.html#a145f450e516b0cf04e77b85d933964b3aa0e402b67c91f0ec0858797bea1da632">safe::EVENT_SIM_START</a></div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00048">SimReceiver.h:48</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_acabc352211a25148dfb74fd0352c6652"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652">safe::SimReceiver::fireSimStop</a></div><div class="ttdeci">void fireSimStop()</div><div class="ttdoc">Tell all listeners that the simulation stop. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00229">SimReceiver.cpp:229</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a7ea2a9ddeb42fb5e8226ee659d88e9dc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">safe::SimReceiver::latLonAltRequested</a></div><div class="ttdeci">boolean latLonAltRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00063">SimReceiver.h:63</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_aab20ce4c89be96f253eff41ec3e9e4dd"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">safe::SimReceiver::posRequested</a></div><div class="ttdeci">boolean posRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_aa9d0b3fde76556e59a9a8f2135e58b4c_cgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_aa9d0b3fde76556e59a9a8f2135e58b4c_cgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_aa9d0b3fde76556e59a9a8f2135e58b4c_cgraph" id="classsafe_1_1SimReceiver_aa9d0b3fde76556e59a9a8f2135e58b4c_cgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a" title="safe::SimReceiver::\lfireSimStart" alt="" coords="190,5,325,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652" title="safe::SimReceiver::\lfireSimStop" alt="" coords="190,70,325,111"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a927b567de21af15e8b8ce8beed97b41a" title="Tell all listeners that the simulation start. " alt="" coords="190,5,325,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#acabc352211a25148dfb74fd0352c6652" title="Tell all listeners that the simulation stop. " alt="" coords="190,70,325,111"/></map>
 </div>
 </p>
 
@@ -838,19 +894,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>See class <a class="el" href="classSimConnection.html">SimConnection</a>. </p>
+
 <p>Reimplemented from <a class="el" href="classSimConnection.html#a4706c2f4c1ca5b978623204c1b427d22">SimConnection</a>.</p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00142">142</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00136">136</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
 <p>References <a class="el" href="SimExManager_8cpp_source.html#l00016">SimExManager::findSendRecord()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                printf(<span class="stringliteral">&quot;\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n&quot;</span>, except-&gt;dwException, except-&gt;dwSendID, except-&gt;dwIndex, cbData);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="comment">// Locate the bad call and print it out </span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <span class="keywordtype">char</span>* s = <a class="code" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a>(except-&gt;dwSendID);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                printf(<span class="stringliteral">&quot;\n%s&quot;</span>, s);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                printf(<span class="stringliteral">&quot;\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n&quot;</span>, except-&gt;dwException, except-&gt;dwSendID, except-&gt;dwIndex, cbData);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="comment">// Locate the bad call and print it out </span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordtype">char</span>* s = <a class="code" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a>(except-&gt;dwSendID);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                printf(<span class="stringliteral">&quot;\n%s&quot;</span>, s);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
 <div class="ttc" id="classSimExManager_html_a86b371a87e340d9dc5882bcf7d81f2cc"><div class="ttname"><a href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">SimExManager::findSendRecord</a></div><div class="ttdeci">char * findSendRecord(DWORD id)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00016">SimExManager.cpp:16</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -886,24 +944,26 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>See class <a class="el" href="classSimConnection.html">SimConnection</a>. </p>
+
 <p>Reimplemented from <a class="el" href="classSimConnection.html#ac79a4977645b75c7af836daa22c3d35c">SimConnection</a>.</p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00151">151</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00145">145</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00239">fireSimQuit()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00061">quit</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4">fireSimQuit</a>();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a> = 1;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a3181c1e8a89824f10065113b73221bf4"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4">safe::SimReceiver::fireSimQuit</a></div><div class="ttdeci">void fireSimQuit()</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00239">SimReceiver.cpp:239</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_ace5239c6bb7b00183e15b23b7a6a1791"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">safe::SimReceiver::quit</a></div><div class="ttdeci">boolean quit</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00061">SimReceiver.h:61</a></div></div>
+<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00233">fireSimQuit()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00062">quit</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4">fireSimQuit</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a> = 1;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a3181c1e8a89824f10065113b73221bf4"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4">safe::SimReceiver::fireSimQuit</a></div><div class="ttdeci">void fireSimQuit()</div><div class="ttdoc">Tell all listeners that the simulation quit. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00233">SimReceiver.cpp:233</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_ace5239c6bb7b00183e15b23b7a6a1791"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">safe::SimReceiver::quit</a></div><div class="ttdeci">boolean quit</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00062">SimReceiver.h:62</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a8b46fd2a3242e184b53bda3a89f3b70b_cgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a8b46fd2a3242e184b53bda3a89f3b70b_cgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a8b46fd2a3242e184b53bda3a89f3b70b_cgraph" id="classsafe_1_1SimReceiver_a8b46fd2a3242e184b53bda3a89f3b70b_cgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4" title="safe::SimReceiver::\lfireSimQuit" alt="" coords="190,5,325,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a3181c1e8a89824f10065113b73221bf4" title="Tell all listeners that the simulation quit. " alt="" coords="190,5,325,46"/></map>
 </div>
 </p>
 
@@ -931,59 +991,64 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
+<p>See class <a class="el" href="classSimConnection.html">SimConnection</a>. </p>
+
 <p>Reimplemented from <a class="el" href="classSimConnection.html#afccf33344d2a799943d402125ea3f7cc">SimConnection</a>.</p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00077">77</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00068">68</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00225">fireDataReceived()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00244">fireLatLonAlt()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00248">firePBH()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00253">firePos()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="comment">//DataSender::boucle++;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData = (SIMCONNECT_RECV_SIMOBJECT_DATA*)pData;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; DataSender::boucle &lt;&lt; &quot;-&gt; &quot; &lt;&lt; pObjData-&gt;dwRequestID;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">if</span> (pObjData-&gt;dwRequestID == 50)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&amp;pObjData-&gt;dwData;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320">fireLatLonAlt</a>(*d);</div>
+<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00219">fireDataReceived()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00238">fireLatLonAlt()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00242">firePBH()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00247">firePos()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="comment">//DataSender::boucle++;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData = (SIMCONNECT_RECV_SIMOBJECT_DATA*)pData;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; DataSender::boucle &lt;&lt; &quot;-&gt; &quot; &lt;&lt; pObjData-&gt;dwRequestID;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">if</span> (pObjData-&gt;dwRequestID == 50)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&amp;pObjData-&gt;dwData;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320">fireLatLonAlt</a>(*d);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pObjData-&gt;dwRequestID == 60)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                        <span class="comment">//SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&amp;pObjData-&gt;dwData;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                        <a class="code" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a> * d = (<a class="code" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a>*)&amp;pObjData-&gt;dwData;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc">firePBH</a>(*d);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pObjData-&gt;dwRequestID == 60)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pObjData-&gt;dwRequestID == 70)</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                        <span class="comment">//SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&amp;pObjData-&gt;dwData;</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <a class="code" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a> * d = (<a class="code" href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a>*)&amp;pObjData-&gt;dwData;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc">firePBH</a>(*d);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pObjData-&gt;dwRequestID == 70)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        <span class="comment">//SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&amp;pObjData-&gt;dwData;</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a> * d = (<a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a>*)&amp;pObjData-&gt;dwData;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <span class="comment">//fireLatLonAlt(d-&gt;d1);</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        <span class="comment">//firePBH(d-&gt;d2);</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2">firePos</a>(*d);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10">fireDataReceived</a>(pObjData);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="comment">//      StructDatum *pS = (StructDatum*)&amp;pObjData-&gt;dwData;</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a9e028dc30f3dd71ac243857f23631d10"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10">safe::SimReceiver::fireDataReceived</a></div><div class="ttdeci">void fireDataReceived(SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00225">SimReceiver.cpp:225</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a3fc50f17b139d2285c3324932adab5cc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc">safe::SimReceiver::firePBH</a></div><div class="ttdeci">void firePBH(SIMCONNECT_DATA_PBH &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00248">SimReceiver.cpp:248</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html"><div class="ttname"><a href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00043">types.h:43</a></div></div>
-<div class="ttc" id="structSIMCONNECT__DATA__PBH_html"><div class="ttname"><a href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00030">types.h:30</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a009565494f89aeed81f642cf7a121320"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320">safe::SimReceiver::fireLatLonAlt</a></div><div class="ttdeci">void fireLatLonAlt(SIMCONNECT_DATA_LATLONALT &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00244">SimReceiver.cpp:244</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a587c1801053190ee9ada057b2ec22fe2"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2">safe::SimReceiver::firePos</a></div><div class="ttdeci">void firePos(SAFE_DATA_POS &amp;d)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00253">SimReceiver.cpp:253</a></div></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                        <span class="comment">//SIMCONNECT_DATA_LATLONALT*  d = (SIMCONNECT_DATA_LATLONALT*)&amp;pObjData-&gt;dwData;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        <a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a> * d = (<a class="code" href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a>*)&amp;pObjData-&gt;dwData;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        <span class="comment">//fireLatLonAlt(d-&gt;d1);</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <span class="comment">//firePBH(d-&gt;d2);</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2">firePos</a>(*d);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        <a class="code" href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10">fireDataReceived</a>(pObjData);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="comment">//      StructDatum *pS = (StructDatum*)&amp;pObjData-&gt;dwData;</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a9e028dc30f3dd71ac243857f23631d10"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10">safe::SimReceiver::fireDataReceived</a></div><div class="ttdeci">void fireDataReceived(SIMCONNECT_RECV_SIMOBJECT_DATA *pObjData)</div><div class="ttdoc">Tell all listeners that data is received. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00219">SimReceiver.cpp:219</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a3fc50f17b139d2285c3324932adab5cc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc">safe::SimReceiver::firePBH</a></div><div class="ttdeci">void firePBH(SIMCONNECT_DATA_PBH &amp;d)</div><div class="ttdoc">Tell all listeners that data is received. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00242">SimReceiver.cpp:242</a></div></div>
+<div class="ttc" id="structSAFE__DATA__POS_html"><div class="ttname"><a href="structSAFE__DATA__POS.html">SAFE_DATA_POS</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00026">types.h:26</a></div></div>
+<div class="ttc" id="structSIMCONNECT__DATA__PBH_html"><div class="ttname"><a href="structSIMCONNECT__DATA__PBH.html">SIMCONNECT_DATA_PBH</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00013">types.h:13</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a009565494f89aeed81f642cf7a121320"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320">safe::SimReceiver::fireLatLonAlt</a></div><div class="ttdeci">void fireLatLonAlt(SIMCONNECT_DATA_LATLONALT &amp;d)</div><div class="ttdoc">Tell all listeners that data is received. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00238">SimReceiver.cpp:238</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a587c1801053190ee9ada057b2ec22fe2"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2">safe::SimReceiver::firePos</a></div><div class="ttdeci">void firePos(SAFE_DATA_POS &amp;d)</div><div class="ttdoc">Tell all listeners that data is received. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00247">SimReceiver.cpp:247</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_ae1b926d69624b1fa8f25d1850749910a_cgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_ae1b926d69624b1fa8f25d1850749910a_cgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_ae1b926d69624b1fa8f25d1850749910a_cgraph" id="classsafe_1_1SimReceiver_ae1b926d69624b1fa8f25d1850749910a_cgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10" title="safe::SimReceiver::\lfireDataReceived" alt="" coords="203,5,338,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320" title="safe::SimReceiver::\lfireLatLonAlt" alt="" coords="203,70,338,111"/><area shape="rect" id="node4" href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc" title="safe::SimReceiver::\lfirePBH" alt="" coords="203,135,338,177"/><area shape="rect" id="node5" href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2" title="safe::SimReceiver::\lfirePos" alt="" coords="203,201,338,242"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a9e028dc30f3dd71ac243857f23631d10" title="Tell all listeners that data is received. " alt="" coords="203,5,338,46"/><area shape="rect" id="node3" href="classsafe_1_1SimReceiver.html#a009565494f89aeed81f642cf7a121320" title="Tell all listeners that data is received. " alt="" coords="203,70,338,111"/><area shape="rect" id="node4" href="classsafe_1_1SimReceiver.html#a3fc50f17b139d2285c3324932adab5cc" title="Tell all listeners that data is received. " alt="" coords="203,135,338,177"/><area shape="rect" id="node5" href="classsafe_1_1SimReceiver.html#a587c1801053190ee9ada057b2ec22fe2" title="Tell all listeners that data is received. " alt="" coords="203,201,338,242"/></map>
 </div>
 </p>
 
@@ -1003,17 +1068,19 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00214">214</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>remove l from the listener list </p>
 
-<p>References <a class="el" href="SimReceiver_8h_source.html#l00065">simListeners</a>.</p>
-<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                                        {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.remove(l);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <span class="comment">/*      else {</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="comment">                                // handle the case</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">                                cout &lt;&lt; &quot;Could not unregister the specified listener object as it is not registered.&quot; &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="comment">                                }*/</span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00208">208</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+
+<p>References <a class="el" href="SimReceiver_8h_source.html#l00066">simListeners</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                                        {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">simListeners</a>.remove(l);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="comment">/*      else {</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">                                // handle the case</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">                                cout &lt;&lt; &quot;Could not unregister the specified listener object as it is not registered.&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment">                                }*/</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5442ed383309fc3df3a4ed663f0911d8"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5442ed383309fc3df3a4ed663f0911d8">safe::SimReceiver::simListeners</a></div><div class="ttdeci">std::list&lt; ISimListener * &gt; simListeners</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1031,19 +1098,28 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00048">48</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Subscribe to a list of data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>set datas data that you want to retrieve for this request Data will be received by using dataReceived() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>l'id de la requete </dd></dl>
 
-<p>References <a class="el" href="Request_8cpp_source.html#l00053">Request::getRequestId()</a>, <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00066">requests</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="classRequest.html">Request</a> r = <a class="code" href="classRequest.html">Request</a>(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, s);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">requests</a>[r.<a class="code" href="classRequest.html#a969a51620c5af946e295b911da503868">getRequestId</a>()] = r;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">return</span> r.<a class="code" href="classRequest.html#a969a51620c5af946e295b911da503868">getRequestId</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00039">39</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+
+<p>References <a class="el" href="Request_8cpp_source.html#l00053">Request::getRequestId()</a>, <a class="el" href="SimConnection_8h_source.html#l00018">SimConnection::hSimConnect</a>, and <a class="el" href="SimReceiver_8h_source.html#l00067">requests</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="classRequest.html">Request</a> r = <a class="code" href="classRequest.html">Request</a>(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, s);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">requests</a>[r.<a class="code" href="classRequest.html#a969a51620c5af946e295b911da503868">getRequestId</a>()] = r;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordflow">return</span> r.<a class="code" href="classRequest.html#a969a51620c5af946e295b911da503868">getRequestId</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
 <div class="ttc" id="classRequest_html"><div class="ttname"><a href="classRequest.html">Request</a></div><div class="ttdef"><b>Definition:</b> <a href="Request_8h_source.html#l00020">Request.h:20</a></div></div>
 <div class="ttc" id="classRequest_html_a969a51620c5af946e295b911da503868"><div class="ttname"><a href="classRequest.html#a969a51620c5af946e295b911da503868">Request::getRequestId</a></div><div class="ttdeci">int getRequestId()</div><div class="ttdef"><b>Definition:</b> <a href="Request_8cpp_source.html#l00053">Request.cpp:53</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_ad0643010dc11038739f30129b997fa27"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">safe::SimReceiver::requests</a></div><div class="ttdeci">std::map&lt; int, Request &gt; requests</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00066">SimReceiver.h:66</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_ad0643010dc11038739f30129b997fa27"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ad0643010dc11038739f30129b997fa27">safe::SimReceiver::requests</a></div><div class="ttdeci">std::map&lt; int, Request &gt; requests</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00067">SimReceiver.h:67</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1069,31 +1145,33 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00157">157</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Subscribe to latitude, longitude and latitude of user plane Data will be received by using latlonaltReceived() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a>. </p>
 
-<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00203">addToDataDefinition()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00062">latLonAltRequested</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                           {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 50, &quot;PLANE LATITUDE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 50, &quot;PLANE LONGITUDE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 50, &quot;PLANE ALTITUDE&quot;, &quot;Feet&quot;);</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                list&lt;structVarUnit&gt; l;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE ALTITUDE&quot;</span>, <span class="stringliteral">&quot;Feet&quot;</span> });</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                this-&gt;<a class="code" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a>(50, l);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a91ad507eac008590af87bb286f30b42a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">safe::SimReceiver::addToDataDefinition</a></div><div class="ttdeci">void addToDataDefinition(int defId, std::list&lt; structVarUnit &gt; s)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00203">SimReceiver.cpp:203</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a7ea2a9ddeb42fb5e8226ee659d88e9dc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">safe::SimReceiver::latLonAltRequested</a></div><div class="ttdeci">boolean latLonAltRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00062">SimReceiver.h:62</a></div></div>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00151">151</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+
+<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00197">addToDataDefinition()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00063">latLonAltRequested</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                           {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 50, &quot;PLANE LATITUDE&quot;, &quot;Radians&quot;);</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 50, &quot;PLANE LONGITUDE&quot;, &quot;Radians&quot;);</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 50, &quot;PLANE ALTITUDE&quot;, &quot;Feet&quot;);</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                list&lt;structVarUnit&gt; l;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE ALTITUDE&quot;</span>, <span class="stringliteral">&quot;Feet&quot;</span> });</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                this-&gt;<a class="code" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a>(50, l);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">latLonAltRequested</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a91ad507eac008590af87bb286f30b42a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">safe::SimReceiver::addToDataDefinition</a></div><div class="ttdeci">void addToDataDefinition(int defId, std::list&lt; structVarUnit &gt; s)</div><div class="ttdoc">Create a data definition on the simulator. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00197">SimReceiver.cpp:197</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a7ea2a9ddeb42fb5e8226ee659d88e9dc"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc">safe::SimReceiver::latLonAltRequested</a></div><div class="ttdeci">boolean latLonAltRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00063">SimReceiver.h:63</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a6279d9a9d8e653910f64d6e843ffa847_cgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a6279d9a9d8e653910f64d6e843ffa847_cgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a6279d9a9d8e653910f64d6e843ffa847_cgraph" id="classsafe_1_1SimReceiver_a6279d9a9d8e653910f64d6e843ffa847_cgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="safe::SimReceiver::\laddToDataDefinition" alt="" coords="190,5,327,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="Create a data definition on the simulator. " alt="" coords="190,5,327,46"/></map>
 </div>
 </p>
 
@@ -1112,30 +1190,32 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00170">170</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Subscribe to pitch, bank and heading of user plane Data will be received by using PBHReceived() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a>. </p>
 
-<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00203">addToDataDefinition()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00063">PBHRequested</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                    {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;struct LATLONALTPBH&quot;, NULL, SIMCONNECT_DATATYPE_LATLONALT, 0, 0);</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                list&lt;structVarUnit&gt; l;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE PITCH DEGREES&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE BANK DEGREES&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE HEADING DEGREES TRUE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                this-&gt;<a class="code" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a>(60, l);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">PBHRequested</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a5484378bd8f4bb4fa6df5f780160e466"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">safe::SimReceiver::PBHRequested</a></div><div class="ttdeci">boolean PBHRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00063">SimReceiver.h:63</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a91ad507eac008590af87bb286f30b42a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">safe::SimReceiver::addToDataDefinition</a></div><div class="ttdeci">void addToDataDefinition(int defId, std::list&lt; structVarUnit &gt; s)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00203">SimReceiver.cpp:203</a></div></div>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00164">164</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+
+<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00197">addToDataDefinition()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00064">PBHRequested</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                    {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;struct LATLONALTPBH&quot;, NULL, SIMCONNECT_DATATYPE_LATLONALT, 0, 0);</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 60, &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                list&lt;structVarUnit&gt; l;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE PITCH DEGREES&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE BANK DEGREES&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE HEADING DEGREES TRUE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                this-&gt;<a class="code" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a>(60, l);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">PBHRequested</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a5484378bd8f4bb4fa6df5f780160e466"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466">safe::SimReceiver::PBHRequested</a></div><div class="ttdeci">boolean PBHRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00064">SimReceiver.h:64</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a91ad507eac008590af87bb286f30b42a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">safe::SimReceiver::addToDataDefinition</a></div><div class="ttdeci">void addToDataDefinition(int defId, std::list&lt; structVarUnit &gt; s)</div><div class="ttdoc">Create a data definition on the simulator. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00197">SimReceiver.cpp:197</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a64df1a0cb0d1ef7a8f87220dd506d576_cgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a64df1a0cb0d1ef7a8f87220dd506d576_cgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a64df1a0cb0d1ef7a8f87220dd506d576_cgraph" id="classsafe_1_1SimReceiver_a64df1a0cb0d1ef7a8f87220dd506d576_cgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="safe::SimReceiver::\laddToDataDefinition" alt="" coords="190,5,327,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="Create a data definition on the simulator. " alt="" coords="190,5,327,46"/></map>
 </div>
 </p>
 
@@ -1154,40 +1234,42 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00182">182</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Subscribe to both, latLonAlt and PBH. Data will be received by using latLonAltPBH() in <a class="el" href="classsafe_1_1ISimListener.html">ISimListener</a>. </p>
 
-<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00203">addToDataDefinition()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00064">posRequested</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00176">176</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="CSafeServerSide_8cpp_source.html#l00020">safe::CSafeSS::launch()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                    {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE LATITUDE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE LONGITUDE&quot;, &quot;Radians&quot;);</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE ALTITUDE&quot;, &quot;Feet&quot;);</span></div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                list&lt;structVarUnit&gt; l;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE ALTITUDE&quot;</span>, <span class="stringliteral">&quot;Feet&quot;</span> });</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="comment">//l.push_back({ &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot; });</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="comment">//l.push_back({ &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot; });</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="comment">//l.push_back({ &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot; });</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE PITCH DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span> });</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE BANK DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span> });</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE HEADING DEGREES TRUE&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span> });</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                this-&gt;<a class="code" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a>(70, l);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">posRequested</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_a91ad507eac008590af87bb286f30b42a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">safe::SimReceiver::addToDataDefinition</a></div><div class="ttdeci">void addToDataDefinition(int defId, std::list&lt; structVarUnit &gt; s)</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00203">SimReceiver.cpp:203</a></div></div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_aab20ce4c89be96f253eff41ec3e9e4dd"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">safe::SimReceiver::posRequested</a></div><div class="ttdeci">boolean posRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00064">SimReceiver.h:64</a></div></div>
+<p>References <a class="el" href="SimReceiver_8cpp_source.html#l00197">addToDataDefinition()</a>, and <a class="el" href="SimReceiver_8h_source.html#l00065">posRequested</a>.</p>
+
+<p>Referenced by <a class="el" href="CSafeServerSide_8cpp_source.html#l00023">safe::CSafeSS::launch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                    {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE LATITUDE&quot;, &quot;Radians&quot;);</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE LONGITUDE&quot;, &quot;Radians&quot;);</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE ALTITUDE&quot;, &quot;Feet&quot;);</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="comment">//SimConnect_AddToDataDefinition(hSimConnect, 70, &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot;/*, SIMCONNECT_DATATYPE_LATLONALT, 0, 0*/);</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                list&lt;structVarUnit&gt; l;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LATITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE LONGITUDE&quot;</span>, <span class="stringliteral">&quot;Radians&quot;</span> });</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE ALTITUDE&quot;</span>, <span class="stringliteral">&quot;Feet&quot;</span> });</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="comment">//l.push_back({ &quot;PLANE PITCH DEGREES&quot;, &quot;Radians&quot; });</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="comment">//l.push_back({ &quot;PLANE BANK DEGREES&quot;, &quot;Radians&quot; });</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="comment">//l.push_back({ &quot;PLANE HEADING DEGREES TRUE&quot;, &quot;Radians&quot; });</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE PITCH DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span> });</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE BANK DEGREES&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span> });</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                l.push_back({ <span class="stringliteral">&quot;PLANE HEADING DEGREES TRUE&quot;</span>, <span class="stringliteral">&quot;degree&quot;</span> });</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                this-&gt;<a class="code" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">addToDataDefinition</a>(70, l);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <a class="code" href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">posRequested</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_a91ad507eac008590af87bb286f30b42a"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a">safe::SimReceiver::addToDataDefinition</a></div><div class="ttdeci">void addToDataDefinition(int defId, std::list&lt; structVarUnit &gt; s)</div><div class="ttdoc">Create a data definition on the simulator. </div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8cpp_source.html#l00197">SimReceiver.cpp:197</a></div></div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_aab20ce4c89be96f253eff41ec3e9e4dd"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd">safe::SimReceiver::posRequested</a></div><div class="ttdeci">boolean posRequested</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00065">SimReceiver.h:65</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_cgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_cgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_cgraph" id="classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_cgraph">
-<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="safe::SimReceiver::\laddToDataDefinition" alt="" coords="190,5,327,46"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1SimReceiver.html#a91ad507eac008590af87bb286f30b42a" title="Create a data definition on the simulator. " alt="" coords="190,5,327,46"/></map>
 </div>
 </p>
 
@@ -1196,7 +1278,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_icgraph" id="classsafe_1_1SimReceiver_a828d69d4fa368bc93c22e4aab6a29eb1_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1CSafeSS.html#a5e9cbc5be2c3ea21c69312b5808dc448" title="safe::CSafeSS::launch" alt="" coords="190,12,343,39"/><area shape="rect" id="node3" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="392,12,453,39"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1CSafeSS.html#abe93583e42a49ab3b5a440fb3c94ac1f" title="safe::CSafeSS::launch" alt="" coords="190,12,343,39"/><area shape="rect" id="node3" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="392,12,453,39"/></map>
 </div>
 </p>
 
@@ -1214,29 +1296,53 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>true if the simulator has quit </dd></dl>
 
-<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00072">72</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8cpp_source.html#l00063">63</a> of file <a class="el" href="SimReceiver_8cpp_source.html">SimReceiver.cpp</a>.</p>
 
-<p>References <a class="el" href="SimReceiver_8h_source.html#l00061">quit</a>.</p>
+<p>References <a class="el" href="SimReceiver_8h_source.html#l00062">quit</a>.</p>
 
-<p>Referenced by <a class="el" href="CSafeServerSide_8cpp_source.html#l00020">safe::CSafeSS::launch()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                 {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="ttc" id="classsafe_1_1SimReceiver_html_ace5239c6bb7b00183e15b23b7a6a1791"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">safe::SimReceiver::quit</a></div><div class="ttdeci">boolean quit</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00061">SimReceiver.h:61</a></div></div>
+<p>Referenced by <a class="el" href="CSafeServerSide_8cpp_source.html#l00023">safe::CSafeSS::launch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                 {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">quit</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="ttc" id="classsafe_1_1SimReceiver_html_ace5239c6bb7b00183e15b23b7a6a1791"><div class="ttname"><a href="classsafe_1_1SimReceiver.html#ace5239c6bb7b00183e15b23b7a6a1791">safe::SimReceiver::quit</a></div><div class="ttdeci">boolean quit</div><div class="ttdef"><b>Definition:</b> <a href="SimReceiver_8h_source.html#l00062">SimReceiver.h:62</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classsafe_1_1SimReceiver_a7d759a7de8dfc9d7bf2800a6a4d84079_icgraph.png" border="0" usemap="#classsafe_1_1SimReceiver_a7d759a7de8dfc9d7bf2800a6a4d84079_icgraph" alt=""/></div>
 <map name="classsafe_1_1SimReceiver_a7d759a7de8dfc9d7bf2800a6a4d84079_icgraph" id="classsafe_1_1SimReceiver_a7d759a7de8dfc9d7bf2800a6a4d84079_icgraph">
-<area shape="rect" id="node2" href="classsafe_1_1CSafeSS.html#a5e9cbc5be2c3ea21c69312b5808dc448" title="safe::CSafeSS::launch" alt="" coords="214,5,367,32"/><area shape="rect" id="node3" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="416,5,477,32"/></map>
+<area shape="rect" id="node2" href="classsafe_1_1CSafeSS.html#abe93583e42a49ab3b5a440fb3c94ac1f" title="safe::CSafeSS::launch" alt="" coords="214,5,367,32"/><area shape="rect" id="node3" href="server_8cpp.html#a353674c5af92be7fb389265cde4e5e03" title="_tmain" alt="" coords="416,5,477,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ab8484321a4c8d68183158614e2c4afac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Config safe::SimReceiver::cfg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The configuration from <a class="el" href="config_8h.html">config.h</a> for <a class="el" href="classsafe_1_1SimReceiver.html" title="Allow to retrieve data from the simulator You have to implement ISimListener in order to receive data...">SimReceiver</a> </p>
+
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00061">61</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a7ea2a9ddeb42fb5e8226ee659d88e9dc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1254,11 +1360,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>True if <a class="el" href="classsafe_1_1SimReceiver.html#a6279d9a9d8e653910f64d6e843ffa847">requestLatLonAlt()</a> has been called </p>
+<p>True if <a class="el" href="classsafe_1_1SimReceiver.html#a6279d9a9d8e653910f64d6e843ffa847" title="Subscribe to latitude, longitude and latitude of user plane Data will be received by using latlonaltR...">requestLatLonAlt()</a> has been called </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00062">62</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00063">63</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00113">onRecvEvent()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00157">requestLatLonAlt()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00107">onRecvEvent()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00151">requestLatLonAlt()</a>.</p>
 
 </div>
 </div>
@@ -1279,11 +1385,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>True if <a class="el" href="classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576">requestPBH()</a> has been called </p>
+<p>True if <a class="el" href="classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576" title="Subscribe to pitch, bank and heading of user plane Data will be received by using PBHReceived() in IS...">requestPBH()</a> has been called </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00063">63</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00064">64</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00113">onRecvEvent()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00170">requestPBH()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00107">onRecvEvent()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00164">requestPBH()</a>.</p>
 
 </div>
 </div>
@@ -1304,11 +1410,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>True if <a class="el" href="classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1">requestPos()</a> has been called </p>
+<p>True if <a class="el" href="classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1" title="Subscribe to both, latLonAlt and PBH. Data will be received by using latLonAltPBH() in ISimListener...">requestPos()</a> has been called </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00064">64</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00065">65</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00113">onRecvEvent()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00182">requestPos()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00107">onRecvEvent()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00176">requestPos()</a>.</p>
 
 </div>
 </div>
@@ -1331,9 +1437,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>True if the simulator quit </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00061">61</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00062">62</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00151">onRecvQuit()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00072">stop()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00145">onRecvQuit()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00063">stop()</a>.</p>
 
 </div>
 </div>
@@ -1354,11 +1460,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The id of the request ans the <a class="el" href="classRequest.html">Request</a> created when <a class="el" href="classsafe_1_1SimReceiver.html#a41b0d6e5f4becb521cb22980556836d1">request()</a> is called </p>
+<p>The id of the request ans the <a class="el" href="classRequest.html">Request</a> created when <a class="el" href="classsafe_1_1SimReceiver.html#a41b0d6e5f4becb521cb22980556836d1" title="Subscribe to a list of data. ">request()</a> is called </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00066">66</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00067">67</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00225">fireDataReceived()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00048">request()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00219">fireDataReceived()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00039">request()</a>.</p>
 
 </div>
 </div>
@@ -1381,9 +1487,9 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Listener list </p>
 
-<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00065">65</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
+<p>Definition at line <a class="el" href="SimReceiver_8h_source.html#l00066">66</a> of file <a class="el" href="SimReceiver_8h_source.html">SimReceiver.h</a>.</p>
 
-<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00211">addListener()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00225">fireDataReceived()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00244">fireLatLonAlt()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00248">firePBH()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00253">firePos()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00239">fireSimQuit()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00231">fireSimStart()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00235">fireSimStop()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00214">removeListener()</a>.</p>
+<p>Referenced by <a class="el" href="SimReceiver_8cpp_source.html#l00205">addListener()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00219">fireDataReceived()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00238">fireLatLonAlt()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00242">firePBH()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00247">firePos()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00233">fireSimQuit()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00225">fireSimStart()</a>, <a class="el" href="SimReceiver_8cpp_source.html#l00229">fireSimStop()</a>, and <a class="el" href="SimReceiver_8cpp_source.html#l00208">removeListener()</a>.</p>
 
 </div>
 </div>
@@ -1397,7 +1503,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesafe.html">safe</a></li><li class="navelem"><a class="el" href="classsafe_1_1SimReceiver.html">SimReceiver</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 10:28:45 for StartAir_Safe by
+    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

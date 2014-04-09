@@ -1,8 +1,9 @@
 <map id="global/SimReceiver.h" name="global/SimReceiver.h">
-<area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="637,304,702,331"/>
+<area shape="rect" id="node3" href="$types_8h.html" title="types.h" alt="" coords="660,304,725,331"/>
 <area shape="rect" id="node4" href="$ISimListener_8h.html" title="ISimListener.h" alt="" coords="472,80,577,107"/>
 <area shape="rect" id="node5" href="$SimDataEvent_8h.html" title="SimDataEvent.h" alt="" coords="471,155,586,181"/>
-<area shape="rect" id="node6" href="$Request_8h.html" title="Request.h" alt="" coords="629,229,710,256"/>
+<area shape="rect" id="node6" href="$Request_8h.html" title="Request.h" alt="" coords="573,229,654,256"/>
 <area shape="rect" id="node13" href="$SimExManager_8h.html" title="SimExManager.h" alt="" coords="223,155,346,181"/>
 <area shape="rect" id="node14" href="$SimConnection_8h.html" title="SimConnection.h" alt="" coords="27,155,147,181"/>
+<area shape="rect" id="node16" href="$config_8h.html" title="config.h" alt="" coords="981,80,1047,107"/>
 </map>

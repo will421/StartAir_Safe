@@ -1,6 +1,7 @@
 <map id="client/UDPReceiver.cpp" name="client/UDPReceiver.cpp">
-<area shape="rect" id="node2" href="$client_2stdafx_8h.html" title="stdafx.h" alt="" coords="157,80,224,107"/>
-<area shape="rect" id="node7" href="$UDPReceiver_8h.html" title="UDPReceiver.h" alt="" coords="337,80,447,107"/>
+<area shape="rect" id="node2" href="$client_2stdafx_8h.html" title="stdafx.h" alt="" coords="165,80,232,107"/>
+<area shape="rect" id="node7" href="$UDPReceiver_8h.html" title="UDPReceiver.h" alt="" coords="389,80,499,107"/>
+<area shape="rect" id="node11" href="$config_8h.html" title="config.h" alt="" coords="565,80,632,107"/>
 <area shape="rect" id="node3" href="$client_2targetver_8h.html" title="targetver.h" alt="" coords="17,155,100,181"/>
 <area shape="rect" id="node10" href="$types_8h.html" title="types.h" alt="" coords="505,155,569,181"/>
 </map>

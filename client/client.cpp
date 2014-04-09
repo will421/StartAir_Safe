@@ -5,15 +5,32 @@
 
 #include "CSafe.h"
 #include "DataSender.h"
+#include "config.h"
+#include <string>
+
 
 using namespace safe;
 
 int _tmain(int argc, _TCHAR* argv[])
-{
-	CSafe s = CSafe(15020); 
-	s.launch();
+{	
+	loadConfig();
+	int port;
+	try {
+		bool res = cfg_Safe.exists("datasender_position_definition_id");
+		if (!cfg_Safe.lookupValue("client_listening_port", port))
+		{
+			std::cerr << "warning : client_listening_port missing in " << configFile << "the listening port will be set to 15020" << std::endl;
+			port = 15020;
+		}
+	}
+	catch (const SettingNotFoundException &nfex)
+	{
+		std::cerr << "warning : client_listening_port missing in " << configFile << "the listening port will be set to 15020" << std::endl;
+		port = 15020;
+	}
 
-	//DataSender d = DataSender(); d.launch(); d.~DataSender();
+	CSafe s = CSafe(port);
+	s.launch();
 	
 	return 0;
 }

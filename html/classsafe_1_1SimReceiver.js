@@ -23,6 +23,7 @@ var classsafe_1_1SimReceiver =
     [ "requestPBH", "classsafe_1_1SimReceiver.html#a64df1a0cb0d1ef7a8f87220dd506d576", null ],
     [ "requestPos", "classsafe_1_1SimReceiver.html#a828d69d4fa368bc93c22e4aab6a29eb1", null ],
     [ "stop", "classsafe_1_1SimReceiver.html#a7d759a7de8dfc9d7bf2800a6a4d84079", null ],
+    [ "cfg", "classsafe_1_1SimReceiver.html#ab8484321a4c8d68183158614e2c4afac", null ],
     [ "latLonAltRequested", "classsafe_1_1SimReceiver.html#a7ea2a9ddeb42fb5e8226ee659d88e9dc", null ],
     [ "PBHRequested", "classsafe_1_1SimReceiver.html#a5484378bd8f4bb4fa6df5f780160e466", null ],
     [ "posRequested", "classsafe_1_1SimReceiver.html#aab20ce4c89be96f253eff41ec3e9e4dd", null ],

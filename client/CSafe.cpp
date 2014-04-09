@@ -9,6 +9,9 @@ using std::endl;
 
 namespace safe {
 
+	
+
+
 	CSafe::CSafe(int port) : UDPReceiver(port), ds(0)
 	{
 	}

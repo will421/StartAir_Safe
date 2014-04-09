@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "CSafeServerSide.h"
 
+#include "config.h"
+#include <string>
+
 using std::cout;
 using std::endl;
 
@@ -17,10 +20,32 @@ namespace safe
 	{
 	}
 
-	void CSafeSS::launch(int port)
+	void CSafeSS::launch()
 	{
-		udps.addTarget("127.0.0.1", port);
-		udps.addTarget("192.168.0.12", port);
+		loadConfig();
+		try {
+			const Setting& root = cfg_Safe.getRoot();
+
+			const Setting &clients = root["csafess_clients"];
+			int count = clients.getLength();
+			for (int i = 0; i < count; ++i)
+			{
+				const Setting &client = clients[i];
+				std::string addr;
+				int port;
+				if (!(client.lookupValue("address", addr)
+					&& client.lookupValue("port", port)))
+					continue;
+
+				udps.addTarget(addr, port);
+			}
+		}
+		catch(SettingNotFoundException ex)
+		{
+			std::cerr << "csafess_clients not found" << std::endl;
+			system("pause");
+			exit(EXIT_FAILURE);
+		}
 
 		SimReceiver sr = SimReceiver(0);
 		sr.requestPos();
