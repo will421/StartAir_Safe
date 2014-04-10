@@ -14,6 +14,21 @@ UDPReceiver::UDPReceiver(int port)
 	sin.sin_port = htons(port);
 	bind(sock, (SOCKADDR *)&sin, sizeof(sin));
 	listen(sock, 0);
+
+	safe::loadConfig();
+	try {
+		if (!safe::cfg_Safe.lookupValue("udpreceiver_buffer_size", size_buff))
+		{
+			std::cerr << "warning : udpreceiver_buffer_size missing in " << configFile << "the listening port will be set to 255" << std::endl;
+			size_buff = 255;
+		}
+	}
+	catch (const SettingNotFoundException &nfex)
+	{
+		std::cerr << "warning : udpreceiver_buffer_size missing in " << configFile << "the listening port will be set to 255" << std::endl;
+		size_buff = 255;
+	}
+
 }
 
 
@@ -21,6 +36,7 @@ UDPReceiver::~UDPReceiver()
 {
 	closesocket(sock);
 	WSACleanup();
+	//delete[] buffer;
 }
 
 //void UDPReceiver::datagramReceived(SOCKADDR & from, SAFE_RECV & message)
@@ -31,21 +47,8 @@ UDPReceiver::~UDPReceiver()
 
 void UDPReceiver::boucle()
 {
-	int size;
-	safe::loadConfig();
-	try {
-		if (!safe::cfg_Safe.lookupValue("udpreceiver_buffer_size", size))
-		{
-			std::cerr << "warning : udpreceiver_buffer_size missing in " << configFile << "the listening port will be set to 255" << std::endl;
-			size = 255;
-		}
-	}
-	catch (const SettingNotFoundException &nfex)
-	{
-		std::cerr << "warning : udpreceiver_buffer_size missing in " << configFile << "the listening port will be set to 255" << std::endl;
-		size = 255;
-	}
-
+	
+	//buffer = new char[size_buff];
 	char buffer[255];
 
 	SOCKADDR_IN csin;

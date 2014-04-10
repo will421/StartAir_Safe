@@ -1,8 +1,5 @@
 var hierarchy =
 [
-    [ "safe::IDataPool", "classsafe_1_1IDataPool.html", [
-      [ "safe::Extrapolation", "classsafe_1_1Extrapolation.html", null ]
-    ] ],
     [ "safe::ISimListener", "classsafe_1_1ISimListener.html", [
       [ "safe::CSafe", "classsafe_1_1CSafe.html", null ],
       [ "safe::CSafeSS", "classsafe_1_1CSafeSS.html", null ]

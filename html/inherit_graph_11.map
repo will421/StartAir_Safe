@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structstructVarUnit.html" title="structVarUnit" alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node1" href="$classsafe_1_1ISimListener.html" title="safe::ISimListener" alt="" coords="6,56,133,83"/>
+<area shape="rect" id="node2" href="$classsafe_1_1CSafe.html" title="safe::CSafe" alt="" coords="190,5,279,32"/>
+<area shape="rect" id="node3" href="$classsafe_1_1CSafeSS.html" title="safe::CSafeSS" alt="" coords="181,56,288,83"/>
+<area shape="rect" id="node4" href="$classUDPReceiver.html" title="UDPReceiver" alt="" coords="20,5,119,32"/>
 </map>

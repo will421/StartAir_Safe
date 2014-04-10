@@ -5,12 +5,6 @@ var dir_db3a54907829b36871118d03417739cd =
     [ "CSafe.h", "CSafe_8h.html", [
       [ "CSafe", "classsafe_1_1CSafe.html", "classsafe_1_1CSafe" ]
     ] ],
-    [ "Extrapolation.h", "Extrapolation_8h.html", [
-      [ "Extrapolation", "classsafe_1_1Extrapolation.html", "classsafe_1_1Extrapolation" ]
-    ] ],
-    [ "IDataPool.h", "IDataPool_8h.html", [
-      [ "IDataPool", "classsafe_1_1IDataPool.html", "classsafe_1_1IDataPool" ]
-    ] ],
     [ "stdafx.cpp", "client_2stdafx_8cpp.html", null ],
     [ "stdafx.h", "client_2stdafx_8h.html", null ],
     [ "targetver.h", "client_2targetver_8h.html", null ],

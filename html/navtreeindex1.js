@@ -1,17 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"structSAFE__DATA__POS.html#a18eaec4d79141d220b7efaf3970e3ce0":[1,0,2,3],
-"structSAFE__DATA__POS.html#a2245054e1dda3aa5272776d48da93a3b":[1,0,2,5],
-"structSAFE__DATA__POS.html#a2b4ec9c9302293682e013c70e4719613":[1,0,2,4],
-"structSAFE__DATA__POS.html#a7dc5001dc838ba3b0cd5461fea221350":[1,0,2,0],
-"structSAFE__DATA__POS.html#a7fb1a53fabf8603679ff7d681f6d6583":[1,0,2,2],
-"structSAFE__DATA__POS.html#a99a55b678e8622865ee50dc86650c80e":[1,0,2,1],
-"structSAFE__RECV.html":[1,0,3],
-"structSAFE__RECV.html#a766d7b0d6b0152ae5089159d61d87195":[1,0,3,0],
-"structSAFE__RECV.html#a90882484f60fd29264f6bbbd3e871ec0":[1,0,3,1],
-"structSIMCONNECT__DATA__PBH.html":[1,0,4],
-"structSIMCONNECT__DATA__PBH.html#a110532ecadd54e28597dfeaddafb5126":[1,0,4,0],
-"structSIMCONNECT__DATA__PBH.html#a18f2408604ab47c053f0a3cee532fe0f":[1,0,4,2],
 "structSIMCONNECT__DATA__PBH.html#a9f6dda15cb4213b0c854abd8bdc76bcc":[1,0,4,1],
 "structSimDataEvent_1_1StructDatum.html":[1,0,6,0],
 "structSimDataEvent_1_1StructDatum.html#a6440991785fba4ceccf2caf31fe0f4e4":[1,0,6,0,0],

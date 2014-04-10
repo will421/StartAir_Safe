@@ -1,6 +1,6 @@
 <map id="_tmain" name="_tmain">
 <area shape="rect" id="node2" href="$classsafe_1_1CSafe.html#a2f769d9c2bc104cf720f3412d286ee84" title="safe::CSafe::launch" alt="" coords="115,5,250,32"/>
-<area shape="rect" id="node4" href="$namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2" title="safe::loadConfig" alt="" coords="540,56,655,83"/>
+<area shape="rect" id="node5" href="$namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2" title="safe::loadConfig" alt="" coords="125,56,240,83"/>
 <area shape="rect" id="node3" href="$classUDPReceiver.html#a5dab36fdbe58782f084ea87348cb38c5" title="UDPReceiver::boucle" alt="" coords="299,5,443,32"/>
-<area shape="rect" id="node5" href="$classUDPReceiver.html#afc620756f680a0b14d910ad8c648b1e3" title="UDPReceiver::datagramReceived" alt="" coords="491,5,703,32"/>
+<area shape="rect" id="node4" href="$classUDPReceiver.html#afc620756f680a0b14d910ad8c648b1e3" title="UDPReceiver::datagramReceived" alt="" coords="491,5,703,32"/>
 </map>

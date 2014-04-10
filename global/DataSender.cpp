@@ -123,6 +123,12 @@ namespace safe {
 			std::cerr << "No 'datasender' setting in configuration file." << endl;
 			id = 99;
 		}
+		//cout << endl << "PLANE LATITUDE = " << d.Latitude;
+		//cout << endl << "PLANE LONGITUDE = " << d.Longitude;
+		//cout << endl << "PLANE ALTITUDE = " << d.Altitude;
+		//cout << endl << "P = " << d.p;
+		//cout << endl << "B = " << d.b;
+		//cout << endl << "H = " << d.h;
 		SimConnect_SetDataOnSimObject(hSimConnect, id, SIMCONNECT_OBJECT_ID_USER, 0, 0, sizeof(d), &d);
 	}
 	//void DataSender::sendAll(SIMCONNECT_DATA_LATLONALT &d1, SIMCONNECT_DATA_PBH &d2) {

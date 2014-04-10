@@ -1,4 +1,4 @@
 <map id="safe::CSafe" name="safe::CSafe">
 <area shape="rect" id="node2" href="$classsafe_1_1ISimListener.html" title="{safe::ISimListener\n||+ ~ISimListener()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l}" alt="" coords="5,6,176,186"/>
-<area shape="rect" id="node3" href="$classUDPReceiver.html" title="{UDPReceiver\n|&#45; sock\l|+ UDPReceiver()\l+ ~UDPReceiver()\l+ boucle()\l# datagramReceived()\l}" alt="" coords="201,35,348,157"/>
+<area shape="rect" id="node3" href="$classUDPReceiver.html" title="{UDPReceiver\n|&#45; sock\l&#45; size_buff\l|+ UDPReceiver()\l+ ~UDPReceiver()\l+ boucle()\l# datagramReceived()\l}" alt="" coords="201,28,348,164"/>
 </map>

@@ -16,6 +16,8 @@ protected:
 	virtual void datagramReceived(SOCKADDR & from, SAFE_RECV & message) = 0;
 private:
 	SOCKET sock;
+	int size_buff;
+	//char * buffer;
 
 };
 

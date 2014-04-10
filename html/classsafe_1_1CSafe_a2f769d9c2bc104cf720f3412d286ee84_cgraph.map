@@ -1,5 +1,4 @@
 <map id="safe::CSafe::launch" name="safe::CSafe::launch">
-<area shape="rect" id="node2" href="$classUDPReceiver.html#a5dab36fdbe58782f084ea87348cb38c5" title="UDPReceiver::boucle" alt="" coords="189,31,333,57"/>
+<area shape="rect" id="node2" href="$classUDPReceiver.html#a5dab36fdbe58782f084ea87348cb38c5" title="UDPReceiver::boucle" alt="" coords="189,5,333,32"/>
 <area shape="rect" id="node3" href="$classUDPReceiver.html#afc620756f680a0b14d910ad8c648b1e3" title="UDPReceiver::datagramReceived" alt="" coords="382,5,594,32"/>
-<area shape="rect" id="node4" href="$namespacesafe.html#a220bb815a5672adea49bc68b7f1df3b2" title="safe::loadConfig" alt="" coords="431,56,545,83"/>
 </map>

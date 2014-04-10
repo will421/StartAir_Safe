@@ -1,6 +1,6 @@
 <map id="safe::CSafe" name="safe::CSafe">
 <area shape="rect" id="node2" href="$classsafe_1_1ISimListener.html" title="{safe::ISimListener\n||+ ~ISimListener()\l+ dataReceived()\l+ simQuitted()\l+ simStopped()\l+ simStarted()\l+ latlonaltReceived()\l+ PBHReceived()\l+ latLonAltPBHReceived()\l}" alt="" coords="5,458,176,638"/>
-<area shape="rect" id="node3" href="$classUDPReceiver.html" title="{UDPReceiver\n|&#45; sock\l|+ UDPReceiver()\l+ ~UDPReceiver()\l+ boucle()\l# datagramReceived()\l}" alt="" coords="201,487,348,609"/>
+<area shape="rect" id="node3" href="$classUDPReceiver.html" title="{UDPReceiver\n|&#45; sock\l&#45; size_buff\l|+ UDPReceiver()\l+ ~UDPReceiver()\l+ boucle()\l# datagramReceived()\l}" alt="" coords="201,480,348,616"/>
 <area shape="rect" id="node4" href="$classsafe_1_1DataSender.html" title="{safe::DataSender\n|&#45; lla\l|+ DataSender()\l+ DataSender()\l+ ~DataSender()\l+ sendLatLonAlt()\l+ sendPBH()\l+ sendPos()\l# freeze()\l# onRecvSimobjectData()\l# onRecvException()\l}" alt="" coords="372,451,540,645"/>
 <area shape="rect" id="node5" href="$classSimExManager.html" title="{SimExManager\n|&#45; record_count\l&#45; firstSet\l&#45; recordname\l|+ SimExManager()\l+ ~SimExManager()\l# addSendRecord()\l# findSendRecord()\l# firstSendRecord()\l# lastSendRecord()\l&#45; add()\l}" alt="" coords="209,184,348,379"/>
 <area shape="rect" id="node6" href="$structSimExManager_1_1record__struct.html" title="{SimExManager::record\l_struct\n|+ call\l+ sendid\l|}" alt="" coords="201,5,356,112"/>

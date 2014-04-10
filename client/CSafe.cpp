@@ -63,7 +63,7 @@ namespace safe {
 	}
 
 
-	void CSafe::simQuitted(HANDLE h) { cout << "\nSIM QUIT" << endl; }
+	void CSafe::simQuitted(HANDLE h) { cout << "\nSIM QUIT" << endl; exit(EXIT_SUCCESS); }
 	void CSafe::simStopped(HANDLE h) { cout << "\nSIM STOP" << endl; }
 	void CSafe::simStarted(HANDLE h) { cout << "\nSIM START" << endl; }
 
@@ -123,13 +123,7 @@ namespace safe {
 	void CSafe::datagramReceived(SOCKADDR & from, SAFE_RECV & datagram)
 	{
 
-		//std::cout << "datagramReceived : " << datagram.d.Altitude << " " << d->Latitude << std::endl;
-		//cout << endl << "PLANE LATITUDE = " << datagram.d.Latitude;
-		//cout << endl << "PLANE LONGITUDE = " << datagram.d.Longitude;
-		//cout << endl << "PLANE ALTITUDE = " << datagram.d.Altitude;
-		//cout << endl << "P = " << datagram.d.p;
-		//cout << endl << "B = " << datagram.d.b;
-		//cout << endl << "H = " << datagram.d.h;
+
 		ds.sendPos(datagram.d);
 	}
 };

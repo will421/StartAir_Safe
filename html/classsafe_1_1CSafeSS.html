@@ -237,25 +237,19 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="CSafeServerSide_8cpp_source.html#l00091">91</a> of file <a class="el" href="CSafeServerSide_8cpp_source.html">CSafeServerSide.cpp</a>.</p>
 
-<p>References <a class="el" href="types_8h_source.html#l00032">SAFE_DATA_POS::Altitude</a>, <a class="el" href="types_8h_source.html#l00034">SAFE_DATA_POS::b</a>, <a class="el" href="types_8h_source.html#l00035">SAFE_DATA_POS::h</a>, <a class="el" href="types_8h_source.html#l00030">SAFE_DATA_POS::Latitude</a>, <a class="el" href="types_8h_source.html#l00031">SAFE_DATA_POS::Longitude</a>, <a class="el" href="types_8h_source.html#l00033">SAFE_DATA_POS::p</a>, <a class="el" href="UDPSender_8cpp_source.html#l00030">UDPSender::send()</a>, and <a class="el" href="CSafeServerSide_8h_source.html#l00025">udps</a>.</p>
+<p>References <a class="el" href="UDPSender_8cpp_source.html#l00030">UDPSender::send()</a>, and <a class="el" href="CSafeServerSide_8h_source.html#l00025">udps</a>.</p>
 <div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE LATITUDE = &quot;</span> &lt;&lt; d.<a class="code" href="structSAFE__DATA__POS.html#a18eaec4d79141d220b7efaf3970e3ce0">Latitude</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE LONGITUDE = &quot;</span> &lt;&lt; d.<a class="code" href="structSAFE__DATA__POS.html#a2b4ec9c9302293682e013c70e4719613">Longitude</a>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;PLANE ALTITUDE = &quot;</span> &lt;&lt; d.<a class="code" href="structSAFE__DATA__POS.html#a7dc5001dc838ba3b0cd5461fea221350">Altitude</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;P = &quot;</span> &lt;&lt; d.<a class="code" href="structSAFE__DATA__POS.html#a2245054e1dda3aa5272776d48da93a3b">p</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;B = &quot;</span> &lt;&lt; d.<a class="code" href="structSAFE__DATA__POS.html#a99a55b678e8622865ee50dc86650c80e">b</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;H = &quot;</span> &lt;&lt; d.<a class="code" href="structSAFE__DATA__POS.html#a7fb1a53fabf8603679ff7d681f6d6583">h</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;PLANE LATITUDE = &quot; &lt;&lt; d.Latitude;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;PLANE LONGITUDE = &quot; &lt;&lt; d.Longitude;</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;PLANE ALTITUDE = &quot; &lt;&lt; d.Altitude;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;P = &quot; &lt;&lt; d.p;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;B = &quot; &lt;&lt; d.b;</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;H = &quot; &lt;&lt; d.h;</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <a class="code" href="classsafe_1_1CSafeSS.html#ad20e6d2a1cb47fc4e0184eb39b6a0188">udps</a>.<a class="code" href="classUDPSender.html#ad9d9cfd0e6af018c44f6c0b0674f5bba">send</a>((<span class="keywordtype">char</span>*)&amp;d, <span class="keyword">sizeof</span>(d));</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="ttc" id="structSAFE__DATA__POS_html_a99a55b678e8622865ee50dc86650c80e"><div class="ttname"><a href="structSAFE__DATA__POS.html#a99a55b678e8622865ee50dc86650c80e">SAFE_DATA_POS::b</a></div><div class="ttdeci">double b</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00034">types.h:34</a></div></div>
 <div class="ttc" id="classsafe_1_1CSafeSS_html_ad20e6d2a1cb47fc4e0184eb39b6a0188"><div class="ttname"><a href="classsafe_1_1CSafeSS.html#ad20e6d2a1cb47fc4e0184eb39b6a0188">safe::CSafeSS::udps</a></div><div class="ttdeci">UDPSender udps</div><div class="ttdef"><b>Definition:</b> <a href="CSafeServerSide_8h_source.html#l00025">CSafeServerSide.h:25</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html_a18eaec4d79141d220b7efaf3970e3ce0"><div class="ttname"><a href="structSAFE__DATA__POS.html#a18eaec4d79141d220b7efaf3970e3ce0">SAFE_DATA_POS::Latitude</a></div><div class="ttdeci">double Latitude</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00030">types.h:30</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html_a2245054e1dda3aa5272776d48da93a3b"><div class="ttname"><a href="structSAFE__DATA__POS.html#a2245054e1dda3aa5272776d48da93a3b">SAFE_DATA_POS::p</a></div><div class="ttdeci">double p</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00033">types.h:33</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html_a7fb1a53fabf8603679ff7d681f6d6583"><div class="ttname"><a href="structSAFE__DATA__POS.html#a7fb1a53fabf8603679ff7d681f6d6583">SAFE_DATA_POS::h</a></div><div class="ttdeci">double h</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00035">types.h:35</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html_a7dc5001dc838ba3b0cd5461fea221350"><div class="ttname"><a href="structSAFE__DATA__POS.html#a7dc5001dc838ba3b0cd5461fea221350">SAFE_DATA_POS::Altitude</a></div><div class="ttdeci">double Altitude</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00032">types.h:32</a></div></div>
 <div class="ttc" id="classUDPSender_html_ad9d9cfd0e6af018c44f6c0b0674f5bba"><div class="ttname"><a href="classUDPSender.html#ad9d9cfd0e6af018c44f6c0b0674f5bba">UDPSender::send</a></div><div class="ttdeci">void send(char *data, int size)</div><div class="ttdef"><b>Definition:</b> <a href="UDPSender_8cpp_source.html#l00030">UDPSender.cpp:30</a></div></div>
-<div class="ttc" id="structSAFE__DATA__POS_html_a2b4ec9c9302293682e013c70e4719613"><div class="ttname"><a href="structSAFE__DATA__POS.html#a2b4ec9c9302293682e013c70e4719613">SAFE_DATA_POS::Longitude</a></div><div class="ttdeci">double Longitude</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00031">types.h:31</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -572,7 +566,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesafe.html">safe</a></li><li class="navelem"><a class="el" href="classsafe_1_1CSafeSS.html">CSafeSS</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
+    <li class="footer">Generated on Thu Apr 10 2014 09:23:15 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

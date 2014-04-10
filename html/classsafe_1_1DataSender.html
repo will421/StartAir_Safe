@@ -381,17 +381,17 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classSimConnection.html#a4706c2f4c1ca5b978623204c1b427d22">SimConnection</a>.</p>
 
-<p>Definition at line <a class="el" href="DataSender_8cpp_source.html#l00141">141</a> of file <a class="el" href="DataSender_8cpp_source.html">DataSender.cpp</a>.</p>
+<p>Definition at line <a class="el" href="DataSender_8cpp_source.html#l00147">147</a> of file <a class="el" href="DataSender_8cpp_source.html">DataSender.cpp</a>.</p>
 
 <p>References <a class="el" href="SimExManager_8cpp_source.html#l00016">SimExManager::findSendRecord()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                printf(<span class="stringliteral">&quot;\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n&quot;</span>, except-&gt;dwException, except-&gt;dwSendID, except-&gt;dwIndex, cbData);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                <span class="comment">// Locate the bad call and print it out </span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordtype">char</span>* s = <a class="code" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a>(except-&gt;dwSendID);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                printf(<span class="stringliteral">&quot;\n%s&quot;</span>, s);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                SIMCONNECT_RECV_EXCEPTION *except = (SIMCONNECT_RECV_EXCEPTION*)pData;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                printf(<span class="stringliteral">&quot;\n\n***** EXCEPTION=%d  SendID=%d  Index=%d  cbData=%d\n&quot;</span>, except-&gt;dwException, except-&gt;dwSendID, except-&gt;dwIndex, cbData);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                <span class="comment">// Locate the bad call and print it out </span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                <span class="keywordtype">char</span>* s = <a class="code" href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">findSendRecord</a>(except-&gt;dwSendID);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                printf(<span class="stringliteral">&quot;\n%s&quot;</span>, s);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
 <div class="ttc" id="classSimExManager_html_a86b371a87e340d9dc5882bcf7d81f2cc"><div class="ttname"><a href="classSimExManager.html#a86b371a87e340d9dc5882bcf7d81f2cc">SimExManager::findSendRecord</a></div><div class="ttdeci">char * findSendRecord(DWORD id)</div><div class="ttdef"><b>Definition:</b> <a href="SimExManager_8cpp_source.html#l00016">SimExManager.cpp:16</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -429,11 +429,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classSimConnection.html#afccf33344d2a799943d402125ea3f7cc">SimConnection</a>.</p>
 
-<p>Definition at line <a class="el" href="DataSender_8cpp_source.html#l00136">136</a> of file <a class="el" href="DataSender_8cpp_source.html">DataSender.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="DataSender_8cpp_source.html#l00142">142</a> of file <a class="el" href="DataSender_8cpp_source.html">DataSender.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -502,8 +502,14 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                        std::cerr &lt;&lt; <span class="stringliteral">&quot;No &#39;datasender&#39; setting in configuration file.&quot;</span> &lt;&lt; endl;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                        <span class="keywordtype">id</span> = 99;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                SimConnect_SetDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, SIMCONNECT_OBJECT_ID_USER, 0, 0, <span class="keyword">sizeof</span>(d), &amp;d);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;PLANE LATITUDE = &quot; &lt;&lt; d.Latitude;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;PLANE LONGITUDE = &quot; &lt;&lt; d.Longitude;</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;PLANE ALTITUDE = &quot; &lt;&lt; d.Altitude;</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;P = &quot; &lt;&lt; d.p;</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;B = &quot; &lt;&lt; d.b;</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="comment">//cout &lt;&lt; endl &lt;&lt; &quot;H = &quot; &lt;&lt; d.h;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                SimConnect_SetDataOnSimObject(<a class="code" href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">hSimConnect</a>, <span class="keywordtype">id</span>, SIMCONNECT_OBJECT_ID_USER, 0, 0, <span class="keyword">sizeof</span>(d), &amp;d);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        }</div>
 <div class="ttc" id="classSimConnection_html_a4539c178af67aa6152a96486671bc314"><div class="ttname"><a href="classSimConnection.html#a4539c178af67aa6152a96486671bc314">SimConnection::hSimConnect</a></div><div class="ttdeci">HANDLE hSimConnect</div><div class="ttdef"><b>Definition:</b> <a href="SimConnection_8h_source.html#l00018">SimConnection.h:18</a></div></div>
 <div class="ttc" id="namespacesafe_html_a85fc0f4134c6368f1e1edab0cdf1cdf2"><div class="ttname"><a href="namespacesafe.html#a85fc0f4134c6368f1e1edab0cdf1cdf2">safe::cfg_Safe</a></div><div class="ttdeci">static Config cfg_Safe</div><div class="ttdef"><b>Definition:</b> <a href="config_8h_source.html#l00015">config.h:15</a></div></div>
 </div><!-- fragment -->
@@ -573,7 +579,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesafe.html">safe</a></li><li class="navelem"><a class="el" href="classsafe_1_1DataSender.html">DataSender</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
+    <li class="footer">Generated on Thu Apr 10 2014 09:23:15 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

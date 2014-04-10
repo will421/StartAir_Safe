@@ -86,24 +86,27 @@ $(document).ready(function(){initNavTree('UDPReceiver_8h_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classUDPReceiver.html#afc620756f680a0b14d910ad8c648b1e3">datagramReceived</a>(SOCKADDR &amp; from, <a class="code" href="structSAFE__RECV.html">SAFE_RECV</a> &amp; message) = 0;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classUDPReceiver.html#a84ba767aae9f867f44a754d92d11913a">   18</a></span>&#160;        SOCKET <a class="code" href="classUDPReceiver.html#a84ba767aae9f867f44a754d92d11913a">sock</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classUDPReceiver.html#ac1a97761df4ff16d84628812407168c1">   19</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classUDPReceiver.html#ac1a97761df4ff16d84628812407168c1">size_buff</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">//char * buffer;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
-<div class="ttc" id="classUDPReceiver_html_a5dab36fdbe58782f084ea87348cb38c5"><div class="ttname"><a href="classUDPReceiver.html#a5dab36fdbe58782f084ea87348cb38c5">UDPReceiver::boucle</a></div><div class="ttdeci">void boucle()</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8cpp_source.html#l00032">UDPReceiver.cpp:32</a></div></div>
+<div class="ttc" id="classUDPReceiver_html_a5dab36fdbe58782f084ea87348cb38c5"><div class="ttname"><a href="classUDPReceiver.html#a5dab36fdbe58782f084ea87348cb38c5">UDPReceiver::boucle</a></div><div class="ttdeci">void boucle()</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8cpp_source.html#l00048">UDPReceiver.cpp:48</a></div></div>
 <div class="ttc" id="classUDPReceiver_html_afc620756f680a0b14d910ad8c648b1e3"><div class="ttname"><a href="classUDPReceiver.html#afc620756f680a0b14d910ad8c648b1e3">UDPReceiver::datagramReceived</a></div><div class="ttdeci">virtual void datagramReceived(SOCKADDR &amp;from, SAFE_RECV &amp;message)=0</div></div>
 <div class="ttc" id="classUDPReceiver_html_a84ba767aae9f867f44a754d92d11913a"><div class="ttname"><a href="classUDPReceiver.html#a84ba767aae9f867f44a754d92d11913a">UDPReceiver::sock</a></div><div class="ttdeci">SOCKET sock</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8h_source.html#l00018">UDPReceiver.h:18</a></div></div>
-<div class="ttc" id="classUDPReceiver_html_a2a1da63c1c780adc54a47c8576ead6b0"><div class="ttname"><a href="classUDPReceiver.html#a2a1da63c1c780adc54a47c8576ead6b0">UDPReceiver::~UDPReceiver</a></div><div class="ttdeci">virtual ~UDPReceiver()</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8cpp_source.html#l00020">UDPReceiver.cpp:20</a></div></div>
+<div class="ttc" id="classUDPReceiver_html_a2a1da63c1c780adc54a47c8576ead6b0"><div class="ttname"><a href="classUDPReceiver.html#a2a1da63c1c780adc54a47c8576ead6b0">UDPReceiver::~UDPReceiver</a></div><div class="ttdeci">virtual ~UDPReceiver()</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8cpp_source.html#l00035">UDPReceiver.cpp:35</a></div></div>
 <div class="ttc" id="structSAFE__RECV_html"><div class="ttname"><a href="structSAFE__RECV.html">SAFE_RECV</a></div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00049">types.h:49</a></div></div>
 <div class="ttc" id="classUDPReceiver_html"><div class="ttname"><a href="classUDPReceiver.html">UDPReceiver</a></div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8h_source.html#l00008">UDPReceiver.h:8</a></div></div>
 <div class="ttc" id="classUDPReceiver_html_aad17b1b31a5ff76fd4ade1fdc9e29165"><div class="ttname"><a href="classUDPReceiver.html#aad17b1b31a5ff76fd4ade1fdc9e29165">UDPReceiver::UDPReceiver</a></div><div class="ttdeci">UDPReceiver(int port)</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8cpp_source.html#l00006">UDPReceiver.cpp:6</a></div></div>
+<div class="ttc" id="classUDPReceiver_html_ac1a97761df4ff16d84628812407168c1"><div class="ttname"><a href="classUDPReceiver.html#ac1a97761df4ff16d84628812407168c1">UDPReceiver::size_buff</a></div><div class="ttdeci">int size_buff</div><div class="ttdef"><b>Definition:</b> <a href="UDPReceiver_8h_source.html#l00019">UDPReceiver.h:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_db3a54907829b36871118d03417739cd.html">client</a></li><li class="navelem"><a class="el" href="UDPReceiver_8h.html">UDPReceiver.h</a></li>
-    <li class="footer">Generated on Wed Apr 9 2014 23:02:23 for StartAir_Safe by
+    <li class="footer">Generated on Thu Apr 10 2014 09:23:15 for StartAir_Safe by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

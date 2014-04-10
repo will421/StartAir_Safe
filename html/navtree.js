@@ -36,7 +36,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "CSafeServerSide_8cpp.html",
-"structSAFE__DATA__POS.html#a18eaec4d79141d220b7efaf3970e3ce0"
+"structSIMCONNECT__DATA__PBH.html#a9f6dda15cb4213b0c854abd8bdc76bcc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
