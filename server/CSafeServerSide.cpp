@@ -90,13 +90,14 @@ namespace safe
 	}
 	void CSafeSS::latLonAltPBHReceived(HANDLE h, SAFE_DATA_POS& d)
 	{
-		//cout << endl << "PLANE LATITUDE = " << d.Latitude;
-		//cout << endl << "PLANE LONGITUDE = " << d.Longitude;
-		//cout << endl << "PLANE ALTITUDE = " << d.Altitude;
-		//cout << endl << "P = " << d.p;
-		//cout << endl << "B = " << d.b;
-		//cout << endl << "H = " << d.h;
-
+		/*
+		cout << endl << "PLANE LATITUDE = " << d.Latitude;
+		cout << endl << "PLANE LONGITUDE = " << d.Longitude;
+		cout << endl << "PLANE ALTITUDE = " << d.Altitude;
+		cout << endl << "P = " << d.p;
+		cout << endl << "B = " << d.b;
+		cout << endl << "H = " << d.h;
+		*/
 		udps.send((char*)&d, sizeof(d));
 	}
 };

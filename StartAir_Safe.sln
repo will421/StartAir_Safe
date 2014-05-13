@@ -24,8 +24,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UDPServer", "UDPServer\UDPS
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "server", "server\server.vcxproj", "{2CD9BA17-4B9E-4C27-9A3A-ACABFF361A8F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "global", "global\global.vcxproj", "{B1902F44-C275-4101-8466-A51EDC5D5E0D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,16 +114,6 @@ Global
 		{2CD9BA17-4B9E-4C27-9A3A-ACABFF361A8F}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{2CD9BA17-4B9E-4C27-9A3A-ACABFF361A8F}.Release|Win32.ActiveCfg = Release|Win32
 		{2CD9BA17-4B9E-4C27-9A3A-ACABFF361A8F}.Release|Win32.Build.0 = Release|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Debug|Win32.ActiveCfg = Debug|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Debug|Win32.Build.0 = Debug|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Release|Any CPU.ActiveCfg = Release|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Release|Win32.ActiveCfg = Release|Win32
-		{B1902F44-C275-4101-8466-A51EDC5D5E0D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -48,8 +48,8 @@ UDPReceiver::~UDPReceiver()
 void UDPReceiver::boucle()
 {
 	
-	//buffer = new char[size_buff];
-	char buffer[255];
+	char * buffer = NULL;
+	buffer = new char[size_buff];
 
 	SOCKADDR_IN csin;
 	int boucle = 0;
@@ -57,20 +57,13 @@ void UDPReceiver::boucle()
 	{
 	    
 		int sizeof_csin = sizeof(csin);
-		int res = recvfrom(sock, buffer, sizeof(buffer), 0, (SOCKADDR *)&csin, &sizeof_csin);
+		int res = recvfrom(sock, buffer, /*sizeof(buffer)*/size_buff, 0, (SOCKADDR *)&csin, &sizeof_csin);
 		int error = WSAGetLastError();
 		SAFE_RECV * recv = (SAFE_RECV *)buffer;
 		
 		datagramReceived(*(SOCKADDR *)&csin,*recv);
-		//datagramReceived(*(SOCKADDR *)&csin, SAFE_RECV_ID_POS, buffer);
-		//std::cout << res << " " << errno  << " " << error  << std::endl;
-	
 
-
-		//boucle++;
-		//if (boucle > 10)
-		//system("pause");
-		//	exit(0);
 	}
+	delete[] buffer;
 	closesocket(sock);
 }
